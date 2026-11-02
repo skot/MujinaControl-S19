@@ -1,0 +1,992 @@
+{
+  "date": "2026-11-01",
+  "note": "Catalog snapshot, not live order-time stock. Partial core-part check, not complete BOM review.",
+  "parts": [
+    {
+      "query": "RV1106G2",
+      "data": {
+        "mpn": "RV1106G2",
+        "total": 1,
+        "results": [
+          {
+            "lcsc": "C5272606",
+            "model": "RV1106G2",
+            "manufacturer": "Rockchip",
+            "package": "QFN-128(12.3x12.3)",
+            "stock": 959,
+            "price": 14.2154,
+            "library_type": "extended",
+            "preferred": false,
+            "category": "Embedded Processors & Controllers",
+            "subcategory": "Microcontrollers (MCU/MPU/SOC)",
+            "subcategory_id": 2584,
+            "mounting_type": "smd",
+            "specs": {
+              "Operating Temperature": "-20℃~+85℃",
+              "Program Memory Type": "ROMless",
+              "Core Size": "32 Bit",
+              "RAM Size": "256KB",
+              "CPU Core": "ARM Cortex-A7",
+              "Features": "Power-on reset (POR)、Watchdog reset、Software reset、Built-in general-purpose timer、Calendar function、Built-in temperature sensor",
+              "ADC (Bit)": "10bit",
+              "Oscillator Type": "External"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "query": "AP63200WU-7",
+      "data": {
+        "mpn": "AP63200WU-7",
+        "total": 1,
+        "results": [
+          {
+            "lcsc": "C2071868",
+            "model": "AP63200WU-7",
+            "manufacturer": "Diodes Incorporated",
+            "package": "TSOT-23-6",
+            "stock": 5975,
+            "price": 1.8553,
+            "library_type": "extended",
+            "preferred": false,
+            "category": "Power Management (PMIC)",
+            "subcategory": "DC-DC Converters",
+            "subcategory_id": 3005,
+            "mounting_type": "smd",
+            "specs": {
+              "Operating Temperature": "-40℃~+85℃",
+              "Function": "Step-down type",
+              "Synchronous Rectifier": "Yes",
+              "Frequency - Switching": "500kHz",
+              "Voltage - Supply": "3.8V~32V",
+              "Output Type": "Adjustable",
+              "Output Current": "2A",
+              "Quiescent Current": "22uA",
+              "Features": "Overcurrent Protection、Light load efficient mode、Cycle-by-cycle current limiting、Hiccup current limiting、EMI optimization (spread spectrum)",
+              "Switch tube (built-in/external)": "Built-in",
+              "Topology": "Buck",
+              "Output Voltage": "-",
+              "Number of Outputs": "1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "query": "AP63205WU-7",
+      "data": {
+        "mpn": "AP63205WU-7",
+        "total": 1,
+        "results": [
+          {
+            "lcsc": "C2071056",
+            "model": "AP63205WU-7",
+            "manufacturer": "Diodes Incorporated",
+            "package": "TSOT-23-6",
+            "stock": 16408,
+            "price": 0.4626,
+            "library_type": "extended",
+            "preferred": false,
+            "category": "Power Management (PMIC)",
+            "subcategory": "DC-DC Converters",
+            "subcategory_id": 3005,
+            "mounting_type": "smd",
+            "specs": {
+              "Operating Temperature": "-40℃~+85℃@(TA)",
+              "Function": "Step-down type",
+              "Synchronous Rectifier": "Yes",
+              "Frequency - Switching": "1.1MHz",
+              "Voltage - Supply": "3.8V~32V",
+              "Output Type": "Fixed",
+              "Output Current": "2A",
+              "Quiescent Current": "22uA",
+              "Features": "Overcurrent Protection、Light load efficient mode、Cycle-by-cycle current limiting、Hiccup current limiting、EMI optimization (spread spectrum)",
+              "Switch tube (built-in/external)": "Built-in",
+              "Topology": "Buck",
+              "Output Voltage": "5V",
+              "Number of Outputs": "1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "query": "AP63203WU-7",
+      "data": {
+        "mpn": "AP63203WU-7",
+        "total": 1,
+        "results": [
+          {
+            "lcsc": "C780769",
+            "model": "AP63203WU-7",
+            "manufacturer": "Diodes Incorporated",
+            "package": "TSOT-23-6",
+            "stock": 3803,
+            "price": 1.1926,
+            "library_type": "extended",
+            "preferred": false,
+            "category": "Power Management (PMIC)",
+            "subcategory": "DC-DC Converters",
+            "subcategory_id": 3005,
+            "mounting_type": "smd",
+            "specs": {
+              "Operating Temperature": "-40℃~+85℃@(TA)",
+              "Function": "Step-down type",
+              "Synchronous Rectifier": "Yes",
+              "Frequency - Switching": "1.1MHz",
+              "Voltage - Supply": "3.8V~32V",
+              "Output Type": "Fixed",
+              "Output Current": "2A",
+              "Quiescent Current": "22uA",
+              "Features": "Overcurrent Protection、Light load efficient mode、Cycle-by-cycle current limiting、Hiccup current limiting、EMI optimization (spread spectrum)",
+              "Switch tube (built-in/external)": "Built-in",
+              "Topology": "Buck",
+              "Output Voltage": "3.3V",
+              "Number of Outputs": "1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "query": "TPS3808G01DBVR",
+      "data": {
+        "mpn": "TPS3808G01DBVR",
+        "total": 1,
+        "results": [
+          {
+            "lcsc": "C19653",
+            "model": "TPS3808G01DBVR",
+            "manufacturer": "Texas Instruments",
+            "package": "SOT-23-6",
+            "stock": 4736,
+            "price": 0.4593,
+            "library_type": "extended",
+            "preferred": false,
+            "category": "Power Management (PMIC)",
+            "subcategory": "Supervisor and Reset ICs",
+            "subcategory_id": 3202,
+            "mounting_type": "smd",
+            "specs": {
+              "Function": "Manual reset input",
+              "Number of Voltages Monitored": "1",
+              "Operating Temperature": "-40℃~+125℃",
+              "ChipType": "Voltage monitor",
+              "Reset Timeout": "20us",
+              "Threshold Voltage": "405mV",
+              "Voltage - Supply": "1.7V~6.5V",
+              "Output Type": "Open-drain",
+              "Quiescent Current": "2.4uA",
+              "Reset Active Level": "Active Low"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "query": "W25N02KVZEIR",
+      "data": {
+        "mpn": "W25N02KVZEIR",
+        "total": 2,
+        "results": [
+          {
+            "lcsc": "C17626844",
+            "model": "W25N02KVZEIR",
+            "manufacturer": "Winbond Elec",
+            "package": "WSON-8(6x8)",
+            "stock": 3897,
+            "price": 11.6728,
+            "library_type": "extended",
+            "preferred": false,
+            "category": "Memory",
+            "subcategory": "NAND FLASH",
+            "subcategory_id": 2322,
+            "mounting_type": "smd",
+            "specs": {
+              "Data Retention - TDR (Year)": "10 years",
+              "Page Program time (TPP)": "700us",
+              "Clock Frequency": "104MHz",
+              "Operating Temperature": "-40℃~+85℃",
+              "Write Cycle Time(tWC)": "25ns",
+              "ECC": "Yes",
+              "Memory Size": "2Gbit",
+              "Voltage - Supply": "2.7V~3.6V",
+              "Block Erase Time(tBE)": "2ms",
+              "Features": "Read buffer function、Software reset function、ECC error correction function、OTP region write protection and lock function、Hardware write protection function、Write enable latch、Software write protection function",
+              "Interface": "SPI",
+              "Program / Erase Cycles": "60,000 Cycles",
+              "Standby Supply Current": "10uA"
+            }
+          },
+          {
+            "lcsc": "C3010298",
+            "model": "W25N02KVZEIR",
+            "manufacturer": "Winbond Elec",
+            "package": "WSON-8-EP(6x8)",
+            "stock": 1744,
+            "price": 11.576,
+            "library_type": "extended",
+            "preferred": false,
+            "category": "Memory",
+            "subcategory": "NAND FLASH",
+            "subcategory_id": 2322,
+            "mounting_type": "smd",
+            "specs": {
+              "Data Retention - TDR (Year)": "10 years",
+              "Page Program time (TPP)": "700us",
+              "Clock Frequency": "104MHz",
+              "Operating Temperature": "-40℃~+85℃",
+              "Write Cycle Time(tWC)": "-",
+              "ECC": "Yes",
+              "Memory Size": "2Gbit",
+              "Voltage - Supply": "2.7V~3.6V",
+              "Block Erase Time(tBE)": "2ms",
+              "Features": "Read buffer function、Software reset function、ECC error correction function、OTP region write protection and lock function、Hardware write protection function、Write enable latch、Software write protection function",
+              "Interface": "SPI",
+              "Program / Erase Cycles": "60,000 Cycles",
+              "Standby Supply Current": "10uA"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "query": "HR911105A",
+      "data": {
+        "mpn": "HR911105A",
+        "total": 1,
+        "results": [
+          {
+            "lcsc": "C12074",
+            "model": "HR911105A",
+            "manufacturer": "HANRUN(Zhongshan HanRun Elec)",
+            "package": "Plugin",
+            "stock": 59708,
+            "price": 1.729,
+            "library_type": "extended",
+            "preferred": false,
+            "category": "Connectors",
+            "subcategory": "Ethernet Connectors / Modular Connectors (RJ45 RJ11)",
+            "subcategory_id": 2983,
+            "mounting_type": "through_hole",
+            "specs": {
+              "Operating Temperature": "0℃~+70℃",
+              "PoE": "Non-PoE",
+              "LED": "With LED",
+              "Shielding": "Shielded",
+              "Mounting Type": "Right Angle",
+              "Ratings": "-",
+              "Number of Ports": "1",
+              "Length": "21.3mm",
+              "Contact Plating": "Gold",
+              "Connector Type": "RJ45 Jack",
+              "Contact Material": "Phosphor Bronze",
+              "Supplementary Features": "Filtered",
+              "Height": "13.5mm",
+              "Width": "16.04mm"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "query": "SRN4018-2R2M",
+      "data": {
+        "mpn": "SRN4018-2R2M",
+        "total": 1,
+        "results": [
+          {
+            "lcsc": "C913207",
+            "model": "SRN4018-2R2M",
+            "manufacturer": "BOURNS",
+            "package": "SMD,4x4mm",
+            "stock": 1855,
+            "price": 0.3529,
+            "library_type": "extended",
+            "preferred": false,
+            "category": "Inductors, Coils, Chokes",
+            "subcategory": "Power Inductors",
+            "subcategory_id": 3050,
+            "mounting_type": "smd",
+            "specs": {
+              "Current - Saturation(Isat)": "3A",
+              "Inductance": "2.2uH",
+              "Type": "-",
+              "Tolerance": "±20%",
+              "Current Rating": "2.9A",
+              "Application Grade": "Consumer grade",
+              "DC Resistance(DCR)": "44mΩ"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "query": "ABS07-32.768KHZ-T",
+      "data": {
+        "mpn": "ABS07-32.768KHZ-T",
+        "total": 1,
+        "results": [
+          {
+            "lcsc": "C130253",
+            "model": "ABS07-32.768KHZ-T",
+            "manufacturer": "Abracon LLC",
+            "package": "SMD3215-2P",
+            "stock": 3560,
+            "price": 0.671,
+            "library_type": "extended",
+            "preferred": false,
+            "category": "Crystals, Oscillators, Resonators",
+            "subcategory": "Crystals",
+            "subcategory_id": 3043,
+            "mounting_type": "smd",
+            "specs": {
+              "Load Capacitance": "12.5pF",
+              "Operating Temperature": "-40℃~+85℃",
+              "Type": "SMD crystal oscillator",
+              "Normal temperature Frequency Tolerance": "±20ppm",
+              "Equivalent Series Resistance(ESR)": "70kΩ",
+              "Frequency Stability": "-",
+              "Frequency": "32.768kHz"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "query": "DM3D-SF",
+      "data": {
+        "error": "No JLCPCB parts found for MPN 'DM3D-SF'",
+        "mpn": "DM3D-SF",
+        "results": [],
+        "hint": "The local catalog only lists in-stock parts (stock >= 10). Try jlc_stock_check(query=\"DM3D-SF\") for low or zero stock, or mouser_get_part / digikey_get_part for other distributors."
+      }
+    },
+    {
+      "query": "C437089",
+      "data": {
+        "lcsc": "C437089",
+        "model": "X2026WV-2x09D-46SN",
+        "manufacturer": "XKB Connection",
+        "package": "Plugin,P=2mm",
+        "stock": 29,
+        "price": 0.2158,
+        "library_type": "extended",
+        "preferred": false,
+        "category": "Connectors",
+        "subcategory": "Wire To Board Connector",
+        "subcategory_id": 2132,
+        "mounting_type": "through_hole",
+        "specs": {
+          "Operating Temperature": "-25℃~+85℃",
+          "Number of Rows": "2",
+          "Voltage Rating": "250V",
+          "Current Rating": "3A",
+          "Pins Structure": "2x9P",
+          "Row Spacing": "2mm",
+          "Mounting Type": "Through Hole",
+          "Flame Retardant Rating": "UL94V-0",
+          "Reference Series": "PHD",
+          "Contact Plating": "Tin",
+          "Number of Pins": "18P",
+          "Pitch": "2mm",
+          "Contact Material": "Brass",
+          "Plastic Material": "PA46",
+          "Number of PINs Per Row": "9"
+        },
+        "min_order": 1,
+        "reel_qty": 300,
+        "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2110111230_XKB-Connection-X2026WV-2x09D-46SN_C437089.pdf",
+        "lcsc_url": "https://www.lcsc.com/product-detail/wire-to-board-connector_xkb-connection-x2026wv-2x09d-46sn_C437089.html",
+        "prices": [
+          {
+            "qty": "1+",
+            "price": 0.2158
+          },
+          {
+            "qty": "50+",
+            "price": 0.1731
+          },
+          {
+            "qty": "300+",
+            "price": 0.1439
+          },
+          {
+            "qty": "600+",
+            "price": 0.1211
+          },
+          {
+            "qty": "2400+",
+            "price": 0.1109
+          },
+          {
+            "qty": "5100+",
+            "price": 0.1049
+          }
+        ],
+        "attributes": [
+          {
+            "name": "Operating Temperature",
+            "value": "-25℃~+85℃"
+          },
+          {
+            "name": "Number of Rows",
+            "value": "2"
+          },
+          {
+            "name": "Voltage Rating",
+            "value": "250V"
+          },
+          {
+            "name": "Current Rating",
+            "value": "3A"
+          },
+          {
+            "name": "Pins Structure",
+            "value": "2x9P"
+          },
+          {
+            "name": "Row Spacing",
+            "value": "2mm"
+          },
+          {
+            "name": "Mounting Type",
+            "value": "Through Hole"
+          },
+          {
+            "name": "Flame Retardant Rating",
+            "value": "UL94V-0"
+          },
+          {
+            "name": "Reference Series",
+            "value": "PHD"
+          },
+          {
+            "name": "Contact Plating",
+            "value": "Tin"
+          },
+          {
+            "name": "Number of Pins",
+            "value": "18P"
+          },
+          {
+            "name": "Pitch",
+            "value": "2mm"
+          },
+          {
+            "name": "Contact Material",
+            "value": "Brass"
+          },
+          {
+            "name": "Plastic Material",
+            "value": "PA46"
+          },
+          {
+            "name": "Number of PINs Per Row",
+            "value": "9"
+          }
+        ],
+        "has_easyeda_footprint": true,
+        "easyeda_symbol_uuid": "0e6d8f1d58d24fd1aeecfb3c20ebf990",
+        "easyeda_footprint_uuid": "7cc35275ffc946668240df36b63a6c52"
+      }
+    },
+    {
+      "query": "C2845614",
+      "data": {
+        "lcsc": "C2845614",
+        "model": "HC-PHD-2*3A",
+        "manufacturer": "HCTL",
+        "package": "Plugin,P=2mm",
+        "stock": 42374,
+        "price": 0.0706,
+        "library_type": "extended",
+        "preferred": false,
+        "category": "Connectors",
+        "subcategory": "Wire To Board Connector",
+        "subcategory_id": 2132,
+        "mounting_type": "through_hole",
+        "specs": {
+          "Operating Temperature": "-25℃~+85℃",
+          "Number of Rows": "2",
+          "Voltage Rating": "250V",
+          "Color": "-",
+          "Current Rating": "3A",
+          "Pins Structure": "2x3P",
+          "Row Spacing": "2mm",
+          "Mounting Type": "Through Hole",
+          "Flame Retardant Rating": "-",
+          "Y-Width of Bottom Edge on Board": "5.2mm",
+          "X-Length of Bottom Edge on Board (Spacing Line)": "8mm",
+          "Reference Series": "PHD",
+          "Contact Plating": "Tin",
+          "Number of Pins": "6P",
+          "Contact Material": "Brass",
+          "Pitch": "2mm",
+          "Supplementary Features": "-",
+          "Plastic Material": "PA46",
+          "Z-Height of the Board": "6.5mm",
+          "Number of PINs Per Row": "3"
+        },
+        "min_order": 1,
+        "reel_qty": 1000,
+        "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401020446_HCTL-HC-PHD-2-3A_C2845614.pdf",
+        "lcsc_url": "https://www.lcsc.com/product-detail/wire-to-board-connector_hctl-hc-phd-2-3a_C2845614.html",
+        "prices": [
+          {
+            "qty": "1+",
+            "price": 0.0706
+          },
+          {
+            "qty": "100+",
+            "price": 0.0565
+          },
+          {
+            "qty": "300+",
+            "price": 0.0494
+          },
+          {
+            "qty": "1000+",
+            "price": 0.0432
+          },
+          {
+            "qty": "5000+",
+            "price": 0.0389
+          },
+          {
+            "qty": "10000+",
+            "price": 0.0368
+          }
+        ],
+        "attributes": [
+          {
+            "name": "Operating Temperature",
+            "value": "-25℃~+85℃"
+          },
+          {
+            "name": "Number of Rows",
+            "value": "2"
+          },
+          {
+            "name": "Voltage Rating",
+            "value": "250V"
+          },
+          {
+            "name": "Color",
+            "value": "-"
+          },
+          {
+            "name": "Current Rating",
+            "value": "3A"
+          },
+          {
+            "name": "Pins Structure",
+            "value": "2x3P"
+          },
+          {
+            "name": "Row Spacing",
+            "value": "2mm"
+          },
+          {
+            "name": "Mounting Type",
+            "value": "Through Hole"
+          },
+          {
+            "name": "Flame Retardant Rating",
+            "value": "-"
+          },
+          {
+            "name": "Y-Width of Bottom Edge on Board",
+            "value": "5.2mm"
+          },
+          {
+            "name": "X-Length of Bottom Edge on Board (Spacing Line)",
+            "value": "8mm"
+          },
+          {
+            "name": "Reference Series",
+            "value": "PHD"
+          },
+          {
+            "name": "Contact Plating",
+            "value": "Tin"
+          },
+          {
+            "name": "Number of Pins",
+            "value": "6P"
+          },
+          {
+            "name": "Contact Material",
+            "value": "Brass"
+          },
+          {
+            "name": "Pitch",
+            "value": "2mm"
+          },
+          {
+            "name": "Supplementary Features",
+            "value": "-"
+          },
+          {
+            "name": "Plastic Material",
+            "value": "PA46"
+          },
+          {
+            "name": "Z-Height of the Board",
+            "value": "6.5mm"
+          },
+          {
+            "name": "Number of PINs Per Row",
+            "value": "3"
+          }
+        ],
+        "has_easyeda_footprint": true,
+        "easyeda_symbol_uuid": "a857fa5480604ee3843d5b960f3215b4",
+        "easyeda_footprint_uuid": "bdcf3f6dd84b42f08b37b69795f3785c"
+      }
+    },
+    {
+      "query": "C492365",
+      "data": {
+        "lcsc": "C492365",
+        "model": "50362462",
+        "manufacturer": "MOLEX",
+        "package": "Push-Pull,P=4.2mm",
+        "stock": 515,
+        "price": 0.7694,
+        "library_type": "extended",
+        "preferred": false,
+        "category": "Connectors",
+        "subcategory": "Wire To Board Connector",
+        "subcategory_id": 2132,
+        "mounting_type": "through_hole",
+        "specs": {
+          "Operating Temperature": "-40℃~+105℃",
+          "Number of Rows": "2",
+          "Voltage Rating": "600V",
+          "Color": "Black",
+          "Current Rating": "13A",
+          "Pins Structure": "2x3P",
+          "Row Spacing": "4.2mm",
+          "Mounting Type": "Right Angle",
+          "Flame Retardant Rating": "UL94V-0",
+          "X-Length of Bottom Edge on Board (Spacing Line)": "13.8mm",
+          "Reference Series": "-",
+          "Contact Plating": "Tin",
+          "Number of Pins": "6P",
+          "Contact Material": "Brass",
+          "Pitch": "4.2mm",
+          "Supplementary Features": "With column",
+          "Number of PINs Per Row": "3"
+        },
+        "min_order": 1,
+        "reel_qty": 115,
+        "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2407021941_MOLEX-50362462_C492365.pdf",
+        "lcsc_url": "https://www.lcsc.com/product-detail/wire-to-board-connector_molex-50362462_C492365.html",
+        "prices": [
+          {
+            "qty": "1+",
+            "price": 0.7694
+          },
+          {
+            "qty": "10+",
+            "price": 0.6939
+          },
+          {
+            "qty": "30+",
+            "price": 0.6562
+          },
+          {
+            "qty": "115+",
+            "price": 0.6185
+          },
+          {
+            "qty": "460+",
+            "price": 0.5971
+          },
+          {
+            "qty": "1035+",
+            "price": 0.584
+          }
+        ],
+        "attributes": [
+          {
+            "name": "Operating Temperature",
+            "value": "-40℃~+105℃"
+          },
+          {
+            "name": "Number of Rows",
+            "value": "2"
+          },
+          {
+            "name": "Voltage Rating",
+            "value": "600V"
+          },
+          {
+            "name": "Color",
+            "value": "Black"
+          },
+          {
+            "name": "Current Rating",
+            "value": "13A"
+          },
+          {
+            "name": "Pins Structure",
+            "value": "2x3P"
+          },
+          {
+            "name": "Row Spacing",
+            "value": "4.2mm"
+          },
+          {
+            "name": "Mounting Type",
+            "value": "Right Angle"
+          },
+          {
+            "name": "Flame Retardant Rating",
+            "value": "UL94V-0"
+          },
+          {
+            "name": "X-Length of Bottom Edge on Board (Spacing Line)",
+            "value": "13.8mm"
+          },
+          {
+            "name": "Reference Series",
+            "value": "-"
+          },
+          {
+            "name": "Contact Plating",
+            "value": "Tin"
+          },
+          {
+            "name": "Number of Pins",
+            "value": "6P"
+          },
+          {
+            "name": "Contact Material",
+            "value": "Brass"
+          },
+          {
+            "name": "Pitch",
+            "value": "4.2mm"
+          },
+          {
+            "name": "Supplementary Features",
+            "value": "With column"
+          },
+          {
+            "name": "Number of PINs Per Row",
+            "value": "3"
+          }
+        ],
+        "has_easyeda_footprint": true,
+        "easyeda_symbol_uuid": "386b72b389a84eebb7e30c15ad5cbef4",
+        "easyeda_footprint_uuid": "6a25e5ffe29c48d3b6fdfaffb5c58ae5"
+      }
+    },
+    {
+      "query": "C54909",
+      "data": {
+        "lcsc": "C54909",
+        "model": "4.2-2*2AW",
+        "manufacturer": "BOOMELE(Boom Precision Elec)",
+        "package": "Push-Pull,P=4.2mm",
+        "stock": 17933,
+        "price": 0.0972,
+        "library_type": "extended",
+        "preferred": false,
+        "category": "Connectors",
+        "subcategory": "Wire To Board Connector",
+        "subcategory_id": 2132,
+        "mounting_type": "through_hole",
+        "specs": {
+          "Operating Temperature": "-25℃~+85℃",
+          "Number of Rows": "2",
+          "Voltage Rating": "300V",
+          "Color": "Transparent",
+          "Current Rating": "9A",
+          "Pins Structure": "2x2P",
+          "Row Spacing": "4.2mm",
+          "Mounting Type": "Right Angle",
+          "Flame Retardant Rating": "UL94V-0",
+          "Y-Width of Bottom Edge on Board": "-",
+          "X-Length of Bottom Edge on Board (Spacing Line)": "-",
+          "Reference Series": "-",
+          "Contact Plating": "-",
+          "Number of Pins": "4P",
+          "Pitch": "4.2mm",
+          "Contact Material": "-",
+          "Supplementary Features": "-",
+          "Plastic Material": "PA",
+          "Z-Height of the Board": "-",
+          "Number of PINs Per Row": "2"
+        },
+        "min_order": 1,
+        "reel_qty": 500,
+        "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_BOOMELE-Boom-Precision-Elec-4-2-2-2AW_C54909.pdf",
+        "lcsc_url": "https://www.lcsc.com/product-detail/wire-to-board-connector_boomele-boom-precision-elec-4-2-2-2aw_C54909.html",
+        "prices": [
+          {
+            "qty": "1+",
+            "price": 0.0972
+          },
+          {
+            "qty": "50+",
+            "price": 0.0767
+          },
+          {
+            "qty": "150+",
+            "price": 0.0665
+          },
+          {
+            "qty": "500+",
+            "price": 0.0566
+          },
+          {
+            "qty": "2500+",
+            "price": 0.0504
+          },
+          {
+            "qty": "5000+",
+            "price": 0.0475
+          }
+        ],
+        "attributes": [
+          {
+            "name": "Operating Temperature",
+            "value": "-25℃~+85℃"
+          },
+          {
+            "name": "Number of Rows",
+            "value": "2"
+          },
+          {
+            "name": "Voltage Rating",
+            "value": "300V"
+          },
+          {
+            "name": "Color",
+            "value": "Transparent"
+          },
+          {
+            "name": "Current Rating",
+            "value": "9A"
+          },
+          {
+            "name": "Pins Structure",
+            "value": "2x2P"
+          },
+          {
+            "name": "Row Spacing",
+            "value": "4.2mm"
+          },
+          {
+            "name": "Mounting Type",
+            "value": "Right Angle"
+          },
+          {
+            "name": "Flame Retardant Rating",
+            "value": "UL94V-0"
+          },
+          {
+            "name": "Y-Width of Bottom Edge on Board",
+            "value": "-"
+          },
+          {
+            "name": "X-Length of Bottom Edge on Board (Spacing Line)",
+            "value": "-"
+          },
+          {
+            "name": "Reference Series",
+            "value": "-"
+          },
+          {
+            "name": "Contact Plating",
+            "value": "-"
+          },
+          {
+            "name": "Number of Pins",
+            "value": "4P"
+          },
+          {
+            "name": "Pitch",
+            "value": "4.2mm"
+          },
+          {
+            "name": "Contact Material",
+            "value": "-"
+          },
+          {
+            "name": "Supplementary Features",
+            "value": "-"
+          },
+          {
+            "name": "Plastic Material",
+            "value": "PA"
+          },
+          {
+            "name": "Z-Height of the Board",
+            "value": "-"
+          },
+          {
+            "name": "Number of PINs Per Row",
+            "value": "2"
+          }
+        ],
+        "has_easyeda_footprint": true,
+        "easyeda_symbol_uuid": "90b62ea527af5d9c49093b294b93fc14",
+        "easyeda_footprint_uuid": "b7ab4839f37b40e2bb11133454581765"
+      }
+    },
+    {
+      "query": "SRN6028C-3R3M",
+      "data": {
+        "error": "No JLCPCB parts found for MPN 'SRN6028C-3R3M'",
+        "mpn": "SRN6028C-3R3M",
+        "results": [],
+        "hint": "The local catalog only lists in-stock parts (stock >= 10). Try jlc_stock_check(query=\"SRN6028C-3R3M\") for low or zero stock, or mouser_get_part / digikey_get_part for other distributors."
+      }
+    },
+    {
+      "query": "SRN6028C-3R9M",
+      "data": {
+        "mpn": "SRN6028C-3R9M",
+        "total": 1,
+        "results": [
+          {
+            "lcsc": "C19947652",
+            "model": "SRN6028C-3R9M",
+            "manufacturer": "BOURNS",
+            "package": "SMD,6x6mm",
+            "stock": 145,
+            "price": 0.3527,
+            "library_type": "extended",
+            "preferred": false,
+            "category": "Inductors, Coils, Chokes",
+            "subcategory": "Power Inductors",
+            "subcategory_id": 3050,
+            "mounting_type": "smd",
+            "specs": {
+              "Current - Saturation(Isat)": "3.9A",
+              "Inductance": "3.9uH",
+              "Tolerance": "±20%",
+              "Current Rating": "3.3A",
+              "Application Grade": "Consumer grade",
+              "DC Resistance(DCR)": "28mΩ"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "query": "SRN6028C-4R7M",
+      "data": {
+        "error": "No JLCPCB parts found for MPN 'SRN6028C-4R7M'",
+        "mpn": "SRN6028C-4R7M",
+        "results": [],
+        "hint": "The local catalog only lists in-stock parts (stock >= 10). Try jlc_stock_check(query=\"SRN6028C-4R7M\") for low or zero stock, or mouser_get_part / digikey_get_part for other distributors."
+      }
+    }
+  ]
+}

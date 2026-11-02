@@ -1,0 +1,1094 @@
+(kicad_sch
+	(version 20260830)
+	(generator "eeschema")
+	(generator_version "10.99")
+	(uuid "3c287cde-07fc-5a42-a7f6-c9452c08d71e")
+	(paper "A3")
+	(title_block
+		(title "MujinaControl-S19 / System overview")
+		(date "2026-11-01")
+		(rev "0.1 DRAFT")
+		(company "Mujina")
+		(comment 1 "Initial schematic - verify hardware and firmware before layout signoff")
+	)
+	(lib_symbols
+		(symbol "Device:R_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:VCC"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VCC"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VCC\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VCC_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VCC_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "USB, Ethernet and RTC rail filters"
+		(exclude_from_sim no)
+		(at 25.08 122.954 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "04bd826a-db7d-5e28-bdff-45aaf925a18c")
+	)
+	(text "Integrated 100BASE-TX PHY / MagJack"
+		(exclude_from_sim no)
+		(at 285.08 120.16 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "108c9454-a30a-5af5-b04d-9e869d010667")
+	)
+	(text "Five voltage monitors / wired-AND enables"
+		(exclude_from_sim no)
+		(at 285.08 65.16 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "1bc7cd07-eb5a-5193-ae82-33a4dfd8b11e")
+	)
+	(text "PSU I2C / enable / display / I2C pull-ups"
+		(exclude_from_sim no)
+		(at 285.08 177.954 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "1c78120d-4115-57e9-935c-f11e229aa766")
+	)
+	(text "MUJINACONTROL-S19"
+		(exclude_from_sim no)
+		(at 20.32 21.59 0)
+		(effects
+			(font
+				(size 3.8 3.8)
+			)
+			(justify left)
+		)
+		(uuid "346eb17c-609d-535a-a037-5491dc573277")
+	)
+	(text "5 V -> core / CPU -> DDR / 1.8 V -> 3.3 V"
+		(exclude_from_sim no)
+		(at 155.08 65.16 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "39e31d31-f730-58b6-9c2d-17b6768e83ae")
+	)
+	(text "Architecture"
+		(exclude_from_sim no)
+		(at 20.32 224.79 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left)
+		)
+		(uuid "3ef8e842-a2cb-52e8-9199-be3a23022470")
+	)
+	(text "Five buck converters with local feedback"
+		(exclude_from_sim no)
+		(at 155.08 67.954 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "4006426f-bbc2-5868-8b38-bb4d69c2c23c")
+	)
+	(text "Maskrom key / UART2 / analog bias"
+		(exclude_from_sim no)
+		(at 155.08 122.954 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "46294492-5c54-5911-a965-698b2dc81aa9")
+	)
+	(text "Alternative 1x4 and 2x2 connector footprints"
+		(exclude_from_sim no)
+		(at 155.08 177.954 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "489250f4-fd74-5382-8349-713a870e99ee")
+	)
+	(text "USB-C device and detection-only VBUS"
+		(exclude_from_sim no)
+		(at 285.08 122.954 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "62f87c12-f994-53dc-b590-80948bba3cdd")
+	)
+	(text "SPI NAND / microSD / 24 MHz / RTC"
+		(exclude_from_sim no)
+		(at 155.08 120.16 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "64339da2-17c3-5c2f-bcbb-3a933ba59413")
+	)
+	(text "J1 12 V -> protected fan rail -> 5 V converter -> CPU/core -> DDR/1.8 V -> 3.3 V -> RESET_N\nThree UART hashboards, shared hashboard I2C, independent PSU I2C, display I2C, four PWM/tach fans.\nUSB-C is a device/recovery port. SPI NAND boots first; microSD is available for development.\nJ1-J16 footprints and pin numbering inherited from bitcrane-v3.1; J16 is now 3.3 V UART2 debug.\nAll cross-sheet connections use named global labels. Camera / wireless / USB hub circuits are omitted." (exclude_from_sim no) (at 20.32 237.49 0) (effects (font (size 1.2 1.2)) (justify left)) (uuid "665544f5-4beb-5ebf-ab43-5ba18460e603"))
+	(text "Supply pin map / shared bypass banks"
+		(exclude_from_sim no)
+		(at 25.08 120.16 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "6dc0d93a-90fa-5328-baed-16ba8c5b3836")
+	)
+	(text "Antminer controlboard / RV1106G2 / 128 MB DDR3L / 100BASE-TX"
+		(exclude_from_sim no)
+		(at 20.32 33.02 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left)
+		)
+		(uuid "77f3aaa1-d84e-5a37-80e6-dd4849501292")
+	)
+	(text "CT-open qualification delay / manual reset"
+		(exclude_from_sim no)
+		(at 285.08 67.954 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "7dbbe1dc-bf2c-57f8-92d6-8511157dffbd")
+	)
+	(text "Fitted/DNP address straps / reset / plug"
+		(exclude_from_sim no)
+		(at 25.08 177.954 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "98008012-db5c-5819-896f-9e7ea1dfe75b")
+	)
+	(text "RV1106G2 / 128 MB DDR3L"
+		(exclude_from_sim no)
+		(at 25.08 65.16 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "a96998ee-c75d-5855-84e3-5e13e4dbff85")
+	)
+	(text "DRAFT 0.1 - NOT FOR FABRICATION\nValidate PSU/hashboard levels and boot states, power timing, CPU OPPs, NAND boot and component packages.\nPCB is a mechanical/connector placement scaffold only: no placement of new components or routing."
+		(exclude_from_sim no)
+		(at 20.32 270 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b96ff2b4-feee-5c49-b2b0-ca783403d917")
+	)
+	(text "Signal mux allocation / status LED"
+		(exclude_from_sim no)
+		(at 25.08 67.954 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "d5a4eaf5-37ba-5d8f-ae37-7c96487ca650")
+	)
+	(text "Three 18-pin mining headers"
+		(exclude_from_sim no)
+		(at 25.08 175.16 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "ea21ef82-ef21-5253-a2f4-8f6865a1ae58")
+	)
+	(text "Four open-drain PWM and protected tach paths"
+		(exclude_from_sim no)
+		(at 155.08 175.16 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "ed88a72b-0753-5e56-b238-b7c7be85841b")
+	)
+	(text "Six-pin 12 V input / fan rail / 5 V" (exclude_from_sim no) (at 285.08 175.16 0) (effects (font (size 1.1 1.1)) (justify left)) (uuid "f5d9c273-523d-585d-bf70-833d2d07240c"))
+	(sheet
+		(at 150 165)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "049388e3-5747-56ee-8960-38947858df69")
+		(property "Sheetname" "Four PWM / tach fan channels"
+			(at 205 162.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "08_fans.kicad_sch"
+			(at 205 197.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20 55)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "20b1adc1-edcb-526a-aa89-72a8e8c83f8f")
+		(property "Sheetname" "SoC interface allocation"
+			(at 75 52.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "01_soc.kicad_sch"
+			(at 75 87.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 150 55)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "2ff931f4-5122-5b9e-89cb-277a8261544a")
+		(property "Sheetname" "Five sequenced SoC rails"
+			(at 205 52.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "02_regulators.kicad_sch"
+			(at 205 87.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20 165)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "69cf748c-7b1a-5daf-980f-25ddeb6fa34e")
+		(property "Sheetname" "Three hashboard interfaces"
+			(at 75 162.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "07_hashboards.kicad_sch"
+			(at 75 197.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 280 110)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "99b0980f-0d62-5aa6-999c-3b33cbaeb27a")
+		(property "Sheetname" "Ethernet / USB recovery"
+			(at 335 107.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "06_network_usb.kicad_sch"
+			(at 335 142.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 280 55)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "bb772fee-7316-5c2e-b7bb-adc68ae9732a")
+		(property "Sheetname" "Power qualification / reset"
+			(at 335 52.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "03_sequencing.kicad_sch"
+			(at 335 87.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20 110)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c95bc365-f93e-5183-988f-d5a6b7589ec9")
+		(property "Sheetname" "SoC power / bypass / filters"
+			(at 75 107.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "04_decoupling.kicad_sch"
+			(at 75 142.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 150 110)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ec46bf82-2d25-5f1d-a868-0811fad8cecc")
+		(property "Sheetname" "Boot storage / clocks / debug"
+			(at 205 107.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "05_boot.kicad_sch"
+			(at 205 142.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 280 165)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "fb0ec5eb-04ed-5297-a5c0-afb39be58024")
+		(property "Sheetname" "12 V input / PSU / display"
+			(at 335 162.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "09_power_service.kicad_sch"
+			(at 335 197.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
