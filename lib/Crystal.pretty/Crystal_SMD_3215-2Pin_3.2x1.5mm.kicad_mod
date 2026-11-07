@@ -179,15 +179,7 @@
 		(uuid "e5e4f8c5-e618-44fc-825d-06f612513e80")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3215-2Pin_3.2x1.5mm.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
+	
+
+	(model "${KIPRJMOD}/3d/kicad/Crystal_SMD_3215-2Pin_3.2x1.5mm.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )

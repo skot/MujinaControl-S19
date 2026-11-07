@@ -4343,6 +4343,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C138033"
+			(at 88.9 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0c04b3ac-76e7-4aab-9724-0c6d1124e781")
 		)
@@ -4357,16 +4368,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C138033"
-			(at 88.9 134.62 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 66.04 154.94 90)
@@ -4441,6 +4443,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C114765"
+			(at 66.04 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e1f04a98-0911-4aea-88ce-3ff70a681706")
 		)
@@ -4455,16 +4468,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C114765"
-			(at 66.04 154.94 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Memory_Flash:GD25QxxxEY")
 		(at 132.08 71.12 0)
@@ -4539,6 +4543,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C3010298"
+			(at 132.08 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d9c7bc47-e6b5-4b06-acf7-7ea6784a0957")
 		)
@@ -4574,16 +4589,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C3010298"
-			(at 132.08 71.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 247.65 45.72 0)
@@ -4660,6 +4666,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 247.65 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "04cd7395-386d-4877-bb3d-824bcaa09980")
 		)
@@ -4674,16 +4691,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C60490"
-			(at 247.65 45.72 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 81.28 228.6 0)
@@ -4834,6 +4842,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C71629"
+			(at 254 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "84174846-693f-49d3-a2cd-715ae9150d51")
 		)
@@ -4848,16 +4867,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C71629"
-			(at 254 101.6 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 228.6 45.72 0)
@@ -4934,6 +4944,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 228.6 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a0fec9c2-fcfe-4ed4-a687-8b05c6f58df5")
 		)
@@ -4948,16 +4969,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C60490"
-			(at 228.6 45.72 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "bitaxe:GT-TC029B-H025-L1N")
 		(at 340.36 154.94 0)
@@ -5043,6 +5055,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C720477"
+			(at 340.36 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e093a419-7075-4007-89c6-e26f90d52be9")
 		)
@@ -5057,16 +5080,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C720477"
-			(at 340.36 154.94 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 241.3 166.37 0)
@@ -5143,6 +5157,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C77018"
+			(at 241.3 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "79890e3b-77f3-43e5-ae13-32fcc70b720f")
 		)
@@ -5157,16 +5182,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C77018"
-			(at 241.3 166.37 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 241.3 177.8 0)
@@ -5315,6 +5331,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C130253"
+			(at 111.76 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "93f3634b-048e-445d-ab63-7285bb6dc9f9")
 		)
@@ -5329,16 +5356,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C130253"
-			(at 111.76 205.74 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 96.52 45.72 0)
@@ -5415,6 +5433,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 96.52 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1ca11e6a-b6e8-477f-a6d5-f034887477c6")
 		)
@@ -5429,16 +5458,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C60490"
-			(at 96.52 45.72 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 323.85 45.72 0)
@@ -5515,6 +5535,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 323.85 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "309cdba1-41fb-4d60-af43-fe5a281533e1")
 		)
@@ -5529,16 +5560,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C60490"
-			(at 323.85 45.72 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 50.8 45.72 0)
@@ -5615,6 +5637,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 50.8 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "364b7b68-0e99-40ec-83a7-41c49d21cefc")
 		)
@@ -5629,16 +5662,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C60490"
-			(at 50.8 45.72 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 142.24 218.44 0)
@@ -5715,6 +5739,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C33149"
+			(at 142.24 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "adcf1551-6f46-4a52-8916-07c56e9aa81f")
 		)
@@ -5729,16 +5764,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C33149"
-			(at 142.24 218.44 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 91.44 182.88 0)
@@ -5887,6 +5913,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C106232"
+			(at 284.48 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e252964e-e3ab-4e51-b119-f66e92de501f")
 		)
@@ -5901,16 +5938,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C106232"
-			(at 284.48 154.94 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 375.92 217.17 0)
@@ -6135,6 +6163,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C114755"
+			(at 330.2 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fc6f2bb1-9f04-4c09-a6b1-cfb401c99f54")
 		)
@@ -6149,16 +6188,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C114755"
-			(at 330.2 208.28 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Connector:Micro_SD_Card_Det2")
 		(at 365.76 73.66 0)
@@ -6233,6 +6263,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C719027"
+			(at 365.76 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "78c7b669-d906-4359-9729-fb2803e60a7c")
 		)
@@ -6274,16 +6315,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C719027"
-			(at 365.76 73.66 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 73.66 45.72 0)
@@ -6360,6 +6392,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 73.66 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "add4c905-5242-44c4-8867-ea2d7964c526")
 		)
@@ -6374,16 +6417,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C60490"
-			(at 73.66 45.72 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 91.44 172.72 0)
@@ -6460,6 +6494,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C33149"
+			(at 91.44 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0b2c8422-0654-46f6-ac8e-e5b3f15819e3")
 		)
@@ -6474,16 +6519,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C33149"
-			(at 91.44 172.72 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 78.74 99.06 90)
@@ -6558,6 +6594,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C114765"
+			(at 78.74 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8455cf7a-9454-4775-be89-44171f9b6d3b")
 		)
@@ -6572,16 +6619,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C114765"
-			(at 78.74 99.06 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 182.88 69.85 0)
@@ -6658,6 +6696,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C76999"
+			(at 182.88 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "55d9a4af-0f0b-4a56-86ae-16d0dc023f3e")
 		)
@@ -6672,16 +6721,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C76999"
-			(at 182.88 69.85 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 228.6 109.22 0)
@@ -6906,6 +6946,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 285.75 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4af9fec6-8036-452c-beec-af5816bac63d")
 		)
@@ -6920,16 +6971,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C60490"
-			(at 285.75 45.72 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 241.3 142.24 0)
@@ -7006,6 +7048,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 241.3 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "afab2b72-defd-464a-8880-c90bf582c133")
 		)
@@ -7020,16 +7073,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C60490"
-			(at 241.3 142.24 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 241.3 194.31 0)
@@ -7106,6 +7150,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 241.3 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fdfdddac-d027-475b-ba4e-0784865e6ff4")
 		)
@@ -7120,16 +7175,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C60490"
-			(at 241.3 194.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:VCC")
 		(at 157.48 50.8 0)
@@ -7502,6 +7548,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 266.7 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7c1ad5ea-9723-4e3d-bee8-593da8bc0b11")
 		)
@@ -7516,16 +7573,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C60490"
-			(at 266.7 45.72 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 228.6 101.6 0)
@@ -7602,6 +7650,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C77073"
+			(at 228.6 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ff816d83-a41d-45e4-85e0-eba97f8af2f9")
 		)
@@ -7616,16 +7675,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C77073"
-			(at 228.6 101.6 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 330.2 217.17 0)
@@ -7924,6 +7974,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C60490"
+			(at 304.8 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4b7db2e0-9441-4fc7-97c8-a24012b34120")
 		)
@@ -7938,16 +7999,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C60490"
-			(at 304.8 45.72 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:Crystal_GND24")
 		(at 111.76 154.94 0)
@@ -8022,6 +8074,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C70590"
+			(at 111.76 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8315f320-f424-42cf-9e9a-7aa2484cf235")
 		)
@@ -8042,16 +8105,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C70590"
-			(at 111.76 154.94 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:VCC")
 		(at 228.6 93.98 0)
@@ -8202,6 +8256,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C33149"
+			(at 81.28 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a431c5fd-de1e-4d64-b228-da93b9f3e742")
 		)
@@ -8216,16 +8281,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C33149"
-			(at 81.28 218.44 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 139.7 172.72 0)
@@ -8302,6 +8358,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C33149"
+			(at 139.7 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e7a44b80-bbb9-415b-9074-f54466699327")
 		)
@@ -8316,16 +8383,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C33149"
-			(at 139.7 172.72 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 375.92 208.28 0)
@@ -8402,6 +8460,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C76999"
+			(at 375.92 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2bb6c55d-d14a-42c3-90ea-d78317986287")
 		)
@@ -8416,16 +8485,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C76999"
-			(at 375.92 208.28 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 157.48 69.85 0)
@@ -8502,6 +8562,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C71629"
+			(at 157.48 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "313c5272-a574-44ab-bd54-758ae88c752c")
 		)
@@ -8516,16 +8587,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C71629"
-			(at 157.48 69.85 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 299.72 100.33 90)
@@ -8600,6 +8662,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C114765"
+			(at 299.72 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "28b27c29-b073-450e-9af7-58439ef49aa4")
 		)
@@ -8614,16 +8687,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C114765"
-			(at 299.72 100.33 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 274.32 208.28 0)
@@ -8709,6 +8773,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2915006"
+			(at 274.32 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bba2e3e6-e451-4b8a-b43d-5f25a31c4e6a")
 		)
@@ -8726,14 +8801,5 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C2915006"
-			(at 274.32 208.28 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 )

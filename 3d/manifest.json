@@ -1,0 +1,1107 @@
+[
+  {
+    "footprint": "LED_SMD:LED_0603_1608Metric",
+    "refs": [
+      "D100"
+    ],
+    "model": "kicad/LED_0603_1608Metric.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+    "sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "refs": [
+      "R201",
+      "R202",
+      "R203",
+      "R204",
+      "R205",
+      "R206",
+      "R207",
+      "R208",
+      "R209",
+      "R210",
+      "R211",
+      "R212",
+      "R213",
+      "R214",
+      "R215",
+      "R216",
+      "R217",
+      "R218",
+      "R219",
+      "R220",
+      "R221",
+      "R222",
+      "R223",
+      "R224",
+      "R225",
+      "R226",
+      "R227",
+      "R228",
+      "R229",
+      "R230",
+      "R231",
+      "R232",
+      "R233",
+      "R234",
+      "R235",
+      "R236",
+      "R237",
+      "R238",
+      "R239",
+      "R240",
+      "R241",
+      "R242",
+      "R243",
+      "R244",
+      "R245",
+      "R246",
+      "R247",
+      "R248",
+      "R249",
+      "R250",
+      "R251",
+      "R252",
+      "R253",
+      "R254",
+      "R255",
+      "R17",
+      "R18",
+      "R19",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24",
+      "R25",
+      "R26",
+      "R27",
+      "R28",
+      "R29",
+      "R30",
+      "R31",
+      "R32",
+      "R33",
+      "R34",
+      "R256",
+      "R257",
+      "R258",
+      "R259",
+      "R260",
+      "R261",
+      "R9",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R262",
+      "R263",
+      "R264",
+      "R265",
+      "R266",
+      "R267",
+      "R268",
+      "R269",
+      "R270",
+      "R271",
+      "R272",
+      "R273",
+      "R274",
+      "R275",
+      "R276",
+      "R277"
+    ],
+    "model": "kicad/R_0402_1005Metric.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Mujina:Rockchip_QFN-128-1EP_12.3x12.3mm_P0.35mm_EP7x7mm",
+    "refs": [
+      "U100"
+    ],
+    "model": "raven/Rockchip_QFN-128-1EP_12.3x12.3mm_P0.35mm_EP7x7mm.step",
+    "source": "/Users/skot/Bitcoin/mujina/mujinaControl/boards/MujinaControl-S19/lib/Mujina.pretty/Rockchip_QFN-128-1EP_12.3x12.3mm_P0.35mm_EP7x7mm.step",
+    "sha256": "c61628fd41e225ad7415a3e99f462804dd7e1f7e88b194793793f0992fd5710c",
+    "note": "Existing Raven1106 RV1106 package model.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "refs": [
+      "C201",
+      "C203",
+      "C204",
+      "C206",
+      "C208",
+      "C209",
+      "C211",
+      "C213",
+      "C214",
+      "C216",
+      "C218",
+      "C219",
+      "C221",
+      "C223",
+      "C224",
+      "C240",
+      "C242",
+      "C246",
+      "C254",
+      "C259",
+      "C260",
+      "C270",
+      "C287",
+      "C288"
+    ],
+    "model": "kicad/C_0805_2012Metric.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "refs": [
+      "C202",
+      "C205",
+      "C207",
+      "C210",
+      "C212",
+      "C215",
+      "C217",
+      "C220",
+      "C222",
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237",
+      "C238",
+      "C239",
+      "C241",
+      "C243",
+      "C244",
+      "C245",
+      "C247",
+      "C248",
+      "C249",
+      "C250",
+      "C251",
+      "C252",
+      "C253",
+      "C255",
+      "C256",
+      "C257",
+      "C258",
+      "C261",
+      "C262",
+      "C263",
+      "C264",
+      "C265",
+      "C266",
+      "C267",
+      "C268",
+      "C269",
+      "C271",
+      "C272",
+      "C273",
+      "C274",
+      "C275",
+      "C276",
+      "C277",
+      "C278",
+      "C279",
+      "C281",
+      "C282",
+      "C283",
+      "C286"
+    ],
+    "model": "kicad/C_0402_1005Metric.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Inductor_SMD:L_Bourns-SRN4018",
+    "refs": [
+      "L201",
+      "L202",
+      "L203"
+    ],
+    "model": "kicad/L_Bourns-SRN4018.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Inductor_SMD.3dshapes/L_Bourns-SRN4018.step",
+    "sha256": "664d005edd26f38ccb014f9e7f740b5434ad2b3a21b84e35a379819cf1365186",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Inductor_SMD:L_Bourns-SRN6028",
+    "refs": [
+      "L205"
+    ],
+    "model": "samacsys/17847075.wrl",
+    "source": "/Users/skot/Bitcoin/mujina/mujinaControl/build/MujinaControl-S19/models/downloads/17847075.wrl",
+    "sha256": "20825f4a8406d598666697b8951b9bce1de501ec1c4e003e4930f5e5d9cbd736",
+    "note": "Exact Bourns part preview; transform from SamacSys footprint (legacy at units converted to mm). VRML only; no STEP solid. APV instances get separate model overrides.",
+    "offset": [
+      0,
+      -0.02,
+      1.43
+    ],
+    "rotation": [
+      -180,
+      0,
+      -90
+    ],
+    "scale": [
+      393.7007874015748,
+      393.7007874015748,
+      393.7007874015748
+    ],
+    "source_url": "https://ms.componentsearchengine.com/3D/0/17847075.wrl",
+    "part_page": "https://ms.componentsearchengine.com/preview_newDesign.php?o3=0&partID=17847075&ev=0&fmt=zip&pna=Mouser",
+    "library_note": "Shared library default is Bourns; APV instance overrides are listed separately."
+  },
+  {
+    "footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+    "refs": [
+      "U110",
+      "U111",
+      "U112",
+      "U113",
+      "U114",
+      "U115"
+    ],
+    "model": "kicad/TSOT-23-6.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+    "sha256": "1007b8f67a3e81e2c5182bfd1fd27afe4d8d3710e0bfa1a14b8a91db8b595eb5",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "bitcrane:SW-SMD_L3.9-W3.0-P4.45",
+    "refs": [
+      "SW1",
+      "SW2"
+    ],
+    "model": "bitcrane/SW-SMD_L3.9-W2.9-H2.0-LS4.8.step",
+    "source": "/Users/skot/Bitcoin/mujina/mujinaControl/bitcrane-v3.1/3d/SW-SMD_L3.9-W2.9-H2.0-LS4.8.step",
+    "sha256": "eb1d8f55ed502394dd05cbe1efb749c3b0e2a43bfefaf227875d38008fbef7ab",
+    "note": "Inherited bitcrane model and alignment.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "refs": [
+      "U120",
+      "U121",
+      "U122",
+      "U123",
+      "U124"
+    ],
+    "model": "kicad/SOT-23-6.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+    "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Inductor_SMD:L_0402_1005Metric",
+    "refs": [
+      "FB201",
+      "FB202"
+    ],
+    "model": "kicad/L_0402_1005Metric.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Inductor_SMD.3dshapes/L_0402_1005Metric.step",
+    "sha256": "8bf2ae2bbd9d8b716db21d8d7fb903fac5ba2696150c3ec2e35bcea17b208ff2",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+    "refs": [
+      "J16"
+    ],
+    "model": "kicad/PinHeader_1x03_P2.54mm_Vertical.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+    "sha256": "b91b4ac5acf1a0d28a676703db972d17b8f11ef26a85b58d60786a69246b921b",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Connector_Card:microSD_HC_Hirose_DM3D-SF",
+    "refs": [
+      "J101"
+    ],
+    "model": "kicad/microSD_HC_Hirose_DM3D-SF.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Connector_Card.3dshapes/microSD_HC_Hirose_DM3D-SF.step",
+    "sha256": "86a63216d65970ae01b64d83d6dce2a0a3d42b4f33bfdec4f227811c9eb24d1d",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Package_SON:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm",
+    "refs": [
+      "U130"
+    ],
+    "model": "samacsys/17521816.wrl",
+    "source": "/Users/skot/Bitcoin/mujina/mujinaControl/build/MujinaControl-S19/models/downloads/17521816.wrl",
+    "sha256": "a074dda8376c748f8e6e2c74cccb38a0368eb6befdeffe66bfeea57b603d11da",
+    "note": "Exact part preview from SamacSys; metres, Y up. VRML only; no STEP solid. 8 x 6 x 0.75 mm.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      -90,
+      0,
+      0
+    ],
+    "scale": [
+      393.7007874015748,
+      393.7007874015748,
+      393.7007874015748
+    ],
+    "source_url": "https://ms.componentsearchengine.com/3D/0/17521816.wrl",
+    "part_page": "https://ms.componentsearchengine.com/preview_newDesign.php?o3=0&partID=17521816&ev=0&fmt=zip&pna=Mouser"
+  },
+  {
+    "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+    "refs": [
+      "Y100"
+    ],
+    "model": "kicad/Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
+    "sha256": "d2a89df82ee5f0f56ef23ee59c8161b8d4e92af2b21959d72778316dde3f9f22",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm",
+    "refs": [
+      "Y101"
+    ],
+    "model": "kicad/Crystal_SMD_3215-2Pin_3.2x1.5mm.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Crystal.3dshapes/Crystal_SMD_3215-2Pin_3.2x1.5mm.step",
+    "sha256": "70191ff5204d0ce50e154f75b1186923e3123cfdb58d647b5cce319de5485701",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Capacitor_SMD:C_1808_4520Metric",
+    "refs": [
+      "C280"
+    ],
+    "model": "kicad/C_1808_4520Metric.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Capacitor_SMD.3dshapes/C_1808_4520Metric.step",
+    "sha256": "229af50a03a786ab452737c600ec2c4cbdf700cd1e7530bab69a8e9fffba4a94",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Diode_SMD:Nexperia_DSN0603-2_0.6x0.3mm_P0.4mm",
+    "refs": [
+      "D201",
+      "D202"
+    ],
+    "model": "proxies/L_0201_0603Metric.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Inductor_SMD.3dshapes/L_0201_0603Metric.step",
+    "sha256": "303a886d7d6d526df33deb11f533d5e25b0f1acdadadb70657d7df635d21352e",
+    "note": "PROXY ONLY: generic 0201 package envelope for DSN0603. Manufacturer SOD962 STEP download blocked (HTTP 403). This is not the exact diode model; terminal geometry is approximate.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "bitcrane:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+    "refs": [
+      "J2"
+    ],
+    "model": "kicad/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+    "sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
+    "note": "Correct USB4105 model replaces the unrelated GT-USB model.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Connector_RJ:RJ45_Hanrun_HR911105A_Horizontal",
+    "refs": [
+      "J100"
+    ],
+    "model": "raven/HR911105A.step",
+    "source": "/Users/skot/Bitcoin/mujina/mujinaControl/research/rv1106/reference-designs/Raven1106/pcb/v1.1/library/HR911105A.step",
+    "sha256": "89e93883359ffa5e7f4cfcbc486e9543144f25e4202714416d5d6d9c5c99dc6c",
+    "note": "HR911105A model and transform copied from Raven footprint with identical pad coordinates.",
+    "offset": [
+      -3.5,
+      -17.5,
+      13.5
+    ],
+    "rotation": [
+      -90,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "footprint": "Diode_SMD:D_SOD-523",
+    "refs": [
+      "U140",
+      "U141"
+    ],
+    "model": "kicad/D_SOD-523.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Diode_SMD.3dshapes/D_SOD-523.step",
+    "sha256": "b525222377930c32abea58606bffba3aaf171cc66ac292b82d28a82d646d995d",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "bitcrane:CONN-TH_X2026WV-2-09D-46SN",
+    "refs": [
+      "J3",
+      "J4",
+      "J5"
+    ],
+    "model": "bitcrane/CONN-TH_X2026WV-2-09D-46SN.step",
+    "source": "/Users/skot/Bitcoin/mujina/mujinaControl/bitcrane-v3.1/3d/CONN-TH_X2026WV-2-09D-46SN.step",
+    "sha256": "f1efa5f3eb1dcab459164e947132d955ad67ebf8ee76976786f0354f1a7a7e55",
+    "note": "Inherited bitcrane model and alignment.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "footprint": "Diode_SMD:D_SOD-123",
+    "refs": [
+      "D3",
+      "D4",
+      "D5",
+      "D6"
+    ],
+    "model": "kicad/D_SOD-123.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Diode_SMD.3dshapes/D_SOD-123.step",
+    "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "refs": [
+      "D230",
+      "D231",
+      "D232",
+      "D233",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "model": "kicad/SOT-23.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+    "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "bitcrane:CONN-TH_4P-P2.54_HCTL_HC-2510-4AW",
+    "refs": [
+      "J6",
+      "J7",
+      "J8",
+      "J9"
+    ],
+    "model": "bitcrane/CONN-TH_4P-P2.54_HCTL_HC-2510-4AW.step",
+    "source": "/Users/skot/Bitcoin/mujina/mujinaControl/bitcrane-v3.1/3d/CONN-TH_4P-P2.54_HCTL_HC-2510-4AW.step",
+    "sha256": "f978e0d8eee580f809a72e0f8604f4a86c643532af938594fd5197d2fe6c43c2",
+    "note": "Inherited bitcrane model and alignment.",
+    "offset": [
+      0,
+      -1.3,
+      3
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "footprint": "bitcrane:CONN-TH_4P-P4.20_5557-2X2AW",
+    "refs": [
+      "J11",
+      "J12",
+      "J13",
+      "J14"
+    ],
+    "model": "bitcrane/CONN-TH_MX4.20-WI-2x2P.step",
+    "source": "/Users/skot/Bitcoin/mujina/mujinaControl/bitcrane-v3.1/3d/CONN-TH_MX4.20-WI-2x2P.step",
+    "sha256": "a68ea6ba17af07cc8c4e4bd77c289a86232c961f0e60861a6f665b7c244ace58",
+    "note": "Inherited bitcrane model and alignment.",
+    "offset": [
+      -2,
+      -2.7,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "refs": [
+      "C284",
+      "C285"
+    ],
+    "model": "kicad/C_1210_3225Metric.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+    "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "bitcrane:SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR",
+    "refs": [
+      "D2"
+    ],
+    "model": "bitcrane/SOT-23-3L_L2.9-W1.6-H1.1-LS2.8-P0.95.step",
+    "source": "/Users/skot/Bitcoin/mujina/mujinaControl/bitcrane-v3.1/3d/SOT-23-3L_L2.9-W1.6-H1.1-LS2.8-P0.95.step",
+    "sha256": "5dcb6e5e088c8891b321686a6eb872c57d71b75753aac8519a866feb21821607",
+    "note": "Inherited bitcrane model and alignment.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      270
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "footprint": "Diode_SMD:D_SMB",
+    "refs": [
+      "D220"
+    ],
+    "model": "kicad/D_SMB.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Diode_SMD.3dshapes/D_SMB.step",
+    "sha256": "029466277d91e9f5492556be93e46611049e07115c7913880c547afa96058ed4",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "bitcrane:CONN-TH_50362462",
+    "refs": [
+      "J1"
+    ],
+    "model": "bitcrane/CONN-TH_50362462.step",
+    "source": "/Users/skot/Bitcoin/mujina/mujinaControl/bitcrane-v3.1/3d/CONN-TH_50362462.step",
+    "sha256": "66989b1ac348167e22c48fb25899615ceaefd3cc558d58e5f21acd190f3d0e9d",
+    "note": "Inherited bitcrane model and alignment.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "footprint": "bitcrane:CONN-TH_6P-P2.00_PHD-2X3A",
+    "refs": [
+      "J10"
+    ],
+    "model": "bitcrane/CONN-TH_6P-P2.00_PHD-2X3A.step",
+    "source": "/Users/skot/Bitcoin/mujina/mujinaControl/bitcrane-v3.1/3d/CONN-TH_6P-P2.00_PHD-2X3A.step",
+    "sha256": "45baae36e85a2160b748c038c2f54175fed45338a9223e59ab3661a33f396a91",
+    "note": "Inherited bitcrane model and alignment.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "footprint": "bitaxe:PinHeader_1x04_P2.54mm_Vertical_shifted",
+    "refs": [
+      "J15"
+    ],
+    "model": "kicad/PinHeader_1x04_P2.54mm_Vertical.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+    "sha256": "a74079b8d06bda78847623b39ee1855ffd1d9a8c1e896b349e4f1dc2056d44d9",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "bitcrane:POWERPAK-1212-8_L3.1-W3.1-P0.65-LS3.3-BL",
+    "refs": [
+      "Q1"
+    ],
+    "model": "kicad/Diodes_PowerDI3333-8.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Package_SON.3dshapes/Diodes_PowerDI3333-8.step",
+    "sha256": "97e1a6ca310f642085269e937d4a72a49d1532ff16b4412cd182b5c4fbb1b6c4",
+    "note": "DMP3013SFV PowerDI3333 model, rotated to match inherited footprint pin-1 corner.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      -90
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "refs": [
+      "L204",
+      "L210"
+    ],
+    "model": "kicad/L_APV_ANR6028.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Inductor_SMD.3dshapes/L_APV_ANR6028.step",
+    "sha256": "c207234c3985fb2c0977d09d316e779948cb0078da89c063b8f3ab614e6bf528",
+    "note": "Correct APV ANR6028 model overrides shared Bourns footprint model on these two board instances. Preserve instance 3D models when updating from libraries.",
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  }
+]

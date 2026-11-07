@@ -1,0 +1,29 @@
+(version 2)
+
+(rule "RV1106 local copper clearance"
+	# RV1106G2 0.35 mm pitch local fanout; see docs/rv1106-fanout-rules.md.
+	(condition "A.intersectsCourtyard('U100') && B.intersectsCourtyard('U100')")
+	(layer "F.Cu")
+	(constraint clearance (min 0.127mm))
+)
+
+(rule "RV1106 short pad escape widths"
+	# RV1106G2 0.35 mm pitch local fanout; see docs/rv1106-fanout-rules.md.
+	(condition "A.Type == 'Track' && A.intersectsCourtyard('U100')")
+	(layer "F.Cu")
+	(constraint track_width (min 0.127mm) (opt 0.15mm))
+)
+
+(rule "RV1106 through-via fanout"
+	# RV1106G2 0.35 mm pitch local fanout; see docs/rv1106-fanout-rules.md.
+	(condition "A.Type == 'Via' && A.intersectsCourtyard('U100')")
+	(constraint via_diameter (min 0.45mm) (opt 0.45mm))
+	(constraint hole_size (min 0.3mm) (opt 0.3mm))
+)
+
+(rule "RV1106 pair launch gap"
+	# RV1106G2 0.35 mm pitch local fanout; see docs/rv1106-fanout-rules.md.
+	(condition "A.inDiffPair('*') && A.intersectsCourtyard('U100')")
+	(layer "F.Cu")
+	(constraint diff_pair_gap (min 0.127mm) (opt 0.2mm))
+)

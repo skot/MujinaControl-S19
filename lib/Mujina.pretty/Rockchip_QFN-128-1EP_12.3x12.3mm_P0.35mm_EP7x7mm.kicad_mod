@@ -945,10 +945,6 @@
     (layers "F.Cu" "F.Mask")
     (zone_connect 2))
   (embedded_fonts no)
-  (model "${KIPRJMOD}/lib/Mujina.pretty/Rockchip_QFN-128-1EP_12.3x12.3mm_P0.35mm_EP7x7mm.step"
-    (offset
-      (xyz 0 0 0))
-    (scale
-      (xyz 1 1 1))
-    (rotate
-      (xyz 0 0 0))))
+  
+	(model "${KIPRJMOD}/3d/raven/Rockchip_QFN-128-1EP_12.3x12.3mm_P0.35mm_EP7x7mm.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)

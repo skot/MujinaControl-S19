@@ -136,15 +136,7 @@
 		(uuid "cf2a4471-8175-4737-8a87-7ce9fb45ef52")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/3d/SW-SMD_L3.9-W2.9-H2.0-LS4.8.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
+	
+
+	(model "${KIPRJMOD}/3d/bitcrane/SW-SMD_L3.9-W2.9-H2.0-LS4.8.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )

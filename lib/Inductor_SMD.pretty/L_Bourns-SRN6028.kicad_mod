@@ -239,15 +239,7 @@
 		(uuid "b8ff0dd5-5951-4426-b8ed-919c5e7c35da")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Bourns-SRN6028.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
+	
+
+	(model "${KIPRJMOD}/3d/samacsys/17847075.wrl" (offset (xyz 0 -0.02 1.43)) (scale (xyz 393.7007874015748 393.7007874015748 393.7007874015748)) (rotate (xyz -180 0 -90)))
 )

@@ -317,15 +317,7 @@
 		(zone_connect 2)
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
+	
+
+	(model "${KIPRJMOD}/3d/samacsys/17521816.wrl" (offset (xyz 0 0 0)) (scale (xyz 393.7007874015748 393.7007874015748 393.7007874015748)) (rotate (xyz -90 0 0)))
 )

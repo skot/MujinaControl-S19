@@ -1,20 +1,20 @@
 {
   "kind": "pcb",
-  "name": "MujinaControl-S19 (schematic draft)",
+  "name": "MujinaControl-S19",
   "source": "MujinaControl-S19.kicad_pcb",
   "qty": 5,
   "order": false,
   "options": {
-    "layers": 2,
+    "layers": 6,
     "thickness_mm": 1.6,
     "color": "green",
-    "finish": "hasl_lead_free",
+    "finish": "enig",
     "copper_oz": 1
   },
   "features": {
     "width_mm": 110.0,
     "height_mm": 100.0,
-    "min_drill_mm": 0.6
+    "min_drill_mm": 0.3
   },
-  "notes": "Not for ordering: connector/outline scaffold only. No new component placement or routing. Current layer count and drill reflect the scaffold, not the eventual RV1106 layout."
+  "notes": "Six-layer nominal 1.6 mm, ENIG, 1 oz outer / 0.5 oz inner copper. Initial RV1106 fanout and power routing saved; routing, reference planes and interface impedance/timing unfinished; not for ordering. See docs/routing-first-pass.md."
 }

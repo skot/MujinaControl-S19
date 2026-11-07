@@ -41,3 +41,6 @@ local
 calc
 
 scripts/
+
+# Local automatic CAD history (separate repository)
+.history/

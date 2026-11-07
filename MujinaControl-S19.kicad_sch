@@ -588,7 +588,17 @@
 		)
 		(uuid "64339da2-17c3-5c2f-bcbb-3a933ba59413")
 	)
-	(text "J1 12 V -> protected fan rail -> 5 V converter -> CPU/core -> DDR/1.8 V -> 3.3 V -> RESET_N\nThree UART hashboards, shared hashboard I2C, independent PSU I2C, display I2C, four PWM/tach fans.\nUSB-C is a device/recovery port. SPI NAND boots first; microSD is available for development.\nJ1-J16 footprints and pin numbering inherited from bitcrane-v3.1; J16 is now 3.3 V UART2 debug.\nAll cross-sheet connections use named global labels. Camera / wireless / USB hub circuits are omitted." (exclude_from_sim no) (at 20.32 237.49 0) (effects (font (size 1.2 1.2)) (justify left)) (uuid "665544f5-4beb-5ebf-ab43-5ba18460e603"))
+	(text "J1 12 V -> protected fan rail -> 5 V converter -> CPU/core -> DDR/1.8 V -> 3.3 V -> RESET_N\nThree UART hashboards, shared hashboard I2C, independent PSU I2C, display I2C, four PWM/tach fans.\nUSB-C is a device/recovery port. SPI NAND boots first; microSD is available for development.\nJ1-J16 footprints and pin numbering inherited from bitcrane-v3.1; J16 is now 3.3 V UART2 debug.\nAll cross-sheet connections use named global labels. Camera / wireless / USB hub circuits are omitted."
+		(exclude_from_sim no)
+		(at 20.32 237.49 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left)
+		)
+		(uuid "665544f5-4beb-5ebf-ab43-5ba18460e603")
+	)
 	(text "Supply pin map / shared bypass banks"
 		(exclude_from_sim no)
 		(at 25.08 120.16 0)
@@ -688,7 +698,17 @@
 		)
 		(uuid "ed88a72b-0753-5e56-b238-b7c7be85841b")
 	)
-	(text "Six-pin 12 V input / fan rail / 5 V" (exclude_from_sim no) (at 285.08 175.16 0) (effects (font (size 1.1 1.1)) (justify left)) (uuid "f5d9c273-523d-585d-bf70-833d2d07240c"))
+	(text "Six-pin 12 V input / fan rail / 5 V"
+		(exclude_from_sim no)
+		(at 285.08 175.16 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "f5d9c273-523d-585d-bf70-833d2d07240c")
+	)
 	(sheet
 		(at 150 165)
 		(size 110 30)

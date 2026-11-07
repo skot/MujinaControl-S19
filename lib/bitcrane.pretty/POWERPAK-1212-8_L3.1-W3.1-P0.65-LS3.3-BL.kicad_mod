@@ -171,15 +171,7 @@
 		(uuid "68fa7be3-5e87-484f-bffe-ec325cd96df4")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/3d/POWERPAK-1212-8_L3.1-W3.1-P0.65-LS3.3-BL.step"
-		(offset
-			(xyz 0 0 0.2)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
+	
+
+	(model "${KIPRJMOD}/3d/kicad/Diodes_PowerDI3333-8.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 -90)))
 )

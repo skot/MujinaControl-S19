@@ -175,15 +175,7 @@
 		(remove_unused_layers no)
 		(uuid "afd38589-5877-4992-8093-618d4bcd5c6b")
 	)
-	(model "${KIPRJMOD}/3d/CONN-TH_4P-P2.54_HCTL_HC-2510-4AW.step"
-		(offset
-			(xyz 0 -1.3 3)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
+	
+
+	(model "${KIPRJMOD}/3d/bitcrane/CONN-TH_4P-P2.54_HCTL_HC-2510-4AW.step" (offset (xyz 0 -1.3 3)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )
