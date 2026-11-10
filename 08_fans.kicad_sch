@@ -444,6 +444,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Polarized"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 5.334 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0 -3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1")
+			(embedded_fonts no)
+		)
 		(symbol "Device:D_Zener_Small_Filled"
 			(pin_numbers
 				(hide yes)
@@ -1990,16 +2139,40 @@
 		(uuid "05c59bf3-1e5e-5178-91cd-2944cc8e7027")
 	)
 	(junction
+		(at 149.86 210.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10a33ad2-7ff2-4200-aa43-e32603d6a86d")
+	)
+	(junction
+		(at 147.32 231.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "25cdbe24-3253-4673-9749-8844394289a3")
+	)
+	(junction
 		(at 106.68 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "290e8ae7-9405-5197-be75-e66b24b4a724")
 	)
 	(junction
+		(at 147.32 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41558a7a-776a-4c00-a2d0-d6d1b7270e8d")
+	)
+	(junction
 		(at 68.58 215.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "612a6220-6f17-52bf-a42c-4bb731a65128")
+	)
+	(junction
+		(at 149.86 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "625f08f6-ae61-447d-beb8-9fb9b20abec8")
 	)
 	(junction
 		(at 363.22 66.04)
@@ -2201,6 +2374,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 119.38) (xy 147.32 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b0f3baf-d2e7-4837-8af2-740d2abf343c")
+	)
+	(wire
+		(pts
 			(xy 347.98 109.22) (xy 347.98 91.44)
 		)
 		(stroke
@@ -2331,6 +2514,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 231.14) (xy 147.32 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43316ef5-76f5-44bf-afb7-b34afe543d81")
+	)
+	(wire
+		(pts
 			(xy 363.22 177.8) (xy 363.22 170.18)
 		)
 		(stroke
@@ -2358,6 +2551,16 @@
 			(type default)
 		)
 		(uuid "478d3b77-5db4-5d47-93cf-b70fd8896208")
+	)
+	(wire
+		(pts
+			(xy 127 111.76) (xy 127 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47add90a-56f5-422c-9bf1-b1426da1d1c1")
 	)
 	(wire
 		(pts
@@ -2431,6 +2634,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 104.14) (xy 127 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50595c06-8427-4868-abff-13587cd3c6c2")
+	)
+	(wire
+		(pts
 			(xy 304.8 52.07) (xy 304.8 78.74)
 		)
 		(stroke
@@ -2438,6 +2651,16 @@
 			(type default)
 		)
 		(uuid "54fc7c7e-5372-5a14-a21e-4f30438b76be")
+	)
+	(wire
+		(pts
+			(xy 127 223.52) (xy 127 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5769d67c-b4e9-46c8-8a17-158d49c30fd2")
 	)
 	(wire
 		(pts
@@ -2911,6 +3134,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 215.9) (xy 127 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0e755e7-8e7b-4511-8ea0-6d7202dc8778")
+	)
+	(wire
+		(pts
 			(xy 52.07 215.9) (xy 81.28 215.9)
 		)
 		(stroke
@@ -2938,6 +3171,16 @@
 			(type default)
 		)
 		(uuid "c5c6f4e1-c03e-52d1-b587-f0003b3eb12e")
+	)
+	(wire
+		(pts
+			(xy 127 210.82) (xy 149.86 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c95e791b-3ee0-467e-976f-5b9b2e8e8d52")
 	)
 	(wire
 		(pts
@@ -3058,6 +3301,16 @@
 			(type default)
 		)
 		(uuid "f2f23cef-5c45-5a4f-85df-da68e68a778f")
+	)
+	(wire
+		(pts
+			(xy 127 99.06) (xy 149.86 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f495e27e-ef0b-4009-b669-e83353724a63")
 	)
 	(wire
 		(pts
@@ -3981,6 +4234,130 @@
 			(project "MujinaControl-S19"
 				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/049388e3-5747-56ee-8960-38947858df69"
 					(reference "D232")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 127 219.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "056ee9aa-75e5-4676-bc8c-b4543b3ce70a")
+		(property "Reference" "C290"
+			(at 130.81 217.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100u / 25V"
+			(at 130.81 219.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
+			(at 127 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDD0000/ABA0000C1228.pdf"
+			(at 127 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100uF 25V hybrid aluminum electrolytic, 125C, 4000h, 30mOhm, 1.4Arms at 100kHz"
+			(at 127 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Application" "Fans 3-4 bulk; place by headers"
+			(at 127 237.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C178640"
+			(at 127 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "EEHZC1E101XP"
+			(at 127 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 127 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9caefe0b-2926-4251-acb4-ceaefb05ad65")
+		)
+		(pin "2"
+			(uuid "2ac900ac-99ff-4085-8f05-fbeae32a99e0")
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/049388e3-5747-56ee-8960-38947858df69"
+					(reference "C290")
 					(unit 1)
 				)
 			)
@@ -8375,6 +8752,130 @@
 			(project "MujinaControl-S19"
 				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/049388e3-5747-56ee-8960-38947858df69"
 					(reference "#PWR9976")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 127 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9af14365-2c9e-436c-862c-35a6f72a9911")
+		(property "Reference" "C289"
+			(at 130.81 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100u / 25V"
+			(at 130.81 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
+			(at 127 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDD0000/ABA0000C1228.pdf"
+			(at 127 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100uF 25V hybrid aluminum electrolytic, 125C, 4000h, 30mOhm, 1.4Arms at 100kHz"
+			(at 127 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Application" "Fans 1-2 bulk; place by headers"
+			(at 127 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C178640"
+			(at 127 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "EEHZC1E101XP"
+			(at 127 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 127 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d25dcb2-11f8-4441-a4bf-1e0ec1fe0eaa")
+		)
+		(pin "2"
+			(uuid "9e144ef0-20f7-42fb-88a5-e2449858799c")
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/049388e3-5747-56ee-8960-38947858df69"
+					(reference "C289")
 					(unit 1)
 				)
 			)

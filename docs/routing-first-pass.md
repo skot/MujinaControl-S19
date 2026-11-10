@@ -29,7 +29,7 @@ The [local fanout rules](rv1106-fanout-rules.md) remain active. Fine-pitch neckd
 
 Complete the remaining low-speed RV1106 control nets, complete the remaining decouplers and both oscillator circuits (in particular RTC_XIN and OSC_XOUT), finish flash/SD and USB/Ethernet with impedance and timing checks, distribute the regulated rails, and complete reference/return planes and stitching. U130's central ground return remains to be addressed. Keep every originally fixed footprint unmoved.
 
-The 12 V input/fan trunk has not been sized or routed: the maximum fan current per connector was requested and remains pending. The logic-regulator routing can proceed independently.
+The later [12 V routing pass](routing-12v.md) connects the input and four fan channels at a 3 A/channel copper target. Q1 remains an unresolved thermal/current limit.
 
 Evidence is in `../../../build/MujinaControl-S19/routing/`, including native connectivity and preservation checks, saved DRC reports, routing decisions, sizing assumptions, and top/bottom/SoC renders. `backup.txt` identifies the pre-routing backup. All edits use native KiCad IPC with canonical saves; existing history is preserved.
 
@@ -40,3 +40,7 @@ Unfinished control connections: DEBUG_TX, FAN3_TACH, HB0_PLUG, HB1_PLUG, HB1_RST
 Both monitored shell jobs had unreliable watcher status. The actual routing process completed with exit code 0, and saved geometry, per-net DRC checks and native connectivity were inspected afterward. No duplicate CAD writer was started.
 
 Backplane displayed the exact canonical saved PCB, and its blob matches the thread history checkpoint. Existing history and companion metadata were preserved.
+
+## 12 V local routing follow-up
+
+See [12 V routing milestone](routing-12v.md): both 12 V rails and fan returns are connected; 422 other board connections remain. The current Q1 is not qualified for the full four-channel load.

@@ -312,14 +312,23 @@
         0.0,
         0.127,
         0.15,
+        0.16,
         0.2,
         0.25,
         0.3,
         0.5,
+        0.6,
         0.75,
+        0.9,
         1.0,
+        1.2,
         1.5,
-        2.0
+        1.8,
+        2.0,
+        2.6,
+        3.0,
+        5.8,
+        6.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -663,6 +672,86 @@
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "name": "12V_Fan",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.5,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "name": "12V_Input",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 3.0,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.2,
+        "diff_pair_width": 0.127,
+        "name": "Ethernet_100ohm",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.127,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "name": "SD_50ohm",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.16,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.2,
+        "diff_pair_width": 0.16,
+        "name": "USB_90ohm",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.16,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -672,7 +761,92 @@
     "net_chain_netclasses": {},
     "net_colors": {},
     "netclass_assignments": {},
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "12V_Input",
+        "pattern": "+12V_IN"
+      },
+      {
+        "netclass": "12V_Fan",
+        "pattern": "+12V_FAN"
+      },
+      {
+        "netclass": "USB_90ohm",
+        "pattern": "USB_DP"
+      },
+      {
+        "netclass": "USB_90ohm",
+        "pattern": "USB_DM"
+      },
+      {
+        "netclass": "USB_90ohm",
+        "pattern": "USB_DP_SOC"
+      },
+      {
+        "netclass": "USB_90ohm",
+        "pattern": "USB_DM_SOC"
+      },
+      {
+        "netclass": "Ethernet_100ohm",
+        "pattern": "ETH_TX_P"
+      },
+      {
+        "netclass": "Ethernet_100ohm",
+        "pattern": "ETH_TX_N"
+      },
+      {
+        "netclass": "Ethernet_100ohm",
+        "pattern": "ETH_RX_P"
+      },
+      {
+        "netclass": "Ethernet_100ohm",
+        "pattern": "ETH_RX_N"
+      },
+      {
+        "netclass": "Ethernet_100ohm",
+        "pattern": "Net-(D201-A1)"
+      },
+      {
+        "netclass": "Ethernet_100ohm",
+        "pattern": "Net-(D201-A2)"
+      },
+      {
+        "netclass": "Ethernet_100ohm",
+        "pattern": "Net-(D202-A1)"
+      },
+      {
+        "netclass": "Ethernet_100ohm",
+        "pattern": "Net-(D202-A2)"
+      },
+      {
+        "netclass": "SD_50ohm",
+        "pattern": "SD_D0"
+      },
+      {
+        "netclass": "SD_50ohm",
+        "pattern": "SD_D1"
+      },
+      {
+        "netclass": "SD_50ohm",
+        "pattern": "SD_D2"
+      },
+      {
+        "netclass": "SD_50ohm",
+        "pattern": "SD_D3"
+      },
+      {
+        "netclass": "SD_50ohm",
+        "pattern": "SD_CMD"
+      },
+      {
+        "netclass": "SD_50ohm",
+        "pattern": "SD_CLK"
+      },
+      {
+        "netclass": "SD_50ohm",
+        "pattern": "SD_CLK_SOC"
+      }
+    ]
   },
   "pcbnew": {
     "find_by_properties": {

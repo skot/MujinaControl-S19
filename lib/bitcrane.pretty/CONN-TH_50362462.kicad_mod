@@ -1,7 +1,7 @@
 (footprint "CONN-TH_50362462"
-	(version 20240108)
+	(version 20260901)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "10.99")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -6.75 0)
@@ -22,18 +22,6 @@
 			(font
 				(size 1 1)
 				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" "CONN-TH_50362462"
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "d6882085-2e15-41ca-b574-07e5078971d2")
-		(effects
-			(font
-				(size 1.27 1.27)
 			)
 		)
 	)
@@ -62,6 +50,7 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
 		(start -6.9 4.3)
 		(end 6.9 17.1)
@@ -69,20 +58,89 @@
 			(width 0.127)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "5a80654f-61e0-4929-b4df-dea205fe9fde")
 	)
-	(fp_rect
-		(start -6.95 -4.12)
-		(end 6.95 17.18)
+	(fp_line
+		(start -6.95 17.18)
+		(end -6.95 3.89)
 		(stroke
-			(width 0.12)
+			(width 0.1)
 			(type default)
 		)
-		(fill none)
 		(layer "F.CrtYd")
-		(uuid "6e2dbd4d-bb11-48b2-9fe1-ec8988c21cb5")
+		(uuid "eb51035d-b7bb-4b9a-a53e-0eee17278323")
+	)
+	(fp_line
+		(start -6.93 3.9)
+		(end -5.53 3.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "51ac3718-bf27-4ade-b82d-3b7698a1cb40")
+	)
+	(fp_line
+		(start -5.53 -4.12)
+		(end 5.55 -4.12)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "eb354d5d-efd2-4e7c-9fa9-ad980f4a70c8")
+	)
+	(fp_line
+		(start -5.53 3.9)
+		(end -5.53 -4.12)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0d52ee73-149d-483d-90a4-53eeaecc5fa0")
+	)
+	(fp_line
+		(start 5.55 3.85)
+		(end 5.55 -4.12)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b75717db-8ef9-4dda-812e-2897fc969318")
+	)
+	(fp_line
+		(start 6.95 3.85)
+		(end 6.95 17.18)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "00f05712-d48c-4d93-b50d-defa4d664ab1")
+	)
+	(fp_line
+		(start 6.95 17.18)
+		(end -6.95 17.18)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "a3c589b3-cdec-4f2d-9071-12380365608a")
+	)
+	(fp_line
+		(start 6.96 3.85)
+		(end 5.55 3.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6d586ab5-13df-4fc8-99b0-9dc794684712")
 	)
 	(fp_circle
 		(center -4.2 -2.75)
@@ -91,7 +149,7 @@
 			(width 0.8)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "f52e8bd8-6246-485a-aebc-47bea10f6acb")
 	)
@@ -102,7 +160,7 @@
 			(width 0.8)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "90d44cc3-4af4-4b7c-b705-c2c61148b756")
 	)
@@ -113,7 +171,7 @@
 			(width 1.4)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "be638973-9721-416c-9cc6-0452954d1331")
 	)
@@ -124,7 +182,7 @@
 			(width 0.8)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "0aa63f99-ccc1-4580-801c-729eded0cad3")
 	)
@@ -135,7 +193,7 @@
 			(width 0.8)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "25a11efd-9c86-4da6-8e95-6ce6d9d983f1")
 	)
@@ -146,7 +204,7 @@
 			(width 0.8)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "8f0836a1-fb97-4575-8dfd-42749ef2d681")
 	)
@@ -157,7 +215,7 @@
 			(width 0.8)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "9dfeff5e-f2f8-4901-8c0a-bfc340cd3d49")
 	)
@@ -168,7 +226,7 @@
 			(width 1.4)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "dcc62dca-0c44-41e8-a2bf-56e14bdcce42")
 	)
@@ -179,7 +237,7 @@
 			(width 0.06)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "90b2b4a8-6247-41d7-a994-a62f4a58eca6")
 	)
@@ -198,14 +256,14 @@
 		(at -4.2 10.05)
 		(size 3 3)
 		(drill 3)
-		(layers "F&B.Cu" "*.Mask")
+		(layers "*.Cu" "*.Mask")
 		(uuid "bc0804bf-b741-4a6c-92c6-dec3f4729c62")
 	)
 	(pad "" np_thru_hole circle
 		(at 4.2 10.05)
 		(size 3 3)
 		(drill 3)
-		(layers "F&B.Cu" "*.Mask")
+		(layers "*.Cu" "*.Mask")
 		(uuid "93a9c95a-9b91-4dd4-8dc3-7aa0e199aa5c")
 	)
 	(pad "1" thru_hole circle
@@ -256,7 +314,83 @@
 		(remove_unused_layers no)
 		(uuid "b0c15697-707a-4e74-9ffd-c6666490756d")
 	)
-	
-
-	(model "${KIPRJMOD}/3d/bitcrane/CONN-TH_50362462.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+	(constraint
+		(type horizontal)
+		(uuid "02fa2fff-615c-49f0-8774-24932095ec90")
+		(members
+			(member "eb354d5d-efd2-4e7c-9fa9-ad980f4a70c8" whole)
+		)
+	)
+	(constraint
+		(type coincident)
+		(uuid "0c64a969-b1d0-4a9a-8c88-577b7f4fae9f")
+		(members
+			(member "eb354d5d-efd2-4e7c-9fa9-ad980f4a70c8" end)
+			(member "b75717db-8ef9-4dda-812e-2897fc969318" end)
+		)
+	)
+	(constraint
+		(type vertical)
+		(uuid "1ca2800c-0a16-469a-81fb-35628335daf9")
+		(members
+			(member "b75717db-8ef9-4dda-812e-2897fc969318" whole)
+		)
+	)
+	(constraint
+		(type horizontal)
+		(uuid "3185e583-8bde-4cd3-a289-2910eaa02343")
+		(members
+			(member "6d586ab5-13df-4fc8-99b0-9dc794684712" whole)
+		)
+	)
+	(constraint
+		(type coincident)
+		(uuid "5de64dcd-041c-4bb0-8802-bac8ec7c91f8")
+		(members
+			(member "eb354d5d-efd2-4e7c-9fa9-ad980f4a70c8" start)
+			(member "0d52ee73-149d-483d-90a4-53eeaecc5fa0" end)
+		)
+	)
+	(constraint
+		(type horizontal)
+		(uuid "978249a5-b978-471f-8202-caef43feb484")
+		(members
+			(member "51ac3718-bf27-4ade-b82d-3b7698a1cb40" whole)
+		)
+	)
+	(constraint
+		(type coincident)
+		(uuid "b9dc3549-8704-4efc-ac0b-2f9cb323c508")
+		(members
+			(member "0d52ee73-149d-483d-90a4-53eeaecc5fa0" start)
+			(member "51ac3718-bf27-4ade-b82d-3b7698a1cb40" end)
+		)
+	)
+	(constraint
+		(type coincident)
+		(uuid "c008cd1a-563d-4b42-a383-128f4e3b95bc")
+		(members
+			(member "b75717db-8ef9-4dda-812e-2897fc969318" start)
+			(member "6d586ab5-13df-4fc8-99b0-9dc794684712" end)
+		)
+	)
+	(constraint
+		(type vertical)
+		(uuid "f94c16de-fb3d-4a3b-a3da-1f4ea0084ce5")
+		(members
+			(member "0d52ee73-149d-483d-90a4-53eeaecc5fa0" whole)
+		)
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d/bitcrane/CONN-TH_50362462.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

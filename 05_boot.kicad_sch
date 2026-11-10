@@ -5001,7 +5001,7 @@
 				)
 			)
 		)
-		(property "Footprint" "bitcrane:SW-SMD_L3.9-W3.0-P4.45"
+		(property "Footprint" "bitaxe:SW-SMD_TC-S3601-3.5-260G-F0.6"
 			(at 364.49 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5012,7 +5012,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.citrelay.com/Catalog%20Pages/SwitchCatalog/CS1213.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C49101620.pdf"
 			(at 364.49 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5023,8 +5023,9 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Right-angle normally-open tactile pushbutton; unconnected pads 3/4 are mechanical anchors"
 			(at 340.36 154.94 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5033,7 +5034,7 @@
 				)
 			)
 		)
-		(property "MPN" "TS-1088-AR02016"
+		(property "MPN" "TC-S3601-3.5-260G-F0.6"
 			(at 364.49 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5044,7 +5045,7 @@
 				)
 			)
 		)
-		(property "Source" "bitcrane-v3.1"
+		(property "Source" "bitaxeBonanza-1004x SW3/SW4"
 			(at 364.49 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5055,7 +5056,18 @@
 				)
 			)
 		)
-		(property "LCSC" "C720477"
+		(property "LCSC" "C49101620"
+			(at 340.36 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "HCTL"
 			(at 340.36 154.94 0)
 			(hide yes)
 			(show_name no)
