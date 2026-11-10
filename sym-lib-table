@@ -71,4 +71,10 @@
     (type "KiCad")
     (uri "${KIPRJMOD}/lib/power.kicad_sym")
     (options "")
+    (descr "Project-local snapshot"))
+  (lib
+    (name "Power_Management")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/lib/Power_Management.kicad_sym")
+    (options "")
     (descr "Project-local snapshot")))

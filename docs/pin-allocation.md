@@ -89,3 +89,13 @@ Fan tach inputs are GPIO edge counters. Hashboard reset outputs default low thro
 Ethernet LEDs use GPIO1_D3 and GPIO1_D2 as in Raven; check the exact BSP LED trigger/mux configuration. SDMMC0 uses its dedicated group and FSPI uses the eMMC/FSPI bank; no eMMC is fitted.
 
 These allocations do not establish driver performance, firmware readiness or the electrical behavior of a particular miner.
+
+## Hashboard supply enables — 2026-11-10
+
+| Net | SoC contact | GPIO mode | Removed accessory connection |
+| --- | ---: | --- | --- |
+| HB0_PWR_EN | 83 | GPIO1_C6, mode 0, 3.3 V output | J15.21 now NC |
+| HB1_PWR_EN | 84 | GPIO1_C7, mode 0, 3.3 V output | J15.22 now NC |
+| HB2_PWR_EN | 87 | GPIO1_D1, mode 0, 3.3 V output | J15.18 now NC |
+
+Active high; 4.7k external pull-ups make supplies default ON despite reset input pulldowns. Reserve these GPIOs in bootloader and OS, preload output state before setting direction, and do not enable their alternate functions. Stop UART and keep signal outputs low/Hi-Z before disabling power; assert reset low. Always-on shared I²C pull-ups can back-power a disabled port: this is not full signal isolation. Preserve all other J15 functions and numbering. Detailed source evidence, power budget, and verification: `build/MujinaControl-S19/hashboard-power/report.md` at the project root. The PCB was updated from this schematic on 2026-11-10: U150-U152 and their passives are placed under J3 and beside each connector, unrouted.

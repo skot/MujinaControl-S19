@@ -489,7 +489,7 @@
 		)
 		(uuid "1bc7cd07-eb5a-5193-ae82-33a4dfd8b11e")
 	)
-	(text "PSU I2C / enable / display / I2C pull-ups"
+	(text "PSU I2C / enable / accessory header J15"
 		(exclude_from_sim no)
 		(at 285.08 177.954 0)
 		(effects
@@ -588,7 +588,7 @@
 		)
 		(uuid "64339da2-17c3-5c2f-bcbb-3a933ba59413")
 	)
-	(text "J1 12 V -> protected fan rail -> 5 V converter -> CPU/core -> DDR/1.8 V -> 3.3 V -> RESET_N\nThree UART hashboards, shared hashboard I2C, independent PSU I2C, display I2C, four PWM/tach fans.\nUSB-C is a device/recovery port. SPI NAND boots first; microSD is available for development.\nJ1-J16 footprints and pin numbering inherited from bitcrane-v3.1; J16 is now 3.3 V UART2 debug.\nAll cross-sheet connections use named global labels. Camera / wireless / USB hub circuits are omitted."
+	(text "J1 12 V -> protected fan rail -> 5 V converter -> CPU/core -> DDR/1.8 V -> 3.3 V -> RESET_N\nThree UART hashboards, shared hashboard I2C, independent PSU I2C, accessory header J15, four PWM/tach fans.\nUSB-C is a device/recovery port. SPI NAND boots first; microSD is available for development.\nJ1-J16 footprints and pin numbering inherited from bitcrane-v3.1, except new accessory header J15; J16 is now 3.3 V UART2 debug.\nAll cross-sheet connections use named global labels. Camera / wireless / USB hub circuits are omitted."
 		(exclude_from_sim no)
 		(at 20.32 237.49 0)
 		(effects
@@ -1077,7 +1077,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "fb0ec5eb-04ed-5297-a5c0-afb39be58024")
-		(property "Sheetname" "12 V input / PSU / display"
+		(property "Sheetname" "12 V input / PSU / accessory"
 			(at 335 162.46 0)
 			(show_name no)
 			(do_not_autoplace no)
