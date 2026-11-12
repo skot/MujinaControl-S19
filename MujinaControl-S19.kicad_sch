@@ -7,9 +7,8 @@
 	(title_block
 		(title "MujinaControl-S19 / System overview")
 		(date "2026-11-01")
-		(rev "0.1 DRAFT")
+		(rev "rev1")
 		(company "Mujina")
-		(comment 1 "Initial schematic - verify hardware and firmware before layout signoff")
 	)
 	(lib_symbols
 		(symbol "Device:R_US"
@@ -544,7 +543,7 @@
 		)
 		(uuid "4006426f-bbc2-5868-8b38-bb4d69c2c23c")
 	)
-	(text "Maskrom key / UART2 / analog bias"
+	(text "BOOT key / UART2 / analog bias"
 		(exclude_from_sim no)
 		(at 155.08 122.954 0)
 		(effects
@@ -654,7 +653,7 @@
 		)
 		(uuid "a96998ee-c75d-5855-84e3-5e13e4dbff85")
 	)
-	(text "DRAFT 0.1 - NOT FOR FABRICATION\nValidate PSU/hashboard levels and boot states, power timing, CPU OPPs, NAND boot and component packages.\nPCB is a mechanical/connector placement scaffold only: no placement of new components or routing."
+	(text "Bring-up: validate PSU/hashboard levels and boot states, power timing, CPU OPPs, NAND boot and component packages."
 		(exclude_from_sim no)
 		(at 20.32 270 0)
 		(effects

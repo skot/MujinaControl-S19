@@ -31,13 +31,13 @@ Ten sheets: system overview, SoC interfaces, sequenced regulators, power qualifi
 - 310 footprints, 1925 tracks, 774 vias. All vias are 0.45 mm diameter / 0.30 mm drill; minimum track 0.127 mm (SoC escapes and Ethernet pairs).
 - USB, Ethernet, SD card and SPI NAND are length-matched within the RV1106 hardware-guide limits.
 - Each regulator follows the TPS62933 datasheet layout, with its own stitched ground pour. 414 ground vias in total; wherever a via is allowed, no point is more than 6 mm from one.
-- Reference designators are hidden on the silkscreen; only the RESET and BOOT labels are printed.
+- Reference designators are hidden on the silkscreen; the printed artwork is the RESET and BOOT labels and the Mujina badger logo.
 
 Routing details, measurements and history are in `docs/routing-current.md`. The other routing documents describe the board before the 2026-11-10 rip-up.
 
 ## Assembly and parts
 
-The board is meant to be assembled by the fab. Every purchased part carries `LCSC` and `MPN` fields: 65 part numbers, 24 basic, 5 preferred and 36 extended, checked against live stock on 2026-11-12. The RV1106G2 needs the fab's standard (not economic) assembly. Stock was low for Q1 and the hashboard connectors J3–J5. See `docs/bom-fab-stock.md`. Fab settings are in `MujinaControl-S19.fab.json` (`order: false`).
+The board is meant to be assembled by the fab. Every purchased part carries `LCSC` and `MPN` fields: 65 part numbers, 24 basic, 9 preferred and 32 extended, checked against live stock on 2026-11-12. The RV1106G2 needs the fab's standard (not economic) assembly. Stock was low for Q1 and the hashboard connectors J3–J5. See `docs/bom-fab-stock.md`. Fab settings are in `MujinaControl-S19.fab.json` (`order: false`).
 
 ## Before ordering
 

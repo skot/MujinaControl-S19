@@ -7,9 +7,8 @@
 	(title_block
 		(title "MujinaControl-S19 / Sequenced regulators")
 		(date "2026-11-01")
-		(rev "0.1 DRAFT")
+		(rev "rev1")
 		(company "Mujina")
-		(comment 1 "Initial schematic - verify hardware and firmware before layout signoff")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -6247,7 +6246,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 294.64 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -6258,7 +6257,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25741"
 			(at 322.58 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -7817,7 +7816,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07124KL"
+		(property "MPN" "0402WGF1243TCE"
 			(at 245.11 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -7828,7 +7827,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C138062"
+		(property "LCSC" "C36777"
 			(at 322.58 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -8526,7 +8525,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 100.33 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8537,7 +8536,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25741"
 			(at 124.46 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -9897,7 +9896,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM1555C1H101JA01D"
+		(property "MPN" "0402CG101J500NT"
 			(at 345.44 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -9908,7 +9907,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77177"
+		(property "LCSC" "C1546"
 			(at 340.36 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9999,7 +9998,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM1555C1H101JA01D"
+		(property "MPN" "0402CG101J500NT"
 			(at 149.86 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -10010,7 +10009,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77177"
+		(property "LCSC" "C1546"
 			(at 142.24 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -10178,7 +10177,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 100.33 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -10189,7 +10188,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25741"
 			(at 124.46 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -10357,7 +10356,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 294.64 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -10368,7 +10367,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25741"
 			(at 322.58 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -11399,7 +11398,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM1555C1H101JA01D"
+		(property "MPN" "0402CG101J500NT"
 			(at 149.86 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -11410,7 +11409,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77177"
+		(property "LCSC" "C1546"
 			(at 142.24 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11626,7 +11625,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM1555C1H101JA01D"
+		(property "MPN" "0402CG101J500NT"
 			(at 345.44 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -11637,7 +11636,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77177"
+		(property "LCSC" "C1546"
 			(at 340.36 139.7 0)
 			(hide yes)
 			(show_name no)

@@ -7,9 +7,8 @@
 	(title_block
 		(title "MujinaControl-S19 / SoC interfaces")
 		(date "2026-11-01")
-		(rev "0.1 DRAFT")
+		(rev "rev1")
 		(company "Mujina")
-		(comment 1 "Initial schematic - verify hardware and firmware before layout signoff")
 	)
 	(lib_symbols
 		(symbol "Device:LED"
@@ -8211,7 +8210,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-071KL"
+		(property "MPN" "0402WGF1001TCE"
 			(at 250.19 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -8222,7 +8221,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C106235"
+		(property "LCSC" "C11702"
 			(at 259.08 195.58 0)
 			(hide yes)
 			(show_name no)

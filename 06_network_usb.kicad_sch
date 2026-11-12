@@ -7,9 +7,8 @@
 	(title_block
 		(title "MujinaControl-S19 / Ethernet and USB")
 		(date "2026-11-01")
-		(rev "0.1 DRAFT")
+		(rev "rev1")
 		(company "Mujina")
-		(comment 1 "Initial schematic - verify hardware and firmware before layout signoff")
 	)
 	(lib_symbols
 		(symbol "Connector:RJ45_Hanrun_HR911105A_Horizontal"
@@ -5254,7 +5253,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07510RL"
+		(property "MPN" "0402WGF5100TCE"
 			(at 369.57 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -5265,7 +5264,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C276273"
+		(property "LCSC" "C25123"
 			(at 350.52 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -5456,7 +5455,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71H103KA88D"
+		(property "MPN" "CL05B103KB5NNNC"
 			(at 219.71 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -5467,7 +5466,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77019"
+		(property "LCSC" "C15195"
 			(at 111.76 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -5732,7 +5731,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-070RL"
+		(property "MPN" "0402WGF0000TCE"
 			(at 35.56 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -5743,7 +5742,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60485"
+		(property "LCSC" "C17168"
 			(at 55.88 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6302,7 +6301,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R61A105KE15D"
+		(property "MPN" "CL05A105KA5NQNC"
 			(at 299.72 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -6313,7 +6312,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C76999"
+		(property "LCSC" "C52923"
 			(at 363.22 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -6478,7 +6477,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-075K1L"
+		(property "MPN" "0402WGF5101TCE"
 			(at 144.78 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -6489,7 +6488,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C105872"
+		(property "LCSC" "C25905"
 			(at 101.6 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -6680,7 +6679,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-070RL"
+		(property "MPN" "0402WGF0000TCE"
 			(at 35.56 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6691,7 +6690,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60485"
+		(property "LCSC" "C17168"
 			(at 55.88 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6856,7 +6855,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-075K1L"
+		(property "MPN" "0402WGF5101TCE"
 			(at 185.42 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -6867,7 +6866,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C105872"
+		(property "LCSC" "C25905"
 			(at 134.62 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -6958,7 +6957,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C104KA88D"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 255.27 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -6969,7 +6968,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C71629"
+		(property "LCSC" "C1525"
 			(at 304.8 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -7384,7 +7383,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-071ML"
+		(property "MPN" "0402WGF1004TCE"
 			(at 350.52 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -7395,7 +7394,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C138033"
+		(property "LCSC" "C26083"
 			(at 281.94 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7695,7 +7694,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-070RL"
+		(property "MPN" "0402WGF0000TCE"
 			(at 35.56 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -7706,7 +7705,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60485"
+		(property "LCSC" "C17168"
 			(at 55.88 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -7797,7 +7796,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0718KL"
+		(property "MPN" "0402WGF1802TCE"
 			(at 209.55 251.46 0)
 			(hide yes)
 			(show_name no)
@@ -7808,7 +7807,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C138044"
+		(property "LCSC" "C25762"
 			(at 254 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -7973,7 +7972,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71H103KA88D"
+		(property "MPN" "CL05B103KB5NNNC"
 			(at 255.27 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -7984,7 +7983,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77019"
+		(property "LCSC" "C15195"
 			(at 142.24 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -8206,7 +8205,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07510RL"
+		(property "MPN" "0402WGF5100TCE"
 			(at 289.56 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8217,7 +8216,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C276273"
+		(property "LCSC" "C25123"
 			(at 314.96 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -8306,7 +8305,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-070RL"
+		(property "MPN" "0402WGF0000TCE"
 			(at 35.56 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -8317,7 +8316,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60485"
+		(property "LCSC" "C17168"
 			(at 55.88 78.74 0)
 			(hide yes)
 			(show_name no)

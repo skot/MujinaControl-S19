@@ -7,9 +7,8 @@
 	(title_block
 		(title "MujinaControl-S19 / Power qualification")
 		(date "2026-11-01")
-		(rev "0.1 DRAFT")
+		(rev "rev1")
 		(company "Mujina")
-		(comment 1 "Initial schematic - verify hardware and firmware before layout signoff")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -1245,7 +1244,7 @@
 		)
 		(uuid "2cf01e7b-e66f-5d66-8636-0249a196a9dc")
 	)
-	(text "Thresholds: 0.8505 / 1.2758 / 1.6848 / 3.0983 V (0.405 V SENSE)."
+	(text "Thresholds: 0.8100 / 1.2150 / 1.6200 / 2.9901 V (0.405 V SENSE)."
 		(exclude_from_sim no)
 		(at 15.24 269.748 0)
 		(effects
@@ -2667,7 +2666,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPS3808G01DBVR"
+		(property "MPN" "TPS3808G01DBVR-TP"
 			(at 299.72 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -2678,7 +2677,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19653"
+		(property "LCSC" "C42394092"
 			(at 297.18 127 0)
 			(hide yes)
 			(show_name no)
@@ -2855,7 +2854,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71H103KA88D"
+		(property "MPN" "CL05B103KB5NNNC"
 			(at 355.6 242.57 0)
 			(hide yes)
 			(show_name no)
@@ -2866,7 +2865,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77019"
+		(property "LCSC" "C15195"
 			(at 363.22 220.98 0)
 			(hide yes)
 			(show_name no)
@@ -2914,7 +2913,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "316k"
+		(property "Value" "300k"
 			(at 256.54 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2936,7 +2935,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-AC0402FR-07316KL_C226987.pdf"
+		(property "Datasheet" "https://pcbparts.dev/mcp/datasheet/C25774"
 			(at 229.87 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -2957,7 +2956,7 @@
 				)
 			)
 		)
-		(property "MPN" "AC0402FR-07316KL"
+		(property "MPN" "0402WGF3003TCE"
 			(at 229.87 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -2968,7 +2967,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C226987"
+		(property "LCSC" "C25774"
 			(at 254 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -2979,7 +2978,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 254 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -3144,7 +3143,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C104KA88D"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 160.02 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -3155,7 +3154,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C71629"
+		(property "LCSC" "C1525"
 			(at 137.16 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -3244,7 +3243,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPS3808G01DBVR"
+		(property "MPN" "TPS3808G01DBVR-TP"
 			(at 105.41 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -3255,7 +3254,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19653"
+		(property "LCSC" "C42394092"
 			(at 99.06 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -3356,7 +3355,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPS3808G01DBVR"
+		(property "MPN" "TPS3808G01DBVR-TP"
 			(at 105.41 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -3367,7 +3366,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19653"
+		(property "LCSC" "C42394092"
 			(at 99.06 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3544,7 +3543,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "0402WGF1002TCE"
 			(at 355.6 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -3555,7 +3554,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60490"
+		(property "LCSC" "C25744"
 			(at 363.22 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -4090,7 +4089,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C104KA88D"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 160.02 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -4101,7 +4100,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C71629"
+		(property "LCSC" "C1525"
 			(at 137.16 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -4149,7 +4148,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "665k"
+		(property "Value" "300k"
 			(at 58.42 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4171,7 +4170,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-AC0402FR-07665KL_C227183.pdf"
+		(property "Datasheet" "https://pcbparts.dev/mcp/datasheet/C25774"
 			(at 35.56 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -4192,7 +4191,7 @@
 				)
 			)
 		)
-		(property "MPN" "AC0402FR-07665KL"
+		(property "MPN" "0402WGF3003TCE"
 			(at 35.56 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -4203,7 +4202,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C227183"
+		(property "LCSC" "C25774"
 			(at 55.88 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -4214,7 +4213,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 55.88 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -4303,7 +4302,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPS3808G01DBVR"
+		(property "MPN" "TPS3808G01DBVR-TP"
 			(at 105.41 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -4314,7 +4313,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19653"
+		(property "LCSC" "C42394092"
 			(at 99.06 127 0)
 			(hide yes)
 			(show_name no)
@@ -4417,7 +4416,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "0402WGF1002TCE"
 			(at 255.27 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -4428,7 +4427,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60490"
+		(property "LCSC" "C25744"
 			(at 241.3 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -4519,7 +4518,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C104KA88D"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 160.02 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4530,7 +4529,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C71629"
+		(property "LCSC" "C1525"
 			(at 137.16 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -4578,7 +4577,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "110k"
+		(property "Value" "100k"
 			(at 256.54 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4621,7 +4620,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07110KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 229.87 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -4632,7 +4631,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C138065"
+		(property "LCSC" "C25741"
 			(at 254 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -4680,7 +4679,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "47k"
 			(at 58.42 214.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4723,7 +4722,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF4702TCE"
 			(at 35.56 238.76 0)
 			(hide yes)
 			(show_name no)
@@ -4734,7 +4733,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25792"
 			(at 55.88 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -4899,7 +4898,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 229.87 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -4910,7 +4909,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25741"
 			(at 254 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -4999,7 +4998,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPS3808G01DBVR"
+		(property "MPN" "TPS3808G01DBVR-TP"
 			(at 299.72 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5010,7 +5009,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19653"
+		(property "LCSC" "C42394092"
 			(at 297.18 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -5113,7 +5112,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C104KA88D"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 355.6 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5124,7 +5123,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C71629"
+		(property "LCSC" "C1525"
 			(at 335.28 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -5215,7 +5214,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "0402WGF1002TCE"
 			(at 304.8 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -5226,7 +5225,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60490"
+		(property "LCSC" "C25744"
 			(at 302.26 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -5348,7 +5347,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "215k"
+		(property "Value" "200k"
 			(at 58.42 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5391,7 +5390,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07215KL"
+		(property "MPN" "0402WGF2003TCE"
 			(at 35.56 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5402,7 +5401,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C185443"
+		(property "LCSC" "C25764"
 			(at 55.88 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5493,7 +5492,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 35.56 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -5504,7 +5503,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25741"
 			(at 55.88 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -6088,7 +6087,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C104KA88D"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 355.6 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -6099,7 +6098,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C71629"
+		(property "LCSC" "C1525"
 			(at 335.28 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6190,7 +6189,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 229.87 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6201,7 +6200,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25741"
 			(at 254 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -6292,7 +6291,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 35.56 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6303,7 +6302,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25741"
 			(at 55.88 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -6351,7 +6350,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "110k"
+		(property "Value" "100k"
 			(at 58.42 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6394,7 +6393,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07110KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 35.56 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6405,7 +6404,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C138065"
+		(property "LCSC" "C25741"
 			(at 55.88 40.64 0)
 			(hide yes)
 			(show_name no)

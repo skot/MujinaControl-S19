@@ -7,9 +7,8 @@
 	(title_block
 		(title "MujinaControl-S19 / Input power and service")
 		(date "2026-11-01")
-		(rev "0.1 DRAFT")
+		(rev "rev1")
 		(company "Mujina")
-		(comment 1 "Initial schematic - verify hardware and firmware before layout signoff")
 	)
 	(lib_symbols
 		(symbol "C_1"
@@ -12911,7 +12910,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-074K7L"
+		(property "MPN" "0402WGF4701TCE"
 			(at 165.1 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -12922,7 +12921,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C105871"
+		(property "LCSC" "C25900"
 			(at 30.48 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -13733,7 +13732,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-074K7L"
+		(property "MPN" "0402WGF4701TCE"
 			(at 231.14 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -13744,7 +13743,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C105871"
+		(property "LCSC" "C25900"
 			(at 231.14 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -14087,7 +14086,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "0402WGF1002TCE"
 			(at 260.35 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -14098,7 +14097,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60490"
+		(property "LCSC" "C25744"
 			(at 114.3 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -14540,7 +14539,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C104KA88D"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 292.1 227.33 0)
 			(hide yes)
 			(show_name no)
@@ -14551,7 +14550,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C71629"
+		(property "LCSC" "C1525"
 			(at 292.1 227.33 0)
 			(hide yes)
 			(show_name no)
@@ -14716,7 +14715,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 129.54 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -14727,7 +14726,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25741"
 			(at 63.5 248.92 0)
 			(hide yes)
 			(show_name no)
@@ -15220,7 +15219,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-074K7L"
+		(property "MPN" "0402WGF4701TCE"
 			(at 204.47 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -15231,7 +15230,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C105871"
+		(property "LCSC" "C25900"
 			(at 170.18 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -16129,7 +16128,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-074K7L"
+		(property "MPN" "0402WGF4701TCE"
 			(at 269.24 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -16140,7 +16139,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C105871"
+		(property "LCSC" "C25900"
 			(at 269.24 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -16534,7 +16533,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C104KA88D"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 304.8 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -16545,7 +16544,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C71629"
+		(property "LCSC" "C1525"
 			(at 213.36 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -16712,7 +16711,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C104KA88D"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 292.1 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -16723,7 +16722,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C71629"
+		(property "LCSC" "C1525"
 			(at 292.1 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -16771,7 +16770,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u / 35V"
+		(property "Value" "10u / 50V"
 			(at 271.78 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16814,7 +16813,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM32ER7YA106KA12L"
+		(property "MPN" "CL32B106KBJNNNE"
 			(at 350.52 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -16825,7 +16824,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C97973"
+		(property "LCSC" "C138687"
 			(at 269.24 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -16991,7 +16990,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C104KA88D"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 292.1 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -17002,7 +17001,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C71629"
+		(property "LCSC" "C1525"
 			(at 292.1 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -17050,7 +17049,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LBZX84C12LT1G"
+		(property "Value" "BZX84C12"
 			(at 160.02 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17072,7 +17071,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf"
+		(property "Datasheet" "https://pcbparts.dev/mcp/datasheet/C19077471"
 			(at 209.55 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -17093,7 +17092,7 @@
 				)
 			)
 		)
-		(property "MPN" "LBZX84C12LT1G"
+		(property "MPN" "BZX84C12"
 			(at 209.55 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -17115,7 +17114,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C12773"
+		(property "LCSC" "C19077471"
 			(at 149.86 74.93 0)
 			(hide yes)
 			(show_name no)

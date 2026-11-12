@@ -7,9 +7,8 @@
 	(title_block
 		(title "MujinaControl-S19 / Fan interfaces")
 		(date "2026-11-01")
-		(rev "0.1 DRAFT")
+		(rev "rev1")
 		(company "Mujina")
-		(comment 1 "Initial schematic - verify hardware and firmware before layout signoff")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x04"
@@ -4178,7 +4177,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11005.pdf"
+		(property "Datasheet" "https://pcbparts.dev/mcp/datasheet/C7420333"
 			(at 170.18 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -4199,7 +4198,7 @@
 				)
 			)
 		)
-		(property "MPN" "BAT54S,215"
+		(property "MPN" "BAT54S"
 			(at 170.18 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -4210,7 +4209,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C47546"
+		(property "LCSC" "C7420333"
 			(at 165.1 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -4956,7 +4955,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-071KL"
+		(property "MPN" "0402WGF1001TCE"
 			(at 229.87 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -4967,7 +4966,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C106235"
+		(property "LCSC" "C11702"
 			(at 246.38 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -5037,7 +5036,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+		(property "Datasheet" "https://pcbparts.dev/mcp/datasheet/C7420339"
 			(at 134.62 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -5080,7 +5079,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C52895"
+		(property "LCSC" "C7420339"
 			(at 86.36 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -5248,7 +5247,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 279.4 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -5259,7 +5258,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25741"
 			(at 266.7 227.33 0)
 			(hide yes)
 			(show_name no)
@@ -5668,7 +5667,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2112"
+		(property "LCSC" "C19077396"
 			(at 304.8 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -5876,7 +5875,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "0402WGF1002TCE"
 			(at 35.56 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -5887,7 +5886,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60490"
+		(property "LCSC" "C25744"
 			(at 106.68 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -5978,7 +5977,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 80.01 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -5989,7 +5988,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25741"
 			(at 68.58 227.33 0)
 			(hide yes)
 			(show_name no)
@@ -6195,7 +6194,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "0402WGF1002TCE"
 			(at 185.42 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -6206,7 +6205,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60490"
+		(property "LCSC" "C25744"
 			(at 132.08 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -6369,7 +6368,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "0402WGF1002TCE"
 			(at 384.81 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -6380,7 +6379,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60490"
+		(property "LCSC" "C25744"
 			(at 330.2 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -6448,7 +6447,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11005.pdf"
+		(property "Datasheet" "https://pcbparts.dev/mcp/datasheet/C7420333"
 			(at 369.57 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -6469,7 +6468,7 @@
 				)
 			)
 		)
-		(property "MPN" "BAT54S,215"
+		(property "MPN" "BAT54S"
 			(at 369.57 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -6480,7 +6479,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C47546"
+		(property "LCSC" "C7420333"
 			(at 363.22 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -6818,7 +6817,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2112"
+		(property "LCSC" "C19077396"
 			(at 106.68 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -7122,7 +7121,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+		(property "Datasheet" "https://pcbparts.dev/mcp/datasheet/C7420339"
 			(at 134.62 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -7165,7 +7164,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C52895"
+		(property "LCSC" "C7420339"
 			(at 86.36 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -7333,7 +7332,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 80.01 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -7344,7 +7343,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25741"
 			(at 68.58 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -7486,7 +7485,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11005.pdf"
+		(property "Datasheet" "https://pcbparts.dev/mcp/datasheet/C7420333"
 			(at 369.57 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -7507,7 +7506,7 @@
 				)
 			)
 		)
-		(property "MPN" "BAT54S,215"
+		(property "MPN" "BAT54S"
 			(at 369.57 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -7518,7 +7517,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C47546"
+		(property "LCSC" "C7420333"
 			(at 363.22 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -7760,7 +7759,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "MPN" "0402WGF1003TCE"
 			(at 279.4 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -7771,7 +7770,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "LCSC" "C25741"
 			(at 266.7 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -7860,7 +7859,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-071KL"
+		(property "MPN" "0402WGF1001TCE"
 			(at 30.48 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -7871,7 +7870,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C106235"
+		(property "LCSC" "C11702"
 			(at 48.26 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -8151,7 +8150,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-071KL"
+		(property "MPN" "0402WGF1001TCE"
 			(at 30.48 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -8162,7 +8161,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C106235"
+		(property "LCSC" "C11702"
 			(at 48.26 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -8304,7 +8303,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11005.pdf"
+		(property "Datasheet" "https://pcbparts.dev/mcp/datasheet/C7420333"
 			(at 170.18 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -8325,7 +8324,7 @@
 				)
 			)
 		)
-		(property "MPN" "BAT54S,215"
+		(property "MPN" "BAT54S"
 			(at 170.18 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -8336,7 +8335,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C47546"
+		(property "LCSC" "C7420333"
 			(at 165.1 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -8428,7 +8427,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-071KL"
+		(property "MPN" "0402WGF1001TCE"
 			(at 229.87 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -8439,7 +8438,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C106235"
+		(property "LCSC" "C11702"
 			(at 246.38 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -8530,7 +8529,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "0402WGF1002TCE"
 			(at 234.95 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -8541,7 +8540,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60490"
+		(property "LCSC" "C25744"
 			(at 304.8 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -8611,7 +8610,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+		(property "Datasheet" "https://pcbparts.dev/mcp/datasheet/C7420339"
 			(at 335.28 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -8654,7 +8653,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C52895"
+		(property "LCSC" "C7420339"
 			(at 284.48 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -9190,7 +9189,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2112"
+		(property "LCSC" "C19077396"
 			(at 106.68 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -9260,7 +9259,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+		(property "Datasheet" "https://pcbparts.dev/mcp/datasheet/C7420339"
 			(at 335.28 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -9303,7 +9302,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C52895"
+		(property "LCSC" "C7420339"
 			(at 284.48 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -9832,7 +9831,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2112"
+		(property "LCSC" "C19077396"
 			(at 304.8 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -9923,7 +9922,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "0402WGF1002TCE"
 			(at 35.56 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -9934,7 +9933,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60490"
+		(property "LCSC" "C25744"
 			(at 106.68 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -10171,7 +10170,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "0402WGF1002TCE"
 			(at 384.81 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -10182,7 +10181,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60490"
+		(property "LCSC" "C25744"
 			(at 330.2 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -10567,7 +10566,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "0402WGF1002TCE"
 			(at 185.42 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -10578,7 +10577,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60490"
+		(property "LCSC" "C25744"
 			(at 132.08 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -10743,7 +10742,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "0402WGF1002TCE"
 			(at 234.95 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -10754,7 +10753,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C60490"
+		(property "LCSC" "C25744"
 			(at 304.8 160.02 0)
 			(hide yes)
 			(show_name no)
