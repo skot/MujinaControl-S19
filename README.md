@@ -1,46 +1,70 @@
 # MujinaControl-S19
 
-Initial RV1106G2 Antminer controlboard schematic, revision 0.1. Open `MujinaControl-S19.kicad_pro` with the selected Backplane KiCad runtime. This is a schematic development milestone, not a fabrication release.
+An open-hardware Antminer S19 controlboard built around the Rockchip RV1106G2, for [Mujina](https://mujina.org) mining firmware. It keeps the bitcrane v3.1 form factor, outline, mounting holes and miner connectors, and replaces bitcrane's RP2040 with a Linux-capable SoC, Ethernet and local storage.
 
-The ten-sheet design contains a 128 MB RV1106G2, 24 MHz and RTC clocks, SPI NAND, microSD, USB recovery, a 100BASE-TX MagJack, five sequenced SoC supplies, and the bitcrane miner interfaces. The PCB contains only the original outline, mounting holes and connector placements. New component placement, Ethernet placement, stackup design and routing remain to be done.
+**Status (2026-11-12):** schematic complete, PCB placed and fully routed on six layers. ERC 0; DRC 0 violations, 0 unconnected items, 0 schematic-parity issues. Every purchased part has a fab (LCSC) part number. **Not yet reviewed for manufacturing and not built or tested.** Do not order until the review below is done.
 
-## Initial choices
+Open `MujinaControl-S19.kicad_pro` with **KiCad 10.99 or later**. The files use a newer format than KiCad 10.0 can read.
 
-- Confirmed power source: J1's existing 6-pin 12 V input (pins 1-3 positive, pins 4-6 ground). A fused branch generates 5 V for the SoC regulators. Fans retain the protected 12 V rail. USB-C VBUS is detection-only: **12 V must be present for USB recovery**.
-- Confirmed storage choice: SPI NAND following Luckfox Pico Pro/Max. U130 is W25N02KVZEIR, a 2 Gbit (256 MB) raw SPI NAND connected to the SoC's quad-SPI interface. MicroSD remains in the draft as an additional storage/boot option. U100's 128 MB in-package DDR3L is separate RAM.
-- CPU and logic use separate nominal 0.9 V regulators. DDR uses 1.3448 V, analog uses 1.792 V, and I/O uses 3.3 V. Five TPS3808 supervisors qualify the rail sequence and reset, using their CT-open delay. This first draft prioritizes explicit sequencing; the regulator/supervisor BOM can be cost-optimized after validation.
-- Three separate hardware UARTs serve the hashboards. Hashboard, PSU and display I2C use separate hardware controllers. Four hardware PWM outputs and four GPIO tach inputs serve the fans.
-- J1-J15 retain bitcrane connector pin assignments. J16 keeps its footprint but changes from RP2040 SWD to **pin 1 TX, pin 2 GND, pin 3 RX**, at 3.3 V. USB SBU pins formerly used for SWD are NC.
-- All bitcrane address-strap and fan-header fitted/DNP choices are preserved. The original mixes 2x2 and 1x4 fitted fan headers; each channel's two footprints are alternative ways to connect one fan.
-- All cross-sheet signals use global labels. Internal circuit nets use local labels. Every physical BOM entry has an MPN field; test pads and mounting holes use explicit PCB-feature identifiers.
+## Hardware
 
-## Verification
+- **SoC:** RV1106G2 with 128 MB in-package DDR3L, 24 MHz crystal and RTC crystal.
+- **Storage:** W25N02KVZEIR 2 Gbit (256 MB) SPI NAND on the quad-SPI bus, following the Luckfox Pico Pro/Max, plus a microSD socket. A bootable NAND takes precedence over microSD.
+- **Network and USB:** 100BASE-TX through the SoC's internal PHY and an integrated MagJack. USB-C device port for recovery and console; VBUS is detection-only, so **12 V must be present for USB recovery**.
+- **Power:** 12 V from J1's 6-pin input (pins 1–3 positive, 4–6 ground) through reverse-polarity P-MOSFET Q1 (NTTFS008P03P8Z) and an SMBJ15A TVS. There is no controller fuse. Six TPS62933 bucks: 12 V → 5 V system (2 A budget), then sequenced 0.9 V core, 0.9 V CPU, 1.35 V DDR, 1.8 V and 3.3 V. Five TPS3808 supervisors (trip at about 90 % of each rail) qualify the sequence and hold reset.
+- **Hashboards:** three ports, each with its own hardware UART, sharing one hashboard I²C bus; BCB100-style I²C/UART pull-ups and plug-detect pull-downs, and a TPS22919 switched 3.3 V supply per port, enabled directly by SoC GPIOs.
+- **Fans:** four independent channels, PWM and tach, each sized for 3 A; the input stage carries all four fans plus the board. Each channel has both a 1×4 2.54 mm and a 2×2 4.2 mm footprint; fit one. Two 100 µF bulk capacitors on the fan rail.
+- **PSU and accessories:** PSU I²C and enable, accessory header J15 (display I²C, GPIO, 5 V / 3.3 V), console UART on J16 (pin 1 TX, 2 GND, 3 RX, 3.3 V), RESET and BOOT (maskrom) right-angle buttons beside the Ethernet jack.
 
-The selected CLI is `/Users/skot/.backplane-bend/kicad/10.99.0-bp.6/bin/kicad-cli`. Reports, netlists and page renders are under `../../build/MujinaControl-S19/`. The semantic checker verifies all 129 SoC package contacts, miner connector net assignments, original DNP choices, sequencing connections, and exact preservation of the bitcrane outline and connector positions.
+J1–J14 keep bitcrane's pin assignments. The SoC pin allocation is in `docs/pin-allocation.md`.
 
-The KiCad IPC startup timed out and its tool explicitly authorized file editing as fallback. The generator constructs and round-trips structured S-expressions, then the actual KiCad CLI reopens the saved design for ERC/netlist/render verification. No original bitcrane or research CAD was edited. A saved schematic milestone is in `../../backups/MujinaControl-S19/erc-clean-milestone/`.
+## Schematic
 
-`scripts/build_schematic.py` is the initial authoring source. **Do not rerun it after editing the schematic manually:** it replaces the generated sheets and scaffold. `scripts/validate_design.py` is read-only and validates the exported reports. Use the normal KiCad editing workflow for later revisions.
+Ten sheets: system overview, SoC interfaces, sequenced regulators, power qualification, SoC supply and bypass, boot storage and clocks, Ethernet and USB, hashboard interfaces, fan interfaces, input power and service. Cross-sheet signals use global labels; resistors use US-style symbols.
 
-## Before layout signoff
+## PCB
 
-1. Confirm actual S19 hashboard and PSU voltages, reset/plug polarity, PSU enable polarity, cable-side I2C pull-ups and powered/unpowered behavior. Connectivity parity with bitcrane is not a measured compatibility test.
-2. Validate cold-start, slow-ramp, brownout, reset and shutdown behavior on all rails. Check supervisor thresholds including tolerance/hysteresis, regulator transient response and effective ceramic capacitance. Confirm the fixed 0.9 V CPU operating points; do not inherit Raven's overclock or enable unrestricted DVFS.
-3. Bring up the selected UART/PWM/I2C pin groups in the BSP, using `docs/pin-allocation.md`. Check UART throughput and 128 MB application memory use. Implement PWM inversion, fan tach counting and watchdog/failure behavior. These firmware changes are not implemented here.
-4. Verify NAND support in the exact boot ROM/loader/BSP and flash/recovery tools. A bootable NAND takes precedence over microSD. Test the recovery key and USB enumeration.
-5. Complete a datasheet-to-footprint audit, especially the SoC exposed pad, NAND exposed pad, MagJack, reused connector variants, crystal, inductors and microSD. Core part lookups were performed; this is not a full sourcing review. The selected 3.3 uH / 4.7 uH inductors and DM3D-SF socket were not found in the fab's in-stock catalog snapshot and need sourcing or substitution.
-6. Develop the PCB stackup and floorplan. The scaffold retains bitcrane's existing two-layer file structure; a four-layer implementation is recommended for the SoC and power/return routing, but has not been laid out. Check RJ45 height, front-panel space and mounting clearance. Validate the PMOS and connectors for the actual fan current.
-7. Tune crystal loading/drive, USB signal integrity and Ethernet magnetics/ESD performance on hardware. Conduct thermal and EMC checks. ERC does not prove any of these properties.
+- 110 × 100 mm, six layers, nominal 1.6 mm FR-4, ENIG, 1 oz outer / 0.5 oz inner, using the fab's JLC06161H-3313 stackup (`docs/pcb-stackup.md`).
+- Layers: F.Cu signals and parts; In1 ground; In2 3.3 V plane with islands for core, DDR, 1.8 V, 5 V and 12 V; In3 slow signals; In4 ground; B.Cu signals.
+- 310 footprints, 1925 tracks, 774 vias. All vias are 0.45 mm diameter / 0.30 mm drill; minimum track 0.127 mm (SoC escapes and Ethernet pairs).
+- USB, Ethernet, SD card and SPI NAND are length-matched within the RV1106 hardware-guide limits.
+- Each regulator follows the TPS62933 datasheet layout, with its own stitched ground pour. 414 ground vias in total; wherever a via is allowed, no point is more than 6 mm from one.
+- Reference designators are hidden on the silkscreen; only the RESET and BOOT labels are printed.
+
+Routing details, measurements and history are in `docs/routing-current.md`. The other routing documents describe the board before the 2026-11-10 rip-up.
+
+## Assembly and parts
+
+The board is meant to be assembled by the fab. Every purchased part carries `LCSC` and `MPN` fields: 65 part numbers, 24 basic, 5 preferred and 36 extended, checked against live stock on 2026-11-12. The RV1106G2 needs the fab's standard (not economic) assembly. Stock was low for Q1 and the hashboard connectors J3–J5. See `docs/bom-fab-stock.md`. Fab settings are in `MujinaControl-S19.fab.json` (`order: false`).
+
+## Before ordering
+
+1. **Manufacturing review.** The routing was largely laid by a grid search: it is rule-clean but not tidy. The east-side hashboard lines are long (up to 117 mm) with up to 9 vias. They are slow signals, but they should be reviewed and could be shortened.
+2. **Hashboard and PSU compatibility.** Confirm the real S19 hashboard and PSU voltages, reset and plug-detect polarity, PSU-enable polarity and powered/unpowered behaviour. Matching bitcrane's connections is not a measured compatibility test.
+3. **Power.** Check cold start, slow ramp, brownout and shutdown on all rails, the supervisor thresholds, and regulator transient response. Measure Q1 and the 12 V copper at the full four-fan load. Upstream wiring must protect against shorts, as there is no controller fuse.
+4. **Footprints and parts.** Audit the footprints against datasheets, especially the SoC and NAND exposed pads, MagJack, crystals, inductors and microSD. Re-check stock before ordering.
+5. **Firmware.** Bring up the UART, PWM and I²C pin groups, fan tach, hashboard power GPIOs, NAND boot and USB recovery in the BSP. Keep the CPU at its fixed 0.9 V operating point.
+6. **On hardware.** Tune the crystals; check USB and Ethernet signal integrity, ESD, thermals and EMC.
+
+## Files
+
+- `MujinaControl-S19.kicad_pro` with ten `.kicad_sch` sheets, `.kicad_pcb` and `.kicad_dru` (custom rules).
+- `lib/`, `models/`, `3d/`: project-local symbols, footprints and 3D models.
+- `docs/`: design notes for each change (stackup, placement, regulators, routing, parts).
+- `scripts/`: the original generator `build_schematic.py`. **Do not rerun it**; it would overwrite the hand-edited schematic. `validate_design.py` and `verify_readability.py` are read-only checks.
+- Check reports, renders and working evidence are kept outside this repository, in `build/MujinaControl-S19/` at the workspace root.
 
 ## Sources and attribution
 
-- `../../bitcrane-v3.1/`: connector pinout, populated options, outline, mounting holes and placement reference; original README states CERN OHL v2. Original files are preserved.
 - [Braiins BCB100](https://github.com/braiins/BCB100): open-source S19 control board (CERN-OHL-S v2), used as the reference for hashboard interface biasing and logic-power control (I2C/UART pull-ups, plug-detect pull-downs and per-port switched 3.3 V). Thanks to Braiins for publishing it.
-- `../../research/rv1106/`: supplied research, including Rockchip datasheet Rev 2.2, Table 2-1 and Table 3-2; hardware design guide sections 2.1-2.3; Luckfox Pico Pro/Max; and Raven1106 v1.1.
-- Raven supplied the starting RV1106 package-pin definition, QFN footprint/model, and storage reference. Its complete SBC circuitry was not copied. Its documented USB-mux and optional-flash limitations were considered. The supplied research notes did not find a top-level Raven license; clarify reuse/redistribution terms before publishing these derived library assets.
-- [Diodes AP63200/AP63203/AP63205 datasheet](https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf): regulator pinouts, feedback equation, soft-start and passive selection.
-- [TI TPS3808 datasheet](https://www.ti.com/lit/ds/symlink/tps3808.pdf): open-drain reset, monitor thresholds, manual reset and CT-open delay. The project-local symbol corrects RESET to open-drain for wired-AND operation.
-- [Bourns SRN6028C datasheet](https://bourns.com/docs/Product-Datasheets/SRN6028C.pdf): selected larger inductors; complete footprint verification before layout.
-- [Nexperia PESD3V3Y1BSF datasheet](https://assets.nexperia.com/documents/data-sheet/PESD3V3Y1BSF.pdf): bidirectional Ethernet-pair ESD devices and DSN0603 package.
+- [bitcrane](https://github.com/skot/bitcrane) v3.1 (CERN-OHL v2): form factor, outline, mounting holes, connector pinouts and placements, fan-header options, and the inherited `bitaxe` and `bitcrane` libraries.
+- Raven1106 v1.1: starting RV1106 package-pin definition, QFN footprint and model, and storage reference. Its full SBC circuit was not copied. No top-level licence was found for Raven; clarify reuse terms for the derived library assets before publishing them more widely.
+- Luckfox Pico Pro/Max: SPI NAND reference.
+- Rockchip RV1106 datasheet Rev 2.2 and hardware design guide: pin functions, power and layout rules.
+- [TI TPS62933](https://www.ti.com/lit/ds/symlink/tps62933.pdf), [TI TPS3808](https://www.ti.com/lit/ds/symlink/tps3808.pdf), [TI TPS22919](https://www.ti.com/lit/ds/symlink/tps22919.pdf), [onsemi NTTFS008P03P8Z](https://www.onsemi.com/download/data-sheet/pdf/nttfs008p03p8z-d.pdf) and [Nexperia PESD3V3Y1BSF](https://assets.nexperia.com/documents/data-sheet/PESD3V3Y1BSF.pdf) datasheets.
 
-Standard KiCad symbols and only the required standard footprints are snapshotted into project-local libraries, alongside the inherited custom libraries. Their original license and attribution markings remain applicable.
+Standard KiCad symbols and footprints are copied into the project-local libraries. Their original licence and attribution markings still apply.
+
+## License
+
+CERN Open Hardware Licence v2, Strongly Reciprocal (`LICENSE`).
