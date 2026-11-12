@@ -1,5 +1,7 @@
 # MujinaControl-S19
 
+![MujinaControl-S19 render](render.png "MujinaControl-S19 render")
+
 An open-hardware Antminer S19 controlboard built around the Rockchip RV1106G2, for [Mujina](https://mujina.org) mining firmware. It keeps the bitcrane v3.1 form factor, outline, mounting holes and miner connectors, and replaces bitcrane's RP2040 with a Linux-capable SoC, Ethernet and local storage.
 
 **Status (2026-11-12):** schematic complete, PCB placed and fully routed on six layers. ERC 0; DRC 0 violations, 0 unconnected items, 0 schematic-parity issues. Every purchased part has a fab (LCSC) part number. **Not yet reviewed for manufacturing and not built or tested.** Do not order until the review below is done.
