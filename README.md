@@ -35,6 +35,7 @@ The KiCad IPC startup timed out and its tool explicitly authorized file editing 
 ## Sources and attribution
 
 - `../../bitcrane-v3.1/`: connector pinout, populated options, outline, mounting holes and placement reference; original README states CERN OHL v2. Original files are preserved.
+- [Braiins BCB100](https://github.com/braiins/BCB100): open-source S19 control board (CERN-OHL-S v2), used as the reference for hashboard interface biasing and logic-power control (I2C/UART pull-ups, plug-detect pull-downs and per-port switched 3.3 V). Thanks to Braiins for publishing it.
 - `../../research/rv1106/`: supplied research, including Rockchip datasheet Rev 2.2, Table 2-1 and Table 3-2; hardware design guide sections 2.1-2.3; Luckfox Pico Pro/Max; and Raven1106 v1.1.
 - Raven supplied the starting RV1106 package-pin definition, QFN footprint/model, and storage reference. Its complete SBC circuitry was not copied. Its documented USB-mux and optional-flash limitations were considered. The supplied research notes did not find a top-level Raven license; clarify reuse/redistribution terms before publishing these derived library assets.
 - [Diodes AP63200/AP63203/AP63205 datasheet](https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf): regulator pinouts, feedback equation, soft-start and passive selection.
