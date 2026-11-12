@@ -4991,7 +4991,7 @@
 				)
 			)
 		)
-		(property "Value" "MASKROM"
+		(property "Value" "BOOT"
 			(at 340.36 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)

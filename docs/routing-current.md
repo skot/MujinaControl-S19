@@ -255,3 +255,31 @@ In1.Cu and In4.Cu are both ground. Signals on F.Cu return on In1; signals on In3
 - No outer-layer ground fill was added outside the regulator and connector zones; the stitching ties the two inner ground planes only.
 
 Evidence: `build/MujinaControl-S19/regs/` (`survey.py`, `seq1.py`, `routenet.py`, `stitch.py`, `stitch-plan.json`, `orig-nets.json`, `milestone-stitched.kicad_pcb`), final DRC `routing-power/drc-g5.json`, pre-change copy listed in `regs/backup.txt`.
+
+## Silkscreen reference designators hidden — 2026-11-12
+
+All 43 reference designators that were visible on F.SilkS are now hidden (none were on B.SilkS; the other 267 footprints already keep theirs on F.Fab or hidden). The only text left on silkscreen is the two button labels, RESET (SW1) and MASKROM (SW2), which are value fields.
+
+The change is 43 added `(hide yes)` lines in the board file and nothing else. It was made as a direct file edit with the document closed: the same change through the KiCad interface also stripped the symbol-unit records from the updated footprints, so that attempt was discarded.
+
+DRC: 67 → 62 findings (silk overlaps 43 → 40, silk-over-copper 2 → 0). The remaining 40 overlaps and 16 silk-to-edge findings are footprint outline graphics, not text. 0 unconnected items.
+
+## DRC clean — 2026-11-12
+
+Board DRC (all severities, with schematic parity): **0 violations, 0 unconnected items, 0 parity issues.** Schematic ERC: 0, unchanged. 1925 tracks and 774 vias, unchanged by this pass.
+
+| Finding (count) | Cause | Fix |
+|---|---|---|
+| Hole clearance, J2 (2) | Ground pads A1B12/B1A12 were 0.243 mm from the two locating holes; the board rule is 0.25 mm | Each pad shortened by 0.02 mm on the side facing the hole (1.10 → 1.08 mm long), in the board and in `lib/bitcrane.pretty` |
+| Malformed courtyard, J1 (1) | Three courtyard line ends missed each other by 0.01–0.02 mm | Ends joined, in the board and the library |
+| Silk overlap (40) and silk clipped by edge (16), fan connectors | Each fan position has two alternative footprints (J6–J9 2.54 mm header, J11–J14 4.2 mm 2×2) with outlines drawn over each other and running off the board | J6–J9 carry no silkscreen now; J11–J14 keep their outline, stopped 0.28 mm inside the board edge, with the off-board line removed. Board and library |
+| Library mismatch, SW1/SW2 (2) | The library polygon for the anchor pads repeated its first point at the end; KiCad drops it on the board | Duplicate point removed from `lib/bitaxe.pretty` |
+| Library mismatch, J16 (1) | Library drew the courtyard as a rectangle and had an extra reference text; the board has four lines and no extra text | Library copy brought in line with the board |
+| Parity, SW2 value | Board says BOOT (renamed on the board), schematic said MASKROM | Schematic value set to BOOT (`05_boot.kicad_sch`) |
+| Parity, Q1 field | The Q1 symbol instance carried a hidden `ki_fp_filters` field that the footprint lacks | Stray field removed from the symbol instance (`09_power_service.kicad_sch`) |
+
+All edits were made as minimal text edits with the documents closed and checked by diff: the board changed only in those pads, courtyard ends and silkscreen lines (pad, via, track, zone, footprint and 3D-model counts unchanged). No copper moved.
+
+Worth knowing: whichever fan connector is fitted, only the larger connector's outline is on the silkscreen.
+
+Evidence: `build/MujinaControl-S19/drcfix/` (`apply.py`, `cmp.py`, `erc-before.json`, `erc-after.json`, `backup.txt`), final DRC `routing-power/drc-e1.json`.

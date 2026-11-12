@@ -15706,17 +15706,6 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "onsemi_WDFN*"
-			(at 114.3 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "6"
 			(uuid "a4513d97-faa4-474c-ac31-5d5945363eaa")
 		)
