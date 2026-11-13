@@ -1052,6 +1052,10 @@
     [
       "fb0ec5eb-04ed-5297-a5c0-afb39be58024",
       "12 V input / PSU / accessory"
+    ],
+    [
+      "91871d2a-a05f-4399-b9b1-6d35b6df6d34",
+      "USB switch / USB-A host port"
     ]
   ],
   "text_variables": {},

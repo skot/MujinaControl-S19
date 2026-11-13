@@ -77,4 +77,10 @@
     (type "KiCad")
     (uri "${KIPRJMOD}/lib/Power_Management.kicad_sym")
     (options "")
+    (descr "Project-local snapshot"))
+  (lib
+    (name "Interface_USB")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/lib/Interface_USB.kicad_sym")
+    (options "")
     (descr "Project-local snapshot")))

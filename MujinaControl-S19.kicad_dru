@@ -34,3 +34,10 @@
 	(layer "F.Cu")
 	(constraint hole_clearance (min 0.2mm))
 )
+
+(rule "USB switch pad pitch clearance"
+	# FSUSB42 MSOP-10, 0.5 mm pitch: 0.15 mm between its pads. See docs/usb-host-jtag.md.
+	(condition "A.intersectsCourtyard('U142') && B.intersectsCourtyard('U142')")
+	(layer "F.Cu")
+	(constraint clearance (min 0.127mm))
+)

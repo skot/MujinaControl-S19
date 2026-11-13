@@ -3594,6 +3594,17 @@
 		)
 		(uuid "2d5f8929-0a42-5f68-ba77-a6d2d5c52bb4")
 	)
+	(text "USB_VBUS_DET also selects the USB switch (sheet 11)."
+		(exclude_from_sim no)
+		(at 223.52 242.57 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "3061b6d1-0629-4f39-8752-f015f44938b4")
+	)
 	(text "12.4k / 18k: 5 V -> 2.96 V."
 		(exclude_from_sim no)
 		(at 223.52 234.95 0)
@@ -3604,6 +3615,17 @@
 			(justify left)
 		)
 		(uuid "3ae13062-47fd-57c5-a886-3b1f67d4149c")
+	)
+	(text "D+ / D- continue to the USB switch on sheet 11; the 2.2 ohm series resistors are there."
+		(exclude_from_sim no)
+		(at 15.24 271.78 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "499e989b-98ae-452f-9cfc-bd56713f6038")
 	)
 	(text "Centre taps: 10n AC-grounded, never to 3.3 V. CHASSIS = shield + Bob-Smith node. Maintain isolation clearance."
 		(exclude_from_sim no)
@@ -4089,16 +4111,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 256.54) (xy 172.72 256.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b8dd889-6d8b-570b-b048-b537b7bef71b")
-	)
-	(wire
-		(pts
 			(xy 86.36 203.2) (xy 86.36 256.54)
 		)
 		(stroke
@@ -4276,16 +4288,6 @@
 			(type default)
 		)
 		(uuid "8d571719-a2fd-5f69-bc80-0dc009c93ba8")
-	)
-	(wire
-		(pts
-			(xy 151.13 233.68) (xy 172.72 233.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8da8b28d-1605-5a07-8c1f-7c096ac22765")
 	)
 	(wire
 		(pts
@@ -4735,40 +4737,18 @@
 			)
 		)
 	)
-	(global_label "USB_DM"
+	(global_label "USBC_DP"
 		(shape bidirectional)
-		(at 76.2 233.68 180)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify right)
-		)
-		(uuid "41954b51-1edb-5a36-b083-515c06a305a6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.2 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-	)
-	(global_label "USB_DM_SOC"
-		(shape bidirectional)
-		(at 172.72 233.68 0)
+		(at 143.51 256.54 0)
 		(effects
 			(font
 				(size 0.9 0.9)
 			)
 			(justify left)
 		)
-		(uuid "64a132ad-c747-5fdd-957f-649c5d9e045d")
+		(uuid "5b365d14-41cd-4ce0-a640-df21eb27a95b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 172.72 233.68 0)
+			(at 143.51 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4889,18 +4869,18 @@
 			)
 		)
 	)
-	(global_label "USB_DP"
+	(global_label "USBC_DM"
 		(shape bidirectional)
-		(at 86.36 256.54 180)
+		(at 143.51 233.68 0)
 		(effects
 			(font
 				(size 0.9 0.9)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "e3f0ad64-65d7-5711-b8bc-45675e572315")
+		(uuid "d39b5b41-7baf-4b97-8f94-1dd4a01580c1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.36 256.54 0)
+			(at 143.51 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4945,28 +4925,6 @@
 		(uuid "eab5dbb8-0037-53e1-b805-ba5267a85b45")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 35.56 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-	)
-	(global_label "USB_DP_SOC"
-		(shape bidirectional)
-		(at 172.72 256.54 0)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify left)
-		)
-		(uuid "f26e1cb0-5058-5862-9f6e-d61443619a8c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 172.72 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5285,106 +5243,6 @@
 			(project "MujinaControl-S19"
 				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/99b0980f-0d62-5aa6-999c-3b33cbaeb27a"
 					(reference "R249")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 147.32 233.68 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1a6b93dd-a056-5661-8d66-4bf2c491bf08")
-		(property "Reference" "R253"
-			(at 147.32 228.6 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "2.2"
-			(at 147.32 231.14 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.95 0.95)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 325.12 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 325.12 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 147.32 233.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RC0402FR-072R2L"
-			(at 325.12 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "LCSC" "C327251"
-			(at 147.32 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3c2e97be-2bd8-4d26-a4d6-d703f6ef039b")
-		)
-		(pin "2"
-			(uuid "ca96401c-4300-405c-ab28-12c9aa7e0430")
-		)
-		(instances
-			(project "MujinaControl-S19"
-				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/99b0980f-0d62-5aa6-999c-3b33cbaeb27a"
-					(reference "R253")
 					(unit 1)
 				)
 			)
@@ -7415,106 +7273,6 @@
 			(project "MujinaControl-S19"
 				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/99b0980f-0d62-5aa6-999c-3b33cbaeb27a"
 					(reference "R247")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 147.32 256.54 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c3f47a89-c55a-5deb-855a-02309587d343")
-		(property "Reference" "R252"
-			(at 147.32 251.46 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "2.2"
-			(at 147.32 254 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.95 0.95)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 245.11 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 245.11 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 147.32 256.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RC0402FR-072R2L"
-			(at 245.11 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "LCSC" "C327251"
-			(at 147.32 256.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8bae2aa9-5124-4695-b2a1-c6a6048daced")
-		)
-		(pin "2"
-			(uuid "7ca7d060-ded6-4590-ab13-201996cb413a")
-		)
-		(instances
-			(project "MujinaControl-S19"
-				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/99b0980f-0d62-5aa6-999c-3b33cbaeb27a"
-					(reference "R252")
 					(unit 1)
 				)
 			)

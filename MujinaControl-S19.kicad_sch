@@ -499,6 +499,17 @@
 		)
 		(uuid "1c78120d-4115-57e9-935c-f11e229aa766")
 	)
+	(text "USB 2.0 switch: USB-C recovery or USB-A host"
+		(exclude_from_sim no)
+		(at 285.08 222.16 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "24710e92-3e8a-4771-897d-be9187f197ef")
+	)
 	(text "MUJINACONTROL-S19"
 		(exclude_from_sim no)
 		(at 20.32 21.59 0)
@@ -543,7 +554,7 @@
 		)
 		(uuid "4006426f-bbc2-5868-8b38-bb4d69c2c23c")
 	)
-	(text "BOOT key / UART2 / analog bias"
+	(text "BOOT key / UART2 / JTAG header / bias"
 		(exclude_from_sim no)
 		(at 155.08 122.954 0)
 		(effects
@@ -565,7 +576,7 @@
 		)
 		(uuid "489250f4-fd74-5382-8349-713a870e99ee")
 	)
-	(text "USB-C device and detection-only VBUS"
+	(text "USB-C device port and VBUS detection"
 		(exclude_from_sim no)
 		(at 285.08 122.954 0)
 		(effects
@@ -587,9 +598,9 @@
 		)
 		(uuid "64339da2-17c3-5c2f-bcbb-3a933ba59413")
 	)
-	(text "J1 12 V -> protected fan rail -> 5 V converter -> CPU/core -> DDR/1.8 V -> 3.3 V -> RESET_N\nThree UART hashboards, shared hashboard I2C, independent PSU I2C, accessory header J15, four PWM/tach fans.\nUSB-C is a device/recovery port. SPI NAND boots first; microSD is available for development.\nJ1-J16 footprints and pin numbering inherited from bitcrane-v3.1, except new accessory header J15; J16 is now 3.3 V UART2 debug.\nAll cross-sheet connections use named global labels. Camera / wireless / USB hub circuits are omitted."
+	(text "J1 12 V -> protected fan rail -> 5 V converter -> CPU/core -> DDR/1.8 V -> 3.3 V -> RESET_N\nThree UART hashboards, shared hashboard I2C, independent PSU I2C, accessory header J15, four PWM/tach fans.\nUSB-C is a device/recovery port; USB-A is a host port for a WiFi dongle (one at a time)."
 		(exclude_from_sim no)
-		(at 20.32 237.49 0)
+		(at 20.32 235.55 0)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -597,6 +608,17 @@
 			(justify left)
 		)
 		(uuid "665544f5-4beb-5ebf-ab43-5ba18460e603")
+	)
+	(text "SPI NAND boots first; microSD is available for development.\nJ1-J16 footprints and pin numbering inherited from bitcrane-v3.1, except new accessory header J15; J16 is now 3.3 V UART2 debug.\nAll cross-sheet connections use named global labels. Camera / onboard wireless / USB hub circuits are omitted."
+		(exclude_from_sim no)
+		(at 20.32 241.4 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left)
+		)
+		(uuid "55402038-e85d-4bdf-ba50-a776e2a3420b")
 	)
 	(text "Supply pin map / shared bypass banks"
 		(exclude_from_sim no)
@@ -652,6 +674,17 @@
 			(justify left)
 		)
 		(uuid "a96998ee-c75d-5855-84e3-5e13e4dbff85")
+	)
+	(text "Current-limited 5 V for a WiFi dongle on J17"
+		(exclude_from_sim no)
+		(at 285.08 224.954 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "b1cb8d16-306b-440e-aceb-758f249241b0")
 	)
 	(text "Bring-up: validate PSU/hashboard levels and boot states, power timing, CPU OPPs, NAND boot and component packages."
 		(exclude_from_sim no)
@@ -880,6 +913,50 @@
 			(project "MujinaControl-S19"
 				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e"
 					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 280 212)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "91871d2a-a05f-4399-b9b1-6d35b6df6d34")
+		(property "Sheetname" "USB switch / USB-A host port"
+			(at 335 209.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "10_usb_host.kicad_sch"
+			(at 335 244.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e"
+					(page "11")
 				)
 			)
 		)

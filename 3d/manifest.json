@@ -1159,5 +1159,113 @@
     ],
     "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
     "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Package_SO:MSOP-10_3x3mm_P0.5mm",
+    "refs": [
+      "U142"
+    ],
+    "model": "kicad/MSOP-10_3x3mm_P0.5mm.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Package_SO.3dshapes/MSOP-10_3x3mm_P0.5mm.step",
+    "sha256": "b8f88eac3ce221c2ccb0b5048f9ad49c2ef4af148f8ae50c4e232e357683f547",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "refs": [
+      "U143"
+    ],
+    "model": "kicad/SOT-23-5.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+    "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Connector_USB:USB_A_Molex_67643_Horizontal",
+    "refs": [
+      "J17"
+    ],
+    "model": "kicad/USB_A_Molex_67643_Horizontal.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Connector_USB.3dshapes/USB_A_Molex_67643_Horizontal.step",
+    "sha256": "d6a1e21b2a1b509fd4f36058bf01036c7a296c391e19486566ce10fe78907800",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
+    "refs": [
+      "J18"
+    ],
+    "model": "kicad/PinHeader_1x05_P2.54mm_Vertical.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+    "sha256": "f03b716e453f6d4f2a111a227c671d96f92708e72a5a663cd4889296d021f4c3",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
   }
 ]

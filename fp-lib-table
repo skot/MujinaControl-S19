@@ -89,4 +89,16 @@
     (type "KiCad")
     (uri "${KIPRJMOD}/lib/bitcrane.pretty")
     (options "")
+    (descr "Project-local snapshot"))
+  (lib
+    (name "Package_SO")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/lib/Package_SO.pretty")
+    (options "")
+    (descr "Project-local snapshot"))
+  (lib
+    (name "Connector_USB")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/lib/Connector_USB.pretty")
+    (options "")
     (descr "Project-local snapshot")))

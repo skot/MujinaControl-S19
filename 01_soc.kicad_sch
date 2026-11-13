@@ -3390,7 +3390,7 @@
 		)
 		(uuid "846746e8-7d6d-59ac-b093-37e58893dd8a")
 	)
-	(text "No eMMC, wireless, camera or audio peripherals fitted."
+	(text "No eMMC, camera or audio fitted. WiFi: USB dongle on J17."
 		(exclude_from_sim no)
 		(at 215.9 234.442 0)
 		(effects
@@ -3423,7 +3423,7 @@
 		)
 		(uuid "b8df23ca-6856-521c-886f-90f48e59e503")
 	)
-	(text "J16 is UART2 TX / GND / RX; no SWD."
+	(text "J16: UART2 TX / GND / RX. JTAG: J18, on the SD_D2 / SD_D3 pins."
 		(exclude_from_sim no)
 		(at 215.9 237.363 0)
 		(effects
@@ -5221,7 +5221,7 @@
 			)
 		)
 	)
-	(global_label "ACC_GPIO0_A3"
+	(global_label "USBA_PWR_EN"
 		(shape bidirectional)
 		(at 137.16 195.58 0)
 		(effects
