@@ -23,12 +23,23 @@ fi
 [[ -n "${KICAD_CLI:-}" ]] || { echo "kicad-cli not found; set KICAD_CLI" >&2; exit 1; }
 echo "Using $KICAD_CLI ($("$KICAD_CLI" --version))"
 
-# Camera and lights are fixed here so every render looks the same regardless of
-# the 3D viewer settings saved on this machine.
-"$KICAD_CLI" pcb render "$board" -o "$out" \
-  --width 2000 --height 1840 \
-  --quality high --background transparent \
-  --perspective --rotate '-20,0,0' --zoom 0.9 \
+# Render with a private, throwaway KiCad config so the result does not depend on
+# the 3D viewer settings saved on this machine. It uses KiCad's default
+# ray-tracing settings except post-processing, which is turned off: its
+# screen-space shadow draws hard-edged grey boxes below parts that overhang the
+# board edge (the Ethernet jack) and turns them into half-transparent black on a
+# transparent background.
+cfg="$(mktemp -d)"
+trap 'rm -rf "$cfg"' EXIT
+ver="$("$KICAD_CLI" --version | grep -Eo '^[0-9]+\.[0-9]+')"
+mkdir -p "$cfg/$ver"
+echo '{"render": {"raytrace_post_processing": false}}' > "$cfg/$ver/3d_viewer.json"
+
+# Camera and lights are fixed here so every render looks the same.
+KICAD_CONFIG_HOME="$cfg" "$KICAD_CLI" pcb render "$board" -o "$out" \
+  --width 2300 --height 2116 \
+  --quality user --background transparent \
+  --perspective --rotate '-20,0,0' --zoom 0.8 \
   --light-top 0.25 --light-bottom 0.25 --light-side 0.17 \
   --light-camera 0.2 --light-side-elevation 67
 

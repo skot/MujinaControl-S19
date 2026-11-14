@@ -62,8 +62,8 @@ The board is meant to be assembled by the fab. Every purchased part carries `LCS
 
 - [Braiins BCB100](https://github.com/braiins/BCB100): open-source S19 control board (CERN-OHL-S v2), used as the reference for hashboard interface biasing and logic-power control (I2C/UART pull-ups, plug-detect pull-downs and per-port switched 3.3 V). Thanks to Braiins for publishing it.
 - [bitcrane](https://github.com/skot/bitcrane) v3.1 (CERN-OHL v2): form factor, outline, mounting holes, connector pinouts and placements, fan-header options, and the inherited `bitaxe` and `bitcrane` libraries.
-- Raven1106 v1.1: starting RV1106 package-pin definition, QFN footprint and model, and storage reference. Its full SBC circuit was not copied. No top-level licence was found for Raven; clarify reuse terms for the derived library assets before publishing them more widely.
-- Luckfox Pico Pro/Max: SPI NAND reference.
+- [Raven1106](https://github.com/EPSILON0-dev/Raven1106) v1.1: starting RV1106 package-pin definition, QFN footprint and model, and storage reference. Its full SBC circuit was not copied. No top-level licence was found for Raven; clarify reuse terms for the derived library assets before publishing them more widely.
+- [Luckfox Pico Pro/Max](https://wiki.luckfox.com/Luckfox-Pico-RV1106/Downloads/): SPI NAND reference.
 - Rockchip RV1106 datasheet Rev 2.2 and hardware design guide: pin functions, power and layout rules.
 - [TI TPS62933](https://www.ti.com/lit/ds/symlink/tps62933.pdf), [TI TPS3808](https://www.ti.com/lit/ds/symlink/tps3808.pdf), [TI TPS22919](https://www.ti.com/lit/ds/symlink/tps22919.pdf), [Vishay SiSS27DN](https://www.vishay.com/docs/62847/siss27dn.pdf), [onsemi NTTFS008P03P8Z](https://www.onsemi.com/download/data-sheet/pdf/nttfs008p03p8z-d.pdf) and [Nexperia PESD3V3Y1BSF](https://assets.nexperia.com/documents/data-sheet/PESD3V3Y1BSF.pdf) datasheets.
 
