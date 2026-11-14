@@ -45,6 +45,8 @@ With only eight signals left, the 40-pin header became a 14-pin one (2×7, 2.54 
 
 Pins 9–13 are 1.8 V only; pin 7 is a level-shifter reference, not a supply. Pins 9 / 10 can be UART5 TX / RX or I2C4 (M2), pins 11 / 12 UART5 RTS / CTS or I2C3 (M2). No PWM output is left on the header. Part for those who fit it: PZ254V-12-14P (fab part C492424). C305 (the 1.8 V reference capacitor) moved beside pin 7.
 
+**Supply copper tidied on 2026-11-14.** The 5 V tongue and the 1.8 V finger on In2 still ended at the old 2×20 pin positions. The 5 V tongue now wraps pin 1, so the pin sits directly in the 5 V copper; on the top layer one 0.5 mm line runs from C303 through a single via to pin 1 (the second via and a 0.6 mm stub are gone). The 1.8 V finger ends at a tap via on its own axis at (74.26, 92.85) instead of a hook 1.5 mm to the side, and the top-layer line from there to C305 and pin 7 is 0.3 mm instead of 0.2 mm. DRC 0 / 0 / 0 with schematic parity; 2198 tracks, 855 vias. Evidence: `build/MujinaControl-S19/j15pwr/`.
+
 ## Parts added
 
 | Ref | Part | Fab part | Class | Stock (2026-11-12) |

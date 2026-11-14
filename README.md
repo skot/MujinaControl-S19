@@ -29,9 +29,10 @@ Eleven sheets: system overview, SoC interfaces, sequenced regulators, power qual
 
 - 110 × 100 mm, six layers, nominal 1.6 mm FR-4, ENIG, 1 oz outer / 0.5 oz inner, using the fab's JLC06161H-3313 stackup (`docs/pcb-stackup.md`).
 - Layers: F.Cu signals and parts; In1 ground; In2 3.3 V plane with islands for core, DDR, 1.8 V, 5 V and 12 V; In3 slow signals; In4 ground; B.Cu signals.
-- 329 footprints (including three fiducials), 2199 tracks, 836 vias. All vias are 0.45 mm diameter / 0.30 mm drill; minimum track 0.127 mm (SoC escapes and Ethernet pairs). About 380 vias sit in pads and need the fab's epoxy-filled, copper-capped via process.
+- 329 footprints (including three fiducials), 2198 tracks, 855 vias. All vias are 0.45 mm diameter / 0.30 mm drill; minimum track 0.127 mm (SoC escapes and Ethernet pairs). About 380 vias sit in pads and need the fab's epoxy-filled, copper-capped via process.
 - USB, Ethernet, SD card and SPI NAND are length-matched within the RV1106 hardware-guide limits. The WiFi SDIO lines are 49–60 mm with two layer changes each; the antenna line is 0.18 mm wide (50 Ω) on the top layer.
 - Each regulator follows the TPS62933 datasheet layout, with its own stitched ground pour. 414 ground vias in total; wherever a via is allowed, no point is more than 6 mm from one.
+- Exposed ground strips along the left and right edges, top and bottom, 3.7 mm wide from the outermost edge, for contact with the case slots (`docs/edge-ground-strips.md`).
 - Reference designators are hidden on the silkscreen; the printed artwork is the RESET and BOOT labels and the Mujina badger logo.
 
 Routing details, measurements and history are in `docs/routing-current.md`. The other routing documents describe the board before the 2026-11-10 rip-up.
