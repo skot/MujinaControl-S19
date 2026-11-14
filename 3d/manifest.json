@@ -727,8 +727,8 @@
     ],
     "model": "raven/HR911105A.step",
     "source": "/Users/skot/Bitcoin/mujina/mujinaControl/research/rv1106/reference-designs/Raven1106/pcb/v1.1/library/HR911105A.step",
-    "sha256": "89e93883359ffa5e7f4cfcbc486e9543144f25e4202714416d5d6d9c5c99dc6c",
-    "note": "HR911105A model and transform copied from Raven footprint with identical pad coordinates.",
+    "sha256": "56244355de3cea06eeb8ff8efea541df1b7736c9a743e3fece2141a3980316e7",
+    "note": "HR911105A model and transform copied from Raven footprint with identical pad coordinates. Edited 2026-11-14: the engraved HanRun / HR911105A marking was removed from the top face (15 pockets 0.03 mm deep); all other geometry is unchanged. The shield and pin colour was changed from near-white (0.94) to steel grey (0.66, 0.67, 0.69). The sha256 is of the edited file; the Raven original was 89e93883359ffa5e7f4cfcbc486e9543144f25e4202714416d5d6d9c5c99dc6c.",
     "offset": [
       -3.5,
       -17.5,
