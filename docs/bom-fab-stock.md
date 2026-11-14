@@ -49,7 +49,7 @@ All resistors are 0402, 1 %, 62.5 mW, as before. Footprints and nets are unchang
 
 | Part | Use | Stock | Per board | Note |
 |---|---|---|---|---|
-| C894097 NTTFS008P03P8Z | Q1 input MOSFET | 7 | 1 | Enough for the five boards in the fab file only if nothing else takes them. Same-voltage candidates in a 3×3 mm power package exist in stock (for example C431196 AONR21357, 30 V, 12.3 mΩ at 4.5 V) but have roughly twice the on-resistance and need a footprint and thermal check; not changed. |
+| ~~C894097 NTTFS008P03P8Z~~ | Q1 input MOSFET | 7 | 1 | Replaced on 2026-11-14 by C506609 SiSS27DN-T1-GE3 (7,565 in stock), see below. |
 | C437089 X2026WV-2x09D-46SN | J3–J5 hashboard connectors | 29 | 3 | Nine boards. Same-series 2×9, 2 mm parts in stock: C2845620 HC-PHD-2*9A (2,413; same maker as J10), C495666 B18B-PHDSS (9,609). Not changed: the footprint should be checked against the chosen part first. |
 | C492365 50362462 | J1 power input | 476 | 1 | |
 | C5272606 RV1106G2 | U100 | 773 | 1 | Standard assembly only. |
@@ -161,7 +161,7 @@ These are datasheet comparisons; none of the parts was measured. Evidence: `buil
 | extended | C54909 | 4.2-2\*2AW | 0353180420 | J11, J12, J13, J14 | J13, J14 | 31,420 |
 | extended | C719027 | DM3D-SF | Micro_SD_Card_Det2 | J101 |  | 8,372 |
 | extended | C5832350 | FTC201612S1R5MBCA | 1.5u | L201, L202, L203, L204, L205, L210 |  | 4,318 |
-| extended | C894097 | NTTFS008P03P8Z | NTTFS008P03P8Z | Q1 |  | 7 |
+| extended | C506609 | SiSS27DN-T1-GE3 | SiSS27DN-T1-GE3 | Q1 |  | 7,565 |
 | extended | C114755 | RC0402FR-07240RL | 240 | R241 |  | 1,098,560 |
 | extended | C138060 | RC0402FR-0712K4L | 12.4k | R202, R204, R254 |  | 334,273 |
 | extended | C276276 | RC0402FR-0768K1L | 68.1k | R206 |  | 60,002 |
@@ -186,3 +186,26 @@ These are datasheet comparisons; none of the parts was measured. Evidence: `buil
 This supersedes the part numbers in [lcsc-mapping.md](lcsc-mapping.md) and [stock-replacements.md](stock-replacements.md) for the lines listed above.
 - Later the same day: the supervisor part and the six divider resistors were changed as described above; netlist connectivity unchanged, ERC 0, DRC 0 / 0 / 0 with parity, readability checker 0 errors.
 - Preferred diodes and FETs: 13 symbols and 13 footprints, fields only; netlist connectivity unchanged, ERC 0, DRC 0 / 0 / 0 with parity, readability checker 0 errors.
+
+## On-board WiFi parts — 2026-11-12 (branch onboard-wifi)
+
+| Class | Fab part | MPN | Value | Refs | Not fitted | Stock |
+| --- | --- | --- | --- | --- | --- | ---: |
+| basic | C1779 | CL21A475KAQNNNE | 4.7u | C323 |  | 2,260,275 |
+| basic | C1555 | 0402CG220J500NT | 22p | C324, C325 |  | 1,486,130 |
+| basic | C32949 | CL05C100JB5NNNC | 10p | C327 |  | 2,098,509 |
+| extended | C2798300 | AP6212 | AP6212 | U160 |  | 326 |
+| extended | C19711727 | XL2EL89CQI-111YLC-26M | 26MHz / CL16pF | Y102 |  | 9,322 |
+| extended | C5832346 | FTC201610S4R7MBCA | 4.7u | L211 |  | 307,429 |
+| extended | C88374 | U.FL-R-SMT-1(80) | U.FL | J19 |  | 319,721 |
+
+Also added, on part numbers the board already uses: C320 (10u, C15850), C321 / C322 (100n, C1525), R310 (22, C25092), R311 (4.7k, C25900). C326 / C328 are unpopulated antenna-matching positions with no part number. J15 is a 2×7 header on this branch (PZ254V-12-14P, C492424, extended, 30,175 in stock) and is not fitted. See [onboard-wifi.md](onboard-wifi.md); current part-number counts are in the 2026-11-14 section below.
+
+## Q1 replaced, parts list tidied — 2026-11-14 (branch onboard-wifi)
+
+- **Q1** is now Vishay SiSS27DN-T1-GE3, fab part C506609 (extended, 7,565 in stock, live reading), instead of onsemi NTTFS008P03P8Z (C894097, 7 in stock). Same lands and pin numbers; on-resistance 5.6 mΩ maximum instead of 3.8 mΩ, so Q1 dissipates about 1.6 W instead of 1.1 W at the 14 A target. Details and the land-pattern check: [q1-upgrade.md](q1-upgrade.md).
+- Test points TP29 / TP30, mounting pads H1–H4 and the three new fiducials FID1–FID3 are excluded from the parts list and the placement file; they are board features, not parts.
+- Fitted parts per board: **299 placements in 70 part numbers: 26 basic, 9 preferred, 35 extended** (RV1106G2 among the extended ones, standard assembly only). This replaces the count of 72 / 27 / 9 / 36 given on 2026-11-12, which included the mounting pads and the not-fitted header J15.
+- Not fitted: J15, the alternative fan connectors J6 / J7 / J13 / J14, option resistors (11 × 4.7 k, 2 × 1 M) and the antenna-matching positions C326 / C328.
+- Live stock on 2026-11-14 for the thin lines: J3–J5 C437089 29 (need 15), J1 471, RV1106G2 762, AP6212 1,784, W25N02KVZEIR 1,461.
+

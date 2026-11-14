@@ -72,7 +72,7 @@
 
     (stroke (width 0.001) (type solid)) (fill solid) (layer "F.Paste") (tstamp 4bd43e1c-fe81-48df-8777-8e031f249c0e))
   (fp_rect (start -1.5 -1.5) (end 1.5 1.5)
-    (stroke (width 0.12) (type solid)) (fill none) (layer "F.SilkS") (tstamp b702833b-f1c3-4369-8dc3-347bbeee81fb))
+    (stroke (width 0.15) (type solid)) (fill none) (layer "F.SilkS") (tstamp b702833b-f1c3-4369-8dc3-347bbeee81fb))
   (fp_circle (center -2.15 -1.32) (end -1.903018 -1.32)
     (stroke (width 0.12) (type solid)) (fill solid) (layer "F.SilkS") (tstamp a587354b-3c98-4316-8e1f-6d5c5b1d4508))
   (pad "1" smd roundrect (at -1.4 -1) (size 0.6 0.24) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2083333333) (tstamp 7e6a0df1-cf51-45a5-98ba-bf139a8b41ad))

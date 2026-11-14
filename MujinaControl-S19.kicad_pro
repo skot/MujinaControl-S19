@@ -1052,6 +1052,10 @@
     [
       "fb0ec5eb-04ed-5297-a5c0-afb39be58024",
       "12 V input / PSU / accessory"
+    ],
+    [
+      "0aebc9a6-bbcb-49db-b7c6-0bedd068370f",
+      "On-board WiFi"
     ]
   ],
   "text_variables": {},

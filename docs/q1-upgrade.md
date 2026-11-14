@@ -1,6 +1,38 @@
-# Q1 input protection upgrade
+# Q1 input protection
 
-Q1 is now **onsemi NTTFS008P03P8Z**, a 3.3 × 3.3 mm WDFN8 (CASE483AW, nominal height 0.75 mm). This is the smallest suitable package found among the reviewed P-channel candidates. The design target is four simultaneous 3 A fans plus a conservative 2 A controller allowance: **14 A continuous at 40 °C local ambient**. This is a design target, not a measured board rating.
+## 2026-11-14: Q1 is Vishay SiSS27DN-T1-GE3
+
+Q1 was changed from onsemi NTTFS008P03P8Z (fab part C894097) to **Vishay SiSS27DN-T1-GE3** (fab part `C506609`, PowerPAK 1212-8S, 3.3 × 3.3 × 0.75 mm) because the fab had 7 pieces of the onsemi part for the 5 needed. The Vishay part had 7,565 in stock on 2026-11-14 and costs about a quarter as much. It is an extended part, like the one it replaces. It goes on the same lands: no copper, via or placement change.
+
+It is the only 30 V P-channel part in this package size in the fab's stock that comes from a major maker with a guaranteed on-resistance below 6 mΩ. It has a higher on-resistance than the onsemi part, so **Q1 runs hotter than before**:
+
+| | SiSS27DN (now) | NTTFS008P03P8Z (before) |
+|---|---|---|
+| Drain-source / gate-source rating | −30 V / ±20 V | −30 V / ±25 V |
+| On-resistance at −10 V, 25 °C, maximum | 5.6 mΩ (4.6 typical) | 3.8 mΩ |
+| On-resistance at −4.5 V, maximum | 9.0 mΩ | 6.5 mΩ |
+| Loss at 14 A, 25 °C figure | 1.10 W | 0.74 W |
+| Loss at 14 A, hot (× 1.5) | 1.65 W, 118 mV | 1.12 W, 80 mV |
+| Loss at 12 A, hot | 1.21 W | 0.82 W |
+| Junction-to-ambient needed for 125 °C at 40 °C ambient, 14 A | ≤ 52 °C/W | ≤ 76 °C/W |
+| Same, at 13 A (four 3 A fans plus about 1 A for the board) | ≤ 60 °C/W | ≤ 88 °C/W |
+| Total gate charge at −10 V, typical | 92 nC | 134 nC |
+
+The × 1.5 allowance is kept from the earlier calculation; the Vishay curve (datasheet page 3, −10 V) reads about 1.45 at 125 °C and 1.57 at 150 °C. Vishay's own steady-state figure on a 1 inch square FR-4 test board is 63 °C/W maximum, which would not hold 125 °C at 14 A. This board's drain copper on four layers and its via bank should do better than that test board, but that has not been measured. **The temperature measurement described at the end of this page matters more now; at the full 14 A target the margin is thin.**
+
+Gate drive is unchanged: D2 clamps gate-source at 11.4–12.7 V, inside the ±20 V rating; the threshold is −1 to −2.2 V, so the part is fully on at 12 V input. Reverse-polarity blocking is unchanged.
+
+**Land pattern.** Vishay package drawing 6008 (datasheet page 7): leads 0.30 mm wide and 0.43 mm long at 0.65 mm pitch, drain pad 2.25 × 1.70 mm with 0.41 mm fingers to the package edge, 0.76 mm between source leads and drain pad. In the footprint's coordinates the source and gate leads span y 1.22 to 1.65 (lands 1.05 to 1.75, 0.42 wide), the drain pad spans y −1.24 to +0.46 and x ±1.125 (land −1.30 to +0.40, ±1.185) and the fingers reach −1.65 (lands to −1.75). The package's drain pad overhangs the land by 0.06 mm toward the source side, leaving 0.59 mm to the source lands. Pin numbers are the same: source 1–3, gate 4, drain 5–8 and the exposed pad. The footprint keeps its name (`Mujina:onsemi_WDFN-8_3.3x3.3mm_P0.65mm_CASE483AW`); its description now names both parts.
+
+**Ways back.** NTTFS008P03P8Z fits the same lands and is the lower-loss choice whenever the fab has enough of it. If the measurement shows too little margin, the next step is a 5 × 6 mm package, for example onsemi NTMFS002P03P8Z (C2902170, 1.4 mΩ maximum, 1,306 in stock): about a quarter of the loss, but a new footprint and a re-layout of the input copper, and against the project note to use the smallest package.
+
+Changed: Q1's Value, MPN, Manufacturer, fab part number, Datasheet, Description and Source fields in the schematic and on the board, the sheet note beside Q1, and the footprint description (library and board): 16 lines in `09_power_service.kicad_sch`, 16 in the board file. ERC 0; DRC with schematic parity 0 violations, 0 unconnected, 0 parity issues; readability checker clear. Evidence: `build/MujinaControl-S19/q1sub/` (both datasheets, `apply.py`, `erc.json`, `drc.json`, `bom.csv`). Source: [Vishay SiSS27DN datasheet](https://www.vishay.com/docs/62847/siss27dn.pdf), document 62847 Rev. A.
+
+## Earlier: upgrade to NTTFS008P03P8Z
+
+The rest of this page is the record of the earlier change from DMP3013SFV-7 to the onsemi part. The footprint, copper and pin map it describes are what the board still has.
+
+Q1 became **onsemi NTTFS008P03P8Z**, a 3.3 × 3.3 mm WDFN8 (CASE483AW, nominal height 0.75 mm). This is the smallest suitable package found among the reviewed P-channel candidates. The design target is four simultaneous 3 A fans plus a conservative 2 A controller allowance: **14 A continuous at 40 °C local ambient**. This is a design target, not a measured board rating.
 
 The schematic's Value, MPN, Manufacturer, LCSC (`C894097`), Datasheet and Description identify the new device. The fab's live stock was seven pieces when checked; this is an extended part. Recheck availability before ordering. No parts were ordered.
 

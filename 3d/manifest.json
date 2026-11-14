@@ -131,7 +131,9 @@
       "R274",
       "R275",
       "R276",
-      "R277"
+      "R277",
+      "R310",
+      "R311"
     ],
     "model": "kicad/R_0402_1005Metric.step",
     "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
@@ -206,7 +208,9 @@
       "C260",
       "C270",
       "C287",
-      "C288"
+      "C288",
+      "C320",
+      "C323"
     ],
     "model": "kicad/C_0805_2012Metric.step",
     "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
@@ -293,7 +297,14 @@
       "C281",
       "C282",
       "C283",
-      "C286"
+      "C286",
+      "C321",
+      "C322",
+      "C324",
+      "C325",
+      "C326",
+      "C327",
+      "C328"
     ],
     "model": "kicad/C_0402_1005Metric.step",
     "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
@@ -575,7 +586,8 @@
   {
     "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
     "refs": [
-      "Y100"
+      "Y100",
+      "Y102"
     ],
     "model": "kicad/Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
     "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
@@ -1135,12 +1147,89 @@
   },
   {
     "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical",
-    "refs": [
-      "J15"
-    ],
+    "refs": [],
     "model": "kicad/PinHeader_2x20_P2.54mm_Vertical.step",
     "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x20_P2.54mm_Vertical.step",
     "sha256": "3e3ee5e050716acbc8e6e4fc2778dce66ea1c9b17bdf6583ec399dabef67e264",
+    "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+    "refs": [
+      "J19"
+    ],
+    "model": "kicad/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step",
+    "sha256": "bb861ac13b1fa3709690e81d82a64544b02d4420ea410f7334fc7a4b57f8e71a",
+    "note": "KiCad package model for the Hirose U.FL-R-SMT-1 receptacle.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "license": "See LICENSE-KiCad.txt and source-file header."
+  },
+  {
+    "footprint": "Mujina:AMPAK_AP6212",
+    "refs": [
+      "U160"
+    ],
+    "model": "generated/AMPAK_AP6212.step",
+    "source": "3d/generated/AMPAK_AP6212.py (CadQuery)",
+    "sha256": "0c49cb39035983ca52447cac5d80dc262479061e057ec0bca46a18fbac0e5243",
+    "note": "Generated envelope: 12 x 12 x 0.5 mm module board with an 11.2 x 11.2 x 1.0 mm shield can, 1.5 mm total as in the AMPAK datasheet. Not a vendor model.",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical",
+    "refs": [
+      "J15"
+    ],
+    "model": "kicad/PinHeader_2x07_P2.54mm_Vertical.step",
+    "source": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x07_P2.54mm_Vertical.step",
+    "sha256": "f8d2903fcfb516de68b1f52f1ac04469ec7dadf9310fa19c6104493da8bdf8c0",
     "note": "KiCad package model; nominal dimensions, not an exact manufacturer model for every MPN.",
     "offset": [
       0,

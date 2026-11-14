@@ -16798,7 +16798,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Power_Management:TPS22919DCK")
 		(lib_id "Power_Management:TPS22919DCK")
 		(at 340.36 116.84 0)
 		(unit 1)

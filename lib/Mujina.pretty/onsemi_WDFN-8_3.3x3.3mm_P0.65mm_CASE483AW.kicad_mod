@@ -2,7 +2,7 @@
   (version 20240108)
   (generator "konnect")
   (layer "F.Cu")
-  (descr "onsemi CASE483AW WDFN8 3.3x3.3; NTTFS008P03P8Z. S=1,2,3 G=4 D=5,6,7,8 and exposed pad (duplicate 8). Recommended mounting pattern: 2.37x1.70 main drain land plus 0.42x0.45 drain fingers; 0.42x0.70 source/gate lands. 3D is a compatible 3.3x3.3 envelope, not vendor-exact.")
+  (descr "3.3x3.3 mm 8-lead power package, 0.65 mm pitch: Vishay PowerPAK 1212-8S (SiSS27DN, fitted) and onsemi CASE483AW WDFN8 (NTTFS008P03P8Z, alternate). S=1,2,3 G=4 D=5,6,7,8 and exposed pad (duplicate 8). Recommended mounting pattern: 2.37x1.70 main drain land plus 0.42x0.45 drain fingers; 0.42x0.70 source/gate lands. 3D is a compatible 3.3x3.3 envelope, not vendor-exact.")
   (attr smd)
   (pad "1" smd rect (at -0.975 1.4) (size 0.42 0.7) (layers "F.Cu" "F.Paste" "F.Mask")  )
   (pad "2" smd rect (at -0.325 1.4) (size 0.42 0.7) (layers "F.Cu" "F.Paste" "F.Mask")  )

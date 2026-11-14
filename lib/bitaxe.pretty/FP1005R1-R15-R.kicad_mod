@@ -18,7 +18,7 @@
     (tstamp 3dc4500b-70d2-4769-a0bd-b14008fd6d06)
   )
   (fp_rect (start -5 -3.5) (end 5 3.5)
-    (stroke (width 0.12) (type solid)) (fill none) (layer "F.SilkS") (tstamp e2294820-3636-4ebc-ae3d-4539526e275f))
+    (stroke (width 0.15) (type solid)) (fill none) (layer "F.SilkS") (tstamp e2294820-3636-4ebc-ae3d-4539526e275f))
   (pad "1" smd rect (at -4.16 0) (size 2 3.1) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 028dbeaa-5fa5-436d-ae0a-50d55d94a616))
   (pad "2" smd rect (at 4.16 0) (size 2 3.1) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 6cc98703-bc58-4185-9776-ff46afbe1f41))
   (model "${KIPRJMOD}/3D/FP1006V2-R.STEP"

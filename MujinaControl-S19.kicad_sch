@@ -642,6 +642,17 @@
 		)
 		(uuid "98008012-db5c-5819-896f-9e7ea1dfe75b")
 	)
+	(text "AP6212 2.4 GHz WiFi module on SDIO"
+		(exclude_from_sim no)
+		(at 285.08 222.16 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "a86d3e03-ff70-416e-a1bc-cad63202557d")
+	)
 	(text "RV1106G2 / 128 MB DDR3L"
 		(exclude_from_sim no)
 		(at 25.08 65.16 0)
@@ -685,6 +696,17 @@
 			(justify left)
 		)
 		(uuid "ea21ef82-ef21-5253-a2f4-8f6865a1ae58")
+	)
+	(text "26 MHz crystal / U.FL antenna connector"
+		(exclude_from_sim no)
+		(at 285.08 224.954 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "eb182ff6-52d5-4ba9-85e2-7742cebea3b7")
 	)
 	(text "Four open-drain PWM and protected tach paths"
 		(exclude_from_sim no)
@@ -748,6 +770,50 @@
 			(project "MujinaControl-S19"
 				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e"
 					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 280 212)
+		(size 110 30)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0aebc9a6-bbcb-49db-b7c6-0bedd068370f")
+		(property "Sheetname" "On-board WiFi"
+			(at 335 209.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Sheetfile" "10_wifi.kicad_sch"
+			(at 335 244.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e"
+					(page "11")
 				)
 			)
 		)

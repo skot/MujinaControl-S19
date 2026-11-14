@@ -2054,6 +2054,17 @@
 		)
 		(uuid "02cca02c-428c-5be0-9bce-2ffd1e6e0333")
 	)
+	(text "Fan 1-3 tach inputs are 1.8 V SoC pins (GPIO3_C4 / C5 / C6): their pull-ups and upper clamps go to +1V8. Fan 4 tach is a 3.3 V pin (GPIO1_D0)."
+		(exclude_from_sim no)
+		(at 15.24 267.462 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "29deab9a-54ca-4130-ac15-45532eb400fe")
+	)
 	(text "Tach pull-up is before the 10k series resistor. Disable GPIO internal pulls; use GPIO edge counters."
 		(exclude_from_sim no)
 		(at 15.24 261.874 0)
@@ -2075,6 +2086,17 @@
 			(justify left)
 		)
 		(uuid "30722a74-5966-554d-9d42-bf1136b9a8cd")
+	)
+	(text "PWM: fan 1 = PWM0_M0 (GPIO1_A2), fan 2 = PWM2_M0 (GPIO0_A1), fan 3 = PWM3_M0 (GPIO0_A2), fan 4 = PWM1_M0 (GPIO0_A4)."
+		(exclude_from_sim no)
+		(at 15.24 270.256 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left)
+		)
+		(uuid "5af52cd0-1f0f-4486-b667-722701dc27e0")
 	)
 	(text "Fan interfaces"
 		(exclude_from_sim no)
@@ -3503,7 +3525,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+1V8"
 		(shape bidirectional)
 		(at 177.8 53.34 0)
 		(effects
@@ -3899,7 +3921,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+1V8"
 		(shape bidirectional)
 		(at 177.8 165.1 0)
 		(effects
@@ -3943,7 +3965,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+1V8"
 		(shape bidirectional)
 		(at 375.92 53.34 0)
 		(effects
@@ -5183,6 +5205,80 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 106.68 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1f2c8130-6c1f-4ba7-9413-26589df3cc8b")
+		(property "Reference" "#PWR12033"
+			(at 106.68 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "+1V8"
+			(at 106.68 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2e1f91d2-0ce7-4ff4-ad28-8ab930d29bab")
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/049388e3-5747-56ee-8960-38947858df69"
+					(reference "#PWR12033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 266.7 227.33 0)
 		(unit 1)
@@ -5913,6 +6009,80 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 304.8 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2c1a6db7-0df7-433e-bc39-db0fb7e6e83f")
+		(property "Reference" "#PWR12035"
+			(at 304.8 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "+1V8"
+			(at 304.8 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 304.8 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 304.8 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 304.8 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f4a7d324-d39c-4fe3-90a3-388e763d42f5")
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/049388e3-5747-56ee-8960-38947858df69"
+					(reference "#PWR12035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 68.58 227.33 0)
 		(unit 1)
@@ -6226,80 +6396,6 @@
 			(project "MujinaControl-S19"
 				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/049388e3-5747-56ee-8960-38947858df69"
 					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 106.68 149.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "33dc2640-5ead-54d6-9645-e8e921b80640")
-		(property "Reference" "#PWR9905"
-			(at 106.68 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 106.68 144.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.9 0.9)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 149.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 106.68 149.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 106.68 149.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0b208b3b-9e0c-4514-993d-20120ef4fcf7")
-		)
-		(instances
-			(project "MujinaControl-S19"
-				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/049388e3-5747-56ee-8960-38947858df69"
-					(reference "#PWR9905")
 					(unit 1)
 				)
 			)
@@ -6651,80 +6747,6 @@
 			(project "MujinaControl-S19"
 				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/049388e3-5747-56ee-8960-38947858df69"
 					(reference "#PWR10033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 106.68 38.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "48703e2a-4a7d-5767-b2ea-9483fcc052d1")
-		(property "Reference" "#PWR9813"
-			(at 106.68 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 106.68 33.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.9 0.9)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 106.68 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 106.68 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "671d13fc-f2f8-4b85-addc-08226d6f2b1d")
-		)
-		(instances
-			(project "MujinaControl-S19"
-				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/049388e3-5747-56ee-8960-38947858df69"
-					(reference "#PWR9813")
 					(unit 1)
 				)
 			)
@@ -7268,6 +7290,80 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 106.68 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "62928d4d-b50f-44d8-a3f6-569a3b690abc")
+		(property "Reference" "#PWR12034"
+			(at 106.68 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "+1V8"
+			(at 106.68 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "16ebe6fc-1497-4ea7-a02e-6fcf13568cb8")
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/049388e3-5747-56ee-8960-38947858df69"
+					(reference "#PWR12034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 68.58 115.57 0)
 		(unit 1)
@@ -7541,80 +7637,6 @@
 			(project "MujinaControl-S19"
 				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/049388e3-5747-56ee-8960-38947858df69"
 					(reference "D231")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 304.8 38.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "724d99f3-3280-5703-98f4-6e5604972740")
-		(property "Reference" "#PWR9859"
-			(at 304.8 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 304.8 33.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.9 0.9)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 304.8 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 304.8 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 304.8 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dac818e7-17fc-43f0-ab39-4d04b3a6b77b")
-		)
-		(instances
-			(project "MujinaControl-S19"
-				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/049388e3-5747-56ee-8960-38947858df69"
-					(reference "#PWR9859")
 					(unit 1)
 				)
 			)

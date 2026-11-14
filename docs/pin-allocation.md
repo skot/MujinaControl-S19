@@ -44,12 +44,12 @@ Draft hardware allocation checked against Rockchip Rev 2.2 package pin table and
 | ETH_LED_LINK | 85 | GPIO1_D3 | VO_LCDC_CLK/VI_CIF_CLKO_M1/I2C3_SCL_M1/UART5_TX_M1/PWM11_IR_M2/AUD_DSM_N/GPIO1_D3_d |
 | ETH_LED_SPEED | 86 | GPIO1_D2 | VO_LCDC_VSYNC/VI_CIF_VSYNC_M1/I2C3_SDA_M1/UART5_RX_M1/SPI0_CS1_M0/PWM0_M1/AUD_DSM_P/GPIO1_D2_d |
 | FAN4_TACH | 89 | GPIO1_D0 | VO_LCDC_DEN/VI_CIF_CLKI_M1/PWM3_IR_M2/UART5_RTS_M1/UART3_TX_M1/GPIO1_D0_d |
-| FAN1_TACH | 90 | GPIO1_C5 | VO_LCDC_D2/VI_CIF_D7_M1/PWM9_M1/UART4_TX_M1/SDMMC1_D2_M1/GPIO1_C5_d |
-| FAN2_TACH | 91 | GPIO1_C4 | VO_LCDC_D3/VI_CIF_D6_M1/PWM8_M1/UART4_RX_M1/SDMMC1_D3_M1/GPIO1_C4_d |
-| FAN3_TACH | 92 | GPIO1_C3 | VO_LCDC_D4/VI_CIF_D5_M1/PWM6_M2/I2C4_SDA_M1/SDMMC1_CMD_M1/SPI0_MISO_M0/GPIO1_C3_d |
-| FAN4_PWM | 93 | PWM5_M2 | VO_LCDC_D5/VI_CIF_D4_M1/PWM5_M2/I2C4_SCL_M1/SDMMC1_CLK_M1/SPI0_MOSI_M0/GPIO1_C2_d |
-| FAN3_PWM | 94 | PWM4_M2 | VO_LCDC_D6/VI_CIF_D3_M1/PWM4_M2/SPI0_CLK_M0/SDMMC1_D0_M1/GPIO1_C1_d |
-| FAN2_PWM | 95 | PWM2_M2 | VO_LCDC_D7/VI_CIF_D2_M1/PWM2_M2/SPI0_CS0_M0/SDMMC1_D1_M1/GPIO1_C0_d |
+| WIFI_SDIO_D2 | 90 | SDMMC1_D2_M1 | VO_LCDC_D2/VI_CIF_D7_M1/PWM9_M1/UART4_TX_M1/SDMMC1_D2_M1/GPIO1_C5_d |
+| WIFI_SDIO_D3 | 91 | SDMMC1_D3_M1 | VO_LCDC_D3/VI_CIF_D6_M1/PWM8_M1/UART4_RX_M1/SDMMC1_D3_M1/GPIO1_C4_d |
+| WIFI_SDIO_CMD | 92 | SDMMC1_CMD_M1 | VO_LCDC_D4/VI_CIF_D5_M1/PWM6_M2/I2C4_SDA_M1/SDMMC1_CMD_M1/SPI0_MISO_M0/GPIO1_C3_d |
+| WIFI_SDIO_CLK_SOC | 93 | SDMMC1_CLK_M1 | VO_LCDC_D5/VI_CIF_D4_M1/PWM5_M2/I2C4_SCL_M1/SDMMC1_CLK_M1/SPI0_MOSI_M0/GPIO1_C2_d |
+| WIFI_SDIO_D0 | 94 | SDMMC1_D0_M1 | VO_LCDC_D6/VI_CIF_D3_M1/PWM4_M2/SPI0_CLK_M0/SDMMC1_D0_M1/GPIO1_C1_d |
+| WIFI_SDIO_D1 | 95 | SDMMC1_D1_M1 | VO_LCDC_D7/VI_CIF_D2_M1/PWM2_M2/SPI0_CS0_M0/SDMMC1_D1_M1/GPIO1_C0_d |
 | ETH_RX_N | 97 | ETH_PHY_RXN | ETH_PHY_RXN |
 | ETH_RX_P | 98 | ETH_PHY_RXP | ETH_PHY_RXP |
 | ETH_TX_N | 99 | ETH_PHY_TXN | ETH_PHY_TXN |
@@ -80,9 +80,10 @@ All miner-facing GPIO banks are supplied at 3.3 V. The unused camera bank remain
 | PSU management | i2c1m0_xfer | J10.6 SCL / .3 SDA |
 | Display | i2c4m0_xfer | J15.3 SCL / .4 SDA |
 | Fan 1 | pwm0m0_pins | Inverted through Q2 |
-| Fan 2 | pwm2m2_pins | Inverted through Q3 |
-| Fan 3 | pwm4m2_pins | Inverted through Q4 |
-| Fan 4 | pwm5m2_pins | Inverted through Q5 |
+| Fan 2 | pwm2m0_pins | Inverted through Q3 |
+| Fan 3 | pwm3m0_pins | Inverted through Q4 |
+| Fan 4 | pwm1m0_pins | Inverted through Q5 |
+| WiFi | sdmmc1m1 (clk, cmd, bus4) | U160 AP6212, 3.3 V SDIO |
 
 Fan tach inputs are GPIO edge counters. Hashboard reset outputs default low through external 100k resistors; plug inputs have external 10k pull-ups. PSU enable defaults low. Set the PWM polarity to account for the inverting NMOS and ensure failure handling leaves fan PWM open.
 
@@ -99,3 +100,21 @@ These allocations do not establish driver performance, firmware readiness or the
 | HB2_PWR_EN | 87 | GPIO1_D1, mode 0, 3.3 V output | J15.18 now NC |
 
 Active high; 4.7k external pull-ups make supplies default ON despite reset input pulldowns. Reserve these GPIOs in bootloader and OS, preload output state before setting direction, and do not enable their alternate functions. Stop UART and keep signal outputs low/Hi-Z before disabling power; assert reset low. Always-on shared I²C pull-ups can back-power a disabled port: this is not full signal isolation. Preserve all other J15 functions and numbering. Detailed source evidence, power budget, and verification: `build/MujinaControl-S19/hashboard-power/report.md` at the project root. The PCB was updated from this schematic on 2026-11-10: U150-U152 and their passives are placed under J3 and beside each connector, unrouted.
+
+## On-board WiFi and moved fan pins — 2026-11-12 (branch onboard-wifi)
+
+The AP6212 module takes the SDMMC1 port in its M1 position (pins 90–95), which the fans used before. Pins come from the accessory header J15; the J15 pins that lose their signal are not connected.
+
+| Net | SoC contact | Function | Level | Note |
+| --- | ---: | --- | --- | --- |
+| FAN1_TACH | 2 | GPIO3_C4 | 1.8 V | was J15.27; pull-up R263 and clamp D230 now on +1V8 |
+| FAN2_TACH | 3 | GPIO3_C5 | 1.8 V | was J15.28; R265 / D231 on +1V8 |
+| FAN3_TACH | 4 | GPIO3_C6 | 1.8 V | was J15.29; R267 / D232 on +1V8 |
+| WIFI_HOST_WAKE | 40 | GPIO4_A5 | 3.3 V | was J15.12; interrupt from the module |
+| WIFI_LPO_32K | 58 | RTC_CLK_OUT (GPIO0_A0) | 3.3 V | was J15.10; 32.768 kHz from the SoC RTC |
+| FAN2_PWM | 59 | PWM2_M0 (GPIO0_A1) | 3.3 V | was J15.9 |
+| FAN3_PWM | 60 | PWM3_IR_M0 (GPIO0_A2) | 3.3 V | was J15.15 |
+| WIFI_REG_ON | 62 | GPIO0_A3 | 3.3 V | was J15.17; reset pull-up on the pin, 4.7k pull-down R311 on the board |
+| FAN4_PWM | 63 | PWM1_M0 (GPIO0_A4) | 3.3 V | was J15.16; PWM1 is no longer free for J15.30 |
+
+FAN1_PWM (pin 74) and FAN4_TACH (pin 89) are unchanged. The three 1.8 V tach inputs must not be driven above 1.8 V: their pull-ups and upper clamp diodes go to +1V8. J15 is now a 2×7 header: I2C4 on pins 3 / 4, GPIO4_A7 on 5, GPIO3_C7 / D0 / D1 / D2 / D3 on 9–13 (1.8 V), supplies on 1 / 2 / 7, ground on 6 / 8 / 14. Details: [onboard-wifi.md](onboard-wifi.md).

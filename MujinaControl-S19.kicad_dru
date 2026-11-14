@@ -34,3 +34,10 @@
 	(layer "F.Cu")
 	(constraint hole_clearance (min 0.2mm))
 )
+
+(rule "Silkscreen outline to outline"
+	# Part outlines were widened to the fab's 0.15 mm minimum line (2026-11-14); six pairs of neighbouring outlines then sit 0.12-0.14 mm apart.
+	# Outline against outline may merge without harm; text and pad openings keep the board's 0.15 mm silkscreen clearance.
+	(condition "A.Type == 'Graphic' && B.Type == 'Graphic' && A.Layer == 'F.SilkS' && B.Layer == 'F.SilkS'")
+	(constraint silk_clearance (min 0.1mm))
+)
