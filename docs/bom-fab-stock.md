@@ -150,7 +150,7 @@ These are datasheet comparisons; none of the parts was measured. Evidence: `buil
 | extended | C125094 | LTST-C190KGKT | STATUS GREEN | D100 |  | 467,400 |
 | extended | C552535 | PESD3V3Y1BSFYL | PESD3V3Y1BSF | D201, D202 |  | 135,010 |
 | extended | C85812 | BLM15AG121SN1D | 120R @ 100MHz | FB201, FB202 |  | 451,026 |
-| extended | C12074 | HR911105A | RJ45_Hanrun_HR911105A_Horizontal | J100 |  | 52,638 |
+| extended | C2760325 | HR915340A | RJ45_Hanrun_HR915340A_Horizontal | J100 |  | 6,517 |
 | extended | C2845614 | HC-PHD-2\*3A | PSU Comm | J10 |  | 40,283 |
 | extended | C2915006 | 61300311121 | UART2 DEBUG | J16 |  | 12,542 |
 | extended | C2982043 | HC-2510-4AW | 61900411021 | J6, J7, J8, J9 | J6, J7 | 18,212 |
@@ -209,3 +209,6 @@ Also added, on part numbers the board already uses: C320 (10u, C15850), C321 / C
 - Not fitted: J15, the alternative fan connectors J6 / J7 / J13 / J14, option resistors (11 × 4.7 k, 2 × 1 M) and the antenna-matching positions C326 / C328.
 - Live stock on 2026-11-14 for the thin lines: J3–J5 C437089 29 (need 15), J1 471, RV1106G2 762, AP6212 1,784, W25N02KVZEIR 1,461.
 
+## Ethernet jack changed to a tab-up type — 2026-11-14
+
+J100 is now HanRun HR915340A, fab part C2760325 (extended, 6,517 in stock, $1.59 each at one piece), instead of HR911105A (C12074). Same 10/100 magnetics and LEDs, with the latch tab on top. The count of part numbers and extended lines does not change. Details: [ethernet-jack-position.md](ethernet-jack-position.md).

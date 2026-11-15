@@ -12,7 +12,7 @@ Open `MujinaControl-S19.kicad_pro` with **KiCad 10.99 or later**. The files use 
 
 - **SoC:** RV1106G2 with 128 MB in-package DDR3L, 24 MHz crystal and RTC crystal.
 - **Storage:** W25N02KVZEIR 2 Gbit (256 MB) SPI NAND on the quad-SPI bus, following the Luckfox Pico Pro/Max, plus a microSD socket. A bootable NAND takes precedence over microSD.
-- **Network and USB:** 100BASE-TX through the SoC's internal PHY and an integrated MagJack. USB-C device port for recovery and console; VBUS is detection-only, so **12 V must be present for USB recovery**.
+- **Network and USB:** 100BASE-TX through the SoC's internal PHY and an integrated MagJack with the latch tab on top (HanRun HR915340A). USB-C device port for recovery and console; VBUS is detection-only, so **12 V must be present for USB recovery**.
 - **Power:** 12 V from J1's 6-pin input (pins 1–3 positive, 4–6 ground) through reverse-polarity P-MOSFET Q1 (SiSS27DN-T1-GE3) and an SMBJ15A TVS. There is no controller fuse. Six TPS62933 bucks: 12 V → 5 V system (2 A budget), then sequenced 0.9 V core, 0.9 V CPU, 1.35 V DDR, 1.8 V and 3.3 V. Five TPS3808 supervisors (trip at about 90 % of each rail) qualify the sequence and hold reset.
 - **Hashboards:** three ports, each with its own hardware UART, sharing one hashboard I²C bus; BCB100-style I²C/UART pull-ups and plug-detect pull-downs, and a TPS22919 switched 3.3 V supply per port, enabled directly by SoC GPIOs.
 - **Fans:** four independent channels, PWM and tach, each sized for 3 A; the input stage carries all four fans plus the board. Each channel has both a 1×4 2.54 mm and a 2×2 4.2 mm footprint; fit one. Two 100 µF bulk capacitors on the fan rail.
@@ -29,10 +29,11 @@ Eleven sheets: system overview, SoC interfaces, sequenced regulators, power qual
 
 - 110 × 100 mm, six layers, nominal 1.6 mm FR-4, ENIG, 1 oz outer / 0.5 oz inner, using the fab's JLC06161H-3313 stackup (`docs/pcb-stackup.md`).
 - Layers: F.Cu signals and parts; In1 ground; In2 3.3 V plane with islands for core, DDR, 1.8 V, 5 V and 12 V; In3 slow signals; In4 ground; B.Cu signals.
-- 329 footprints (including three fiducials), 2198 tracks, 855 vias. All vias are 0.45 mm diameter / 0.30 mm drill; minimum track 0.127 mm (SoC escapes and Ethernet pairs). About 380 vias sit in pads and need the fab's epoxy-filled, copper-capped via process.
+- 329 footprints (including three fiducials), 2211 tracks, 852 vias. All vias are 0.45 mm diameter / 0.30 mm drill; minimum track 0.127 mm (SoC escapes and Ethernet pairs). About 380 vias sit in pads and need the fab's epoxy-filled, copper-capped via process.
 - USB, Ethernet, SD card and SPI NAND are length-matched within the RV1106 hardware-guide limits. The WiFi SDIO lines are 49–60 mm with two layer changes each; the antenna line is 0.18 mm wide (50 Ω) on the top layer.
 - Each regulator follows the TPS62933 datasheet layout, with its own stitched ground pour. 414 ground vias in total; wherever a via is allowed, no point is more than 6 mm from one.
 - Exposed ground strips along the left and right edges, top and bottom, 3.7 mm wide from the outermost edge, for contact with the case slots (`docs/edge-ground-strips.md`).
+- The Ethernet jack is a tab-up type and its face is 2.25 mm past the bottom board edge (`docs/ethernet-jack-position.md`).
 - Reference designators are hidden on the silkscreen; the printed artwork is the RESET and BOOT labels and the Mujina badger logo.
 
 Routing details, measurements and history are in `docs/routing-current.md`. The other routing documents describe the board before the 2026-11-10 rip-up.
