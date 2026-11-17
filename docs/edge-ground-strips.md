@@ -22,3 +22,11 @@ Nothing had to move: the two bands held only ground vias and the mounting pads. 
 ## Checks
 
 DRC with schematic parity: 0 violations, 0 unconnected, 0 parity issues. 329 footprints, 2199 tracks, 856 vias, 40 zones. Evidence: `build/MujinaControl-S19/edge/` (`survey.py`, `apply.py`, `mask.py`, `drc1.json`, renders).
+
+## Outline replaced — 2026-11-17
+
+The board outline was redrawn from the reference outline: outer edges at x = 58.25 and 168.25, top and bottom at y = 34.24 and 134.24, the two notches 2.6 mm deep (to x = 60.85 / 165.65) between y = 50.14 and 55.14, and the lower step starting at y = 128.34. The outline now also carries five circles: one 3.0 mm circle at each mounting hole H1–H4 and a 3.5 mm hole at (127.75, 122.35).
+
+- The pours were refilled to the new outline; the strips are still 3.7 mm from the outermost edge (to within 0.01 mm). DRC with schematic parity: 0 violations, 0 unconnected, 0 parity issues.
+- **The solder-mask openings over the strips are still drawn to the earlier outline.** The largest difference is a band 0.56 mm high at the lower end of each notch (y 55.14–55.70, both sides, top and bottom) where strip copper stays under mask. They should be redrawn to the new outline.
+- **The four circles at H1–H4 sit exactly on the plated mounting holes** that the footprints already drill. An outline circle on top of a plated hole can make the fab ask, or mill the hole unplated. Removing those four circles is the safer state; the 3.5 mm hole is new and has no copper within 0.3 mm.

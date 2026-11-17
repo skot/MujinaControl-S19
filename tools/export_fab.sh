@@ -19,11 +19,12 @@ sch="$here/$name.kicad_sch"
 out="${1:-$here/../../mfg/$name}"
 
 if [[ -z "${KICAD_CLI:-}" ]]; then
-  for c in "$HOME/.backplane-bend/kicad/10.99.0-bp.6/bin/kicad-cli" \
-           "$HOME"/.backplane-bend/kicad/*/bin/kicad-cli \
-           "$(command -v kicad-cli || true)"; do
+  # newest Backplane KiCad first: the board file is saved by it and older builds cannot read it
+  while IFS= read -r c; do
     if [[ -x "$c" ]]; then KICAD_CLI="$c"; break; fi
-  done
+  done < <(ls -d "$HOME/Library/Application Support/Backplane/hub/kicad/"*/bin/kicad-cli 2>/dev/null | sort -V -r;
+           ls -d "$HOME"/.backplane-bend/kicad/*/bin/kicad-cli 2>/dev/null | sort -V -r;
+           command -v kicad-cli || true)
 fi
 [[ -n "${KICAD_CLI:-}" ]] || { echo "kicad-cli not found; set KICAD_CLI" >&2; exit 1; }
 command -v python3 >/dev/null || { echo "python3 not found" >&2; exit 1; }
