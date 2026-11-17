@@ -3826,6 +3826,17 @@
 		)
 		(uuid "fe689e7e-6490-4854-87e5-9dc52b3a1518")
 	)
+	(text "H1-H4: 3.0 mm holes. H5: 3.5 mm hole beside the Ethernet jack."
+		(exclude_from_sim no)
+		(at 50.8 278.13 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "8a80bfbd-b1ca-4088-9439-68375835d48c")
+	)
 	(text "DDR3L: 1.35 V"
 		(exclude_from_sim no)
 		(at 190.5 113.03 0)
@@ -3979,6 +3990,12 @@
 			(justify left)
 		)
 		(uuid "ff78e9bf-e6e5-4fdb-9c19-6fe0ed49038b")
+	)
+	(junction
+		(at 149.86 274.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d086992-337d-47bc-938b-91c68e0dae68")
 	)
 	(junction
 		(at 218.44 181.61)
@@ -4345,6 +4362,26 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ff424a20-0c3d-5c39-a4c1-bac8447756d5")
+	)
+	(wire
+		(pts
+			(xy 149.86 274.32) (xy 172.72 274.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80e60f7c-2462-40c8-a2d5-e6900a616467")
+	)
+	(wire
+		(pts
+			(xy 172.72 269.24) (xy 172.72 274.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "248e26c7-1845-4d2e-9a34-6a771a1e1bd2")
 	)
 	(wire
 		(pts
@@ -13521,6 +13558,114 @@
 			(project "MujinaControl-S19"
 				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/c95bc365-f93e-5183-988f-d5a6b7589ec9"
 					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 172.72 266.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "4d186e76-cdc4-445e-8308-188c59f16f4c")
+		(property "Reference" "H5"
+			(at 172.72 260.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 172.72 262.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "Mujina:MountingHole_3.5mm_Pad"
+			(at 154.94 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 266.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PCB_MOUNTING_HOLE"
+			(at 154.94 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Source" "reference outline: 3.5 mm hole at (127.75, 122.35)"
+			(at 154.94 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 172.72 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98b6a999-0247-40d7-a0f6-5b594cefbd3c")
+		)
+		(instances
+			(project "MujinaControl-S19"
+				(path "/3c287cde-07fc-5a42-a7f6-c9452c08d71e/c95bc365-f93e-5183-988f-d5a6b7589ec9"
+					(reference "H5")
 					(unit 1)
 				)
 			)

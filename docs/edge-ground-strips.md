@@ -28,5 +28,10 @@ DRC with schematic parity: 0 violations, 0 unconnected, 0 parity issues. 329 foo
 The board outline was redrawn from the reference outline: outer edges at x = 58.25 and 168.25, top and bottom at y = 34.24 and 134.24, the two notches 2.6 mm deep (to x = 60.85 / 165.65) between y = 50.14 and 55.14, and the lower step starting at y = 128.34. The outline now also carries five circles: one 3.0 mm circle at each mounting hole H1–H4 and a 3.5 mm hole at (127.75, 122.35).
 
 - The pours were refilled to the new outline; the strips are still 3.7 mm from the outermost edge (to within 0.01 mm). DRC with schematic parity: 0 violations, 0 unconnected, 0 parity issues.
-- **The solder-mask openings over the strips are still drawn to the earlier outline.** The largest difference is a band 0.56 mm high at the lower end of each notch (y 55.14–55.70, both sides, top and bottom) where strip copper stays under mask. They should be redrawn to the new outline.
-- **The four circles at H1–H4 sit exactly on the plated mounting holes** that the footprints already drill. An outline circle on top of a plated hole can make the fab ask, or mill the hole unplated. Removing those four circles is the safer state; the 3.5 mm hole is new and has no copper within 0.3 mm.
+
+Follow-up, 2026-11-17:
+
+- **Mask openings redrawn.** The four solder-mask openings over the strips now follow the new outline exactly (notches at y 50.14–55.14, step at y 128.34).
+- **Outline circles removed from Edge.Cuts.** All five circles are gone from the outline layer; they remain on the reference drawing layer (Dwgs.User). The four on H1–H4 duplicated the plated holes those footprints already drill.
+- **Fifth mounting pad H5.** The reference outline's 3.5 mm hole at (127.75, 122.35), east of the Ethernet jack, is now a plated, ground-connected mounting pad like H1–H4: footprint `Mujina:MountingHole_3.5mm_Pad`, 3.5 mm hole in a 4.5 mm pad (H1–H4 are 3.0 mm in 4.0 mm). The hole keeps the reference diameter; change the footprint to the 3.0 mm one if the fastener there is the same as the others. It is in the schematic beside H1–H4, tied to ground, excluded from the parts list and placement file.
+- DRC with schematic parity: 0 violations, 0 unconnected, 0 parity issues. ERC 0. 330 footprints, 2236 tracks, 852 vias. Evidence: `build/MujinaControl-S19/h5/`.
