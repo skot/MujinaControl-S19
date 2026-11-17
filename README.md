@@ -15,11 +15,11 @@ Open `MujinaControl-S19.kicad_pro` with **KiCad 10.99 or later**. The files use 
 - **Network and USB:** 100BASE-TX through the SoC's internal PHY and an integrated MagJack with the latch tab on top (HanRun HR915340A). USB-C device port for recovery and console; VBUS is detection-only, so **12 V must be present for USB recovery**.
 - **Power:** 12 V from J1's 6-pin input (pins 1–3 positive, 4–6 ground) through reverse-polarity P-MOSFET Q1 (SiSS27DN-T1-GE3) and an SMBJ15A TVS. There is no controller fuse. Six TPS62933 bucks: 12 V → 5 V system (2 A budget), then sequenced 0.9 V core, 0.9 V CPU, 1.35 V DDR, 1.8 V and 3.3 V. Five TPS3808 supervisors (trip at about 90 % of each rail) qualify the sequence and hold reset.
 - **Hashboards:** three ports, each with its own hardware UART, sharing one hashboard I²C bus; BCB100-style I²C/UART pull-ups and plug-detect pull-downs, and a TPS22919 switched 3.3 V supply per port, enabled directly by SoC GPIOs.
-- **Fans:** four independent channels, PWM and tach, each sized for 3 A; the input stage carries all four fans plus the board. Each channel has both a 1×4 2.54 mm and a 2×2 4.2 mm footprint; fit one. Two 100 µF bulk capacitors on the fan rail.
+- **Fans:** four independent channels, PWM and tach, each sized for 3 A; the input stage carries all four fans plus the board. Each channel has both a 1×4 2.54 mm and a 2×2 4.2 mm footprint. The fab fits neither: solder in the one the machine needs. Two 100 µF bulk capacitors on the fan rail.
 - **WiFi:** AMPAK AP6212 2.4 GHz 802.11 b/g/n module on 4-bit SDIO, with its own 26 MHz crystal and a U.FL connector (J19) for an external antenna; there is no on-board antenna. Bluetooth is not wired. See `docs/onboard-wifi.md`.
 - **PSU and accessories:** PSU I²C and enable, 2×7 accessory header J15 (display I²C, six GPIO, 5 V / 3.3 V / 1.8 V; not fitted by the fab), console UART on J16 (pin 1 TX, 2 GND, 3 RX, 3.3 V), RESET and BOOT (maskrom) right-angle buttons beside the Ethernet jack.
 
-J1–J14 keep bitcrane's pin assignments. The SoC pin allocation is in `docs/pin-allocation.md`.
+J1–J14 keep bitcrane's pin assignments. For firmware, `docs/firmware-pins.md` lists every SoC pin, its function, polarity and voltage, with device-tree starting points. The history of the pin allocation is in `docs/pin-allocation.md`.
 
 ## Schematic
 
@@ -29,7 +29,7 @@ Eleven sheets: system overview, SoC interfaces, sequenced regulators, power qual
 
 - 110 × 100 mm, six layers, nominal 1.6 mm FR-4, ENIG, 1 oz outer / 0.5 oz inner, using the fab's JLC06161H-3313 stackup (`docs/pcb-stackup.md`).
 - Layers: F.Cu signals and parts; In1 ground; In2 3.3 V plane with islands for core, DDR, 1.8 V, 5 V and 12 V; In3 slow signals; In4 ground; B.Cu signals.
-- 329 footprints (including three fiducials), 2211 tracks, 852 vias. All vias are 0.45 mm diameter / 0.30 mm drill; minimum track 0.127 mm (SoC escapes and Ethernet pairs). About 380 vias sit in pads and need the fab's epoxy-filled, copper-capped via process.
+- 329 footprints (including three fiducials), 2236 tracks, 852 vias. All vias are 0.45 mm diameter / 0.30 mm drill; minimum track 0.127 mm (SoC escapes and Ethernet pairs). About 380 vias sit in pads and need the fab's epoxy-filled, copper-capped via process.
 - USB, Ethernet, SD card and SPI NAND are length-matched within the RV1106 hardware-guide limits. The WiFi SDIO lines are 49–60 mm with two layer changes each; the antenna line is 0.18 mm wide (50 Ω) on the top layer.
 - Each regulator follows the TPS62933 datasheet layout, with its own stitched ground pour. 414 ground vias in total; wherever a via is allowed, no point is more than 6 mm from one.
 - Exposed ground strips along the left and right edges, top and bottom, 3.7 mm wide from the outermost edge, for contact with the case slots (`docs/edge-ground-strips.md`).
@@ -40,7 +40,7 @@ Routing details, measurements and history are in `docs/routing-current.md`. The 
 
 ## Assembly and parts
 
-The board is meant to be assembled by the fab. Every purchased part carries `LCSC` and `MPN` fields: 299 placements per board in 70 part numbers, 26 basic, 9 preferred and 35 extended; the thin lines were checked against live stock on 2026-11-14. The RV1106G2 needs the fab's standard (not economic) assembly. Stock is low for the hashboard connectors J3–J5. See `docs/bom-fab-stock.md`. Fab settings and the instructions the order must carry are in `MujinaControl-S19.fab.json`.
+The board is meant to be assembled by the fab. Every purchased part carries `LCSC` and `MPN` fields: 295 placements per board in 68 part numbers, 26 basic, 9 preferred and 33 extended; the thin lines were checked against live stock on 2026-11-14. The RV1106G2 needs the fab's standard (not economic) assembly. Stock is low for the hashboard connectors J3–J5. See `docs/bom-fab-stock.md`. Fab settings and the instructions the order must carry are in `MujinaControl-S19.fab.json`.
 
 ## Before ordering
 
@@ -57,6 +57,7 @@ The board is meant to be assembled by the fab. Every purchased part carries `LCS
 - `lib/`, `models/`, `3d/`: project-local symbols, footprints and 3D models.
 - `docs/`: design notes for each change (stackup, placement, regulators, routing, parts).
 - `scripts/`: the original generator `build_schematic.py`. **Do not rerun it**; it would overwrite the hand-edited schematic. `validate_design.py` and `verify_readability.py` are read-only checks.
+- `tools/export_fab.sh` writes the Gerbers, drill files, parts list and placement file for the fab into `mfg/MujinaControl-S19/` at the workspace root; `tools/fab_placement.csv` holds the placement corrections for the fab's part library (`docs/manufacturing-files.md`). `tools/render.sh` makes the picture above.
 - Check reports, renders and working evidence are kept outside this repository, in `build/MujinaControl-S19/` at the workspace root.
 
 ## Sources and attribution

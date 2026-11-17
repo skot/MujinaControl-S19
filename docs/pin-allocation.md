@@ -1,5 +1,7 @@
 # RV1106G2 pin allocation
 
+> For the current state in one place, written for firmware work, see [firmware-pins.md](firmware-pins.md). This page is the record of how the allocation was made and changed; some early statements here were superseded (for example, plug detect now has pull-downs, not pull-ups).
+
 Draft hardware allocation checked against Rockchip Rev 2.2 package pin table and the supplied rv1106-pinctrl.dtsi. SoC pin numbers below are QFN contact numbers, not Linux GPIO numbers. The firmware/device tree remains to be implemented.
 
 | Net | SoC pin | Selected function | Original pin capabilities / reset-pull suffix |

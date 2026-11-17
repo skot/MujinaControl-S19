@@ -2043,7 +2043,7 @@
 		)
 		(uuid "d730b571-4edf-5d04-9e45-48e18190259e")
 	)
-	(text "Fan 4 - fit one connector option"
+	(text "Fan 4 - connectors not fitted; solder in one option"
 		(exclude_from_sim no)
 		(at 213.36 138.43 0)
 		(effects
@@ -2120,7 +2120,7 @@
 		)
 		(uuid "a34a6fd8-76ab-5442-a4a4-cf6993861970")
 	)
-	(text "Fan 2 - fit one connector option"
+	(text "Fan 2 - connectors not fitted; solder in one option"
 		(exclude_from_sim no)
 		(at 213.36 26.67 0)
 		(effects
@@ -2131,7 +2131,7 @@
 		)
 		(uuid "b12309f9-ce50-561a-ba4c-2b9cc9d8ee00")
 	)
-	(text "Fan 1 - fit one connector option"
+	(text "Fan 1 - connectors not fitted; solder in one option"
 		(exclude_from_sim no)
 		(at 15.24 26.67 0)
 		(effects
@@ -2142,7 +2142,7 @@
 		)
 		(uuid "ea3a6eaa-d349-52ae-a67d-67d9bd54456e")
 	)
-	(text "Fan 3 - fit one connector option"
+	(text "Fan 3 - connectors not fitted; solder in one option"
 		(exclude_from_sim no)
 		(at 15.24 138.43 0)
 		(effects
@@ -6874,7 +6874,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "49a87ebd-b743-5d0c-ad9d-6e3f74ff612a")
 		(property "Reference" "J9"
 			(at 246.38 165.1 0)
@@ -6991,7 +6991,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "57b28baa-b1ec-52c0-8966-0475fb507c7f")
 		(property "Reference" "J8"
 			(at 48.26 165.1 0)
@@ -8001,7 +8001,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "783a9865-8cec-56e4-b373-33e6eb75dba0")
 		(property "Reference" "J12"
 			(at 358.14 97.79 0)
@@ -9658,7 +9658,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c2564fa0-127c-5fdd-b78c-ac6c0b3ee571")
 		(property "Reference" "J11"
 			(at 160.02 97.79 0)

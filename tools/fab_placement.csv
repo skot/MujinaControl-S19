@@ -1,0 +1,27 @@
+LCSC,Footprint,Refs,RotationOffset,dX,dY,Residual,Note
+C178640,CP_Elec_6.3x7.7,C289 C290,180,0.0,0.0,0.03,fab footprint -RD: its pad 1 is the negative pad; ours pad 1 is +
+C19077471,SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,D2,180,-0.003,-0.0,0.013,
+C19077396,D_SOD-123,D3 D4 D5 D6,0,0.0,0.0,0.015,pad 1 = cathode in both
+C125094,LED_0603_1608Metric,D100,0,0.0,0.0,0.038,pad 1 = cathode in both
+C19077569,D_SMB,D220,0,0.0,0.0,0.0,pad 1 = cathode in both
+C7420333,SOT-23,D230 D231 D232 D233,180,0.021,0.0,0.083,
+C7420339,SOT-23,Q2 Q3 Q4 Q5,180,0.021,0.0,0.083,
+C3200405,SOT-583-8_L2.1-W1.2-P0.50-LS1.6-BR,U110 U111 U112 U113 U114 U115,180,0.0,0.0,0.1,
+C42394092,SOT-23-6,U120 U121 U122 U123 U124,180,0.0,0.0,0.213,
+C2149796,SOT-363_SC-70-6,U150 U151 U152,180,0.0,0.0,0.113,
+C506609,onsemi_WDFN-8_3.3x3.3mm_P0.65mm_CASE483AW,Q1,0,0.0,-0.053,0.037,fab lands are longer; rows 0.035 mm further apart
+C3010298,WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm,U130,0,0.0,0.0,0.15,
+C3702980,D_SOD-523,U140 U141,0,0.0,0.0,0.05,fab pad 2 = GND
+C70590,Crystal_SMD_3225-4Pin_3.2x2.5mm,Y100,0,0.0,0.0,0.0,
+C19711727,Crystal_SMD_3225-4Pin_3.2x2.5mm,Y102,0,0.0,0.0,0.0,
+C49101620,SW-SMD_TC-S3601-3.5-260G-F0.6,SW1 SW2,0,0.0,-1.525,0.0,fitted on the two signal pads; the mounting lugs are drawn differently
+C88374,U.FL_Hirose_U.FL-R-SMT-1_Vertical,J19,270,-0.763,0.0,0.001,"fab pad 1 = signal, 2 / 3 = ground lugs"
+C719027,microSD_HC_Hirose_DM3D-SF,J101,0,0.0,-0.05,0.0,
+C3020560,USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,J2,0,0.0,-1.308,0.001,fab footprint drawn for another maker's USB-C
+C492365,CONN-TH_50362462,J1,0,0.0,0.0,0.0,
+C2845614,CONN-TH_6P-P2.00_PHD-2X3A,J10,0,0.0,0.0,,"same 2x3 hole grid and pin-1 corner; the pads are numbered in another order (ours by rows, fab zigzag)"
+C2915006,PinHeader_1x03_P2.54mm_Vertical,J16,270,0.0,2.54,0.0,
+C2760325,RJ45_Hanrun_HR915340A_Horizontal,J100,180,4.44,4.195,0.007,fab footprint agrees with ours pad for pad
+C437089,CONN-TH_X2026WV-2-09D-46SN,J3 J4 J5,0,0.01,0.01,0.0,
+C2798300,AMPAK_AP6212,U160,0,0.0,0.001,0.203,"fab pitch 0.889 mm, ours 0.9 mm"
+C5272606,Rockchip_QFN-128-1EP_12.3x12.3mm_P0.35mm_EP7x7mm,U100,0,-0.0,0.0,0.031,

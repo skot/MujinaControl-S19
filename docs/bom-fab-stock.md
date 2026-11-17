@@ -212,3 +212,7 @@ Also added, on part numbers the board already uses: C320 (10u, C15850), C321 / C
 ## Ethernet jack changed to a tab-up type — 2026-11-14
 
 J100 is now HanRun HR915340A, fab part C2760325 (extended, 6,517 in stock, $1.59 each at one piece), instead of HR911105A (C12074). Same 10/100 magnetics and LEDs, with the latch tab on top. The count of part numbers and extended lines does not change. Details: [ethernet-jack-position.md](ethernet-jack-position.md).
+
+## Fan connectors not fitted — 2026-11-15
+
+All eight fan connectors are now not fitted by the fab: J8 / J9 (C2982043) and J11 / J12 (C54909) joined J6 / J7 / J13 / J14. The 1×4 or the 2×2 connector of each channel is soldered in by hand to suit the machine. Fitted parts per board: **295 placements in 68 part numbers: 26 basic, 9 preferred, 33 extended.**
